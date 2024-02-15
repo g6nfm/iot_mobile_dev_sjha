@@ -8,7 +8,7 @@
     Title="SJHAFitness">
 
     <ShellContent
-        Title="Home"
+        Title="Main Page"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
 
