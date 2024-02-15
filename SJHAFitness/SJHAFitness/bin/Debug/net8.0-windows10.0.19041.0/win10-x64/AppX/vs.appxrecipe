@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\Jakob\source\repos\iot_mobile_dev_sjha\SJHAFitness\SJHAFitness\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-02-15T20:22:04.693</Modified>
+      <Modified>2024-02-15T20:53:01.203</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Jakob\source\repos\iot_mobile_dev_sjha\SJHAFitness\SJHAFitness\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2024-02-15T20:22:04.566</Modified>
+      <Modified>2024-02-15T20:53:01.137</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Jakob\source\repos\iot_mobile_dev_sjha\SJHAFitness\SJHAFitness\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\SJHAFitness.runtimeconfig.json">
       <PackagePath>SJHAFitness.runtimeconfig.json</PackagePath>
@@ -44,11 +44,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Jakob\source\repos\iot_mobile_dev_sjha\SJHAFitness\SJHAFitness\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\SJHAFitness.dll">
       <PackagePath>SJHAFitness.dll</PackagePath>
-      <Modified>2024-02-15T20:22:03.689</Modified>
+      <Modified>2024-02-15T20:53:00.973</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Jakob\source\repos\iot_mobile_dev_sjha\SJHAFitness\SJHAFitness\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>SJHAFitness.exe</PackagePath>
-      <Modified>2024-02-15T20:22:03.700</Modified>
+      <Modified>2024-02-15T20:53:00.977</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Jakob\source\repos\iot_mobile_dev_sjha\SJHAFitness\SJHAFitness\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
@@ -266,29 +266,13 @@
       <PackagePath>appiconWideTile.scale-400.png</PackagePath>
       <Modified>2024-02-15T20:18:20.794</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Jakob\source\repos\iot_mobile_dev_sjha\SJHAFitness\SJHAFitness\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
-      <PackagePath>dotnet_bot.scale-100.png</PackagePath>
-      <Modified>2024-02-15T20:18:20.479</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Jakob\source\repos\iot_mobile_dev_sjha\SJHAFitness\SJHAFitness\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
-      <PackagePath>dotnet_bot.scale-125.png</PackagePath>
-      <Modified>2024-02-15T20:18:20.487</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Jakob\source\repos\iot_mobile_dev_sjha\SJHAFitness\SJHAFitness\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
-      <PackagePath>dotnet_bot.scale-150.png</PackagePath>
-      <Modified>2024-02-15T20:18:20.496</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Jakob\source\repos\iot_mobile_dev_sjha\SJHAFitness\SJHAFitness\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
-      <PackagePath>dotnet_bot.scale-200.png</PackagePath>
-      <Modified>2024-02-15T20:18:20.511</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Jakob\source\repos\iot_mobile_dev_sjha\SJHAFitness\SJHAFitness\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
-      <PackagePath>dotnet_bot.scale-400.png</PackagePath>
-      <Modified>2024-02-15T20:18:20.565</Modified>
+    <AppxPackagedFile Include="C:\Users\Jakob\source\repos\iot_mobile_dev_sjha\SJHAFitness\SJHAFitness\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\sjhalogo.scale-100.png">
+      <PackagePath>sjhalogo.scale-100.png</PackagePath>
+      <Modified>2024-02-15T20:37:15.884</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Jakob\source\repos\iot_mobile_dev_sjha\SJHAFitness\SJHAFitness\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\SJHAFitness.deps.json">
       <PackagePath>SJHAFitness.deps.json</PackagePath>
-      <Modified>2024-02-15T20:22:04.327</Modified>
+      <Modified>2024-02-15T20:44:45.582</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Jakob\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.31\lib\net6.0\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>
