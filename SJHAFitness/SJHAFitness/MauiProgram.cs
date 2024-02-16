@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.Logging;
 
-namespace SJHAFitness
+namespace SJHA1
 {
     public static class MauiProgram
     {

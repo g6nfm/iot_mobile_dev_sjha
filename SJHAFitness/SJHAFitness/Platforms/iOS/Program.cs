@@ -1,7 +1,7 @@
 ﻿using ObjCRuntime;
 using UIKit;
 
-namespace SJHAFitness
+namespace SJHA1
 {
     public class Program
     {
