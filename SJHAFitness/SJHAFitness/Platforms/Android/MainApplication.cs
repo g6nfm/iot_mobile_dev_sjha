@@ -1,7 +1,7 @@
 ﻿using Android.App;
 using Android.Runtime;
 
-namespace SJHA1
+namespace SJHAFitness
 {
     [Application]
     public class MainApplication : MauiApplication

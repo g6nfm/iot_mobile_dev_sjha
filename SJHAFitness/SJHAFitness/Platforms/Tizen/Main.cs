@@ -2,7 +2,7 @@ using Microsoft.Maui;
 using Microsoft.Maui.Hosting;
 using System;
 
-namespace SJHA1
+namespace SJHAFitness
 {
     internal class Program : MauiApplication
     {

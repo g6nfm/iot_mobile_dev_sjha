@@ -32937,11 +32937,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\shawn\\source\\repos\\SJHA1\\SJHA1.csproj",
-      "projectName": "SJHA1",
-      "projectPath": "C:\\Users\\shawn\\source\\repos\\SJHA1\\SJHA1.csproj",
+      "projectUniqueName": "C:\\Users\\shawn\\source\\repos\\SJHAFitness\\SJHAFitness.csproj",
+      "projectName": "SJHAFitness",
+      "projectPath": "C:\\Users\\shawn\\source\\repos\\SJHAFitness\\SJHAFitness.csproj",
       "packagesPath": "C:\\Users\\shawn\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\shawn\\source\\repos\\SJHA1\\obj\\",
+      "outputPath": "C:\\Users\\shawn\\source\\repos\\SJHAFitness\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "fallbackFolders": [

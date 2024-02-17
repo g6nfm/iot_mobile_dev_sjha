@@ -1,6 +1,6 @@
 ﻿using Foundation;
 
-namespace SJHA1
+namespace SJHAFitness
 {
     [Register("AppDelegate")]
     public class AppDelegate : MauiUIApplicationDelegate

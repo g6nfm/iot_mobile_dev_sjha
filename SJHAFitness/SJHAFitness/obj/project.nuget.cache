@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "joqZgRoNvkX1hR3r9VjYG1+BgE0alrRiA0YiJ6Ub/rsr/zi2KGruBglyAIrithOOXu1PoQXs9Z9zeGxZxdR7dA==",
+  "dgSpecHash": "oEoXPpBDSY4CR03GHpFb7QjSgnASEMyRqIXYjjoBLEtk+Wo8HuXy/ippQMr/vFsPcwjU7uq/z4Ml4HFgpCKvuA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\shawn\\source\\repos\\SJHA1\\SJHA1.csproj",
+  "projectFilePath": "C:\\Users\\shawn\\source\\repos\\SJHAFitness\\SJHAFitness.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\shawn\\.nuget\\packages\\googlegson\\2.10.1.4\\googlegson.2.10.1.4.nupkg.sha512",
     "C:\\Users\\shawn\\.nuget\\packages\\microsoft.extensions.configuration\\8.0.0\\microsoft.extensions.configuration.8.0.0.nupkg.sha512",

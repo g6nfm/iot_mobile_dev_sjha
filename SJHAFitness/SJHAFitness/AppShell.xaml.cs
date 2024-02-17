@@ -1,4 +1,4 @@
-﻿namespace SJHA1
+﻿namespace SJHAFitness
 {
     public partial class AppShell : Shell
     {

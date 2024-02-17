@@ -8,270 +8,270 @@
     <TargetOsDescription>Windows 10.0</TargetOsDescription>
     <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
     <PackageArchitecture>x64</PackageArchitecture>
-    <PackageIdentityName>com.companyname.sjha1</PackageIdentityName>
+    <PackageIdentityName>com.companyname.sjhafitness</PackageIdentityName>
     <PackageIdentityPublisher>CN=User Name</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\shawn\source\repos\SJHA1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\shawn\source\repos\SJHAFitness\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\</IntermediateOutputPath>
     <RemoteDeploymentType>CopyToDevice</RemoteDeploymentType>
     <PackageRegistrationPath>
     </PackageRegistrationPath>
     <RemoveNonLayoutFiles>false</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\shawn\source\repos\SJHA1\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppX</LayoutDir>
-    <RegisteredManifestChecksum>0B4F822097E52BF97AA05D13EABC417529E1623295E240413CB4BC0FC76D9E8C</RegisteredManifestChecksum>
-    <RegisteredPackageMoniker>com.companyname.sjha1_1.0.0.1_x64__9zz4h110yvjzm</RegisteredPackageMoniker>
-    <RegisteredUserModeAppID>com.companyname.sjha1_9zz4h110yvjzm!App</RegisteredUserModeAppID>
-    <RegisteredPackageID>com.companyname.sjha1</RegisteredPackageID>
+    <LayoutDir>C:\Users\shawn\source\repos\SJHAFitness\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppX</LayoutDir>
+    <RegisteredManifestChecksum>55CC8B3B87B44BBCD552B4E831CEEBED37F55F395C1503D909C1742D5E5E8D17</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>com.companyname.sjhafitness_1.0.0.1_x64__9zz4h110yvjzm</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>com.companyname.sjhafitness_9zz4h110yvjzm!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>com.companyname.sjhafitness</RegisteredPackageID>
     <RegisteredPackagePublisher>CN=User Name</RegisteredPackagePublisher>
     <RegisteredVersion>1.0.0.1</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\shawn\source\repos\SJHA1\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\shawn\source\repos\SJHAFitness\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-02-16T02:31:02.361</Modified>
+      <Modified>2024-02-16T23:08:17.880</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\shawn\source\repos\SJHA1\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
+    <AppxPackagedFile Include="C:\Users\shawn\source\repos\SJHAFitness\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2024-02-16T02:31:02.160</Modified>
+      <Modified>2024-02-16T23:08:17.732</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\shawn\source\repos\SJHA1\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\SJHA1.runtimeconfig.json">
-      <PackagePath>SJHA1.runtimeconfig.json</PackagePath>
-      <Modified>2024-02-16T00:52:06.553</Modified>
+    <AppxPackagedFile Include="C:\Users\shawn\source\repos\SJHAFitness\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\SJHAFitness.runtimeconfig.json">
+      <PackagePath>SJHAFitness.runtimeconfig.json</PackagePath>
+      <Modified>2024-02-16T23:08:17.461</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\shawn\source\repos\SJHA1\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\SJHA1.dll">
-      <PackagePath>SJHA1.dll</PackagePath>
-      <Modified>2024-02-16T02:31:00.813</Modified>
+    <AppxPackagedFile Include="C:\Users\shawn\source\repos\SJHAFitness\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\SJHAFitness.dll">
+      <PackagePath>SJHAFitness.dll</PackagePath>
+      <Modified>2024-02-16T23:08:16.498</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\shawn\source\repos\SJHA1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
-      <PackagePath>SJHA1.exe</PackagePath>
-      <Modified>2024-02-16T02:31:00.870</Modified>
+    <AppxPackagedFile Include="C:\Users\shawn\source\repos\SJHAFitness\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
+      <PackagePath>SJHAFitness.exe</PackagePath>
+      <Modified>2024-02-16T23:08:16.513</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\shawn\source\repos\SJHA1\Resources\Raw\AboutAssets.txt">
+    <AppxPackagedFile Include="C:\Users\shawn\source\repos\SJHAFitness\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
-      <Modified>2024-02-16T00:48:48.470</Modified>
+      <Modified>2024-02-16T23:03:54.069</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\shawn\source\repos\SJHA1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\shawn\source\repos\SJHAFitness\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-100.png">
       <PackagePath>splashSplashScreen.scale-100.png</PackagePath>
-      <Modified>2024-02-16T00:49:23.192</Modified>
+      <Modified>2024-02-16T23:04:07.432</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\shawn\source\repos\SJHA1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\shawn\source\repos\SJHAFitness\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-125.png">
       <PackagePath>splashSplashScreen.scale-125.png</PackagePath>
-      <Modified>2024-02-16T00:49:23.207</Modified>
+      <Modified>2024-02-16T23:04:07.443</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\shawn\source\repos\SJHA1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\shawn\source\repos\SJHAFitness\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-150.png">
       <PackagePath>splashSplashScreen.scale-150.png</PackagePath>
-      <Modified>2024-02-16T00:49:23.227</Modified>
+      <Modified>2024-02-16T23:04:07.459</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\shawn\source\repos\SJHA1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\shawn\source\repos\SJHAFitness\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-200.png">
       <PackagePath>splashSplashScreen.scale-200.png</PackagePath>
-      <Modified>2024-02-16T00:49:23.254</Modified>
+      <Modified>2024-02-16T23:04:07.483</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\shawn\source\repos\SJHA1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\shawn\source\repos\SJHAFitness\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-400.png">
       <PackagePath>splashSplashScreen.scale-400.png</PackagePath>
-      <Modified>2024-02-16T00:49:23.367</Modified>
+      <Modified>2024-02-16T23:04:07.566</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\shawn\source\repos\SJHA1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Regular.ttf">
+    <AppxPackagedFile Include="C:\Users\shawn\source\repos\SJHAFitness\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Regular.ttf">
       <PackagePath>OpenSans-Regular.ttf</PackagePath>
-      <Modified>2024-02-16T00:48:48.463</Modified>
+      <Modified>2024-02-16T23:03:54.064</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\shawn\source\repos\SJHA1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Semibold.ttf">
+    <AppxPackagedFile Include="C:\Users\shawn\source\repos\SJHAFitness\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Semibold.ttf">
       <PackagePath>OpenSans-Semibold.ttf</PackagePath>
-      <Modified>2024-02-16T00:48:48.464</Modified>
+      <Modified>2024-02-16T23:03:54.065</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\shawn\source\repos\SJHA1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
+    <AppxPackagedFile Include="C:\Users\shawn\source\repos\SJHAFitness\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
       <PackagePath>appicon.ico</PackagePath>
-      <Modified>2024-02-16T00:49:24.560</Modified>
+      <Modified>2024-02-16T23:04:07.912</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\shawn\source\repos\SJHA1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\shawn\source\repos\SJHAFitness\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-100.png">
       <PackagePath>appiconLargeTile.scale-100.png</PackagePath>
-      <Modified>2024-02-16T00:49:25.135</Modified>
+      <Modified>2024-02-16T23:04:08.285</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\shawn\source\repos\SJHA1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\shawn\source\repos\SJHAFitness\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-125.png">
       <PackagePath>appiconLargeTile.scale-125.png</PackagePath>
-      <Modified>2024-02-16T00:49:25.166</Modified>
+      <Modified>2024-02-16T23:04:08.303</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\shawn\source\repos\SJHA1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\shawn\source\repos\SJHAFitness\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-150.png">
       <PackagePath>appiconLargeTile.scale-150.png</PackagePath>
-      <Modified>2024-02-16T00:49:25.190</Modified>
+      <Modified>2024-02-16T23:04:08.316</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\shawn\source\repos\SJHA1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\shawn\source\repos\SJHAFitness\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-200.png">
       <PackagePath>appiconLargeTile.scale-200.png</PackagePath>
-      <Modified>2024-02-16T00:49:25.224</Modified>
+      <Modified>2024-02-16T23:04:08.340</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\shawn\source\repos\SJHA1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\shawn\source\repos\SJHAFitness\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-400.png">
       <PackagePath>appiconLargeTile.scale-400.png</PackagePath>
-      <Modified>2024-02-16T00:49:25.350</Modified>
+      <Modified>2024-02-16T23:04:08.429</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\shawn\source\repos\SJHA1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-16.png">
+    <AppxPackagedFile Include="C:\Users\shawn\source\repos\SJHAFitness\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-16.png</PackagePath>
-      <Modified>2024-02-16T00:49:24.725</Modified>
+      <Modified>2024-02-16T23:04:08.025</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\shawn\source\repos\SJHA1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-24.png">
+    <AppxPackagedFile Include="C:\Users\shawn\source\repos\SJHAFitness\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-24.png</PackagePath>
-      <Modified>2024-02-16T00:49:24.731</Modified>
+      <Modified>2024-02-16T23:04:08.029</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\shawn\source\repos\SJHA1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-256.png">
+    <AppxPackagedFile Include="C:\Users\shawn\source\repos\SJHAFitness\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-256.png</PackagePath>
-      <Modified>2024-02-16T00:49:24.766</Modified>
+      <Modified>2024-02-16T23:04:08.050</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\shawn\source\repos\SJHA1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-32.png">
+    <AppxPackagedFile Include="C:\Users\shawn\source\repos\SJHAFitness\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-32.png</PackagePath>
-      <Modified>2024-02-16T00:49:24.738</Modified>
+      <Modified>2024-02-16T23:04:08.034</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\shawn\source\repos\SJHA1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-48.png">
+    <AppxPackagedFile Include="C:\Users\shawn\source\repos\SJHAFitness\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-48.png</PackagePath>
-      <Modified>2024-02-16T00:49:24.745</Modified>
+      <Modified>2024-02-16T23:04:08.039</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\shawn\source\repos\SJHA1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-16.png">
+    <AppxPackagedFile Include="C:\Users\shawn\source\repos\SJHAFitness\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-16.png</PackagePath>
-      <Modified>2024-02-16T00:49:24.674</Modified>
+      <Modified>2024-02-16T23:04:07.991</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\shawn\source\repos\SJHA1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-24.png">
+    <AppxPackagedFile Include="C:\Users\shawn\source\repos\SJHAFitness\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-24.png</PackagePath>
-      <Modified>2024-02-16T00:49:24.683</Modified>
+      <Modified>2024-02-16T23:04:07.997</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\shawn\source\repos\SJHA1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-256.png">
+    <AppxPackagedFile Include="C:\Users\shawn\source\repos\SJHAFitness\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-256.png</PackagePath>
-      <Modified>2024-02-16T00:49:24.716</Modified>
+      <Modified>2024-02-16T23:04:08.019</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\shawn\source\repos\SJHA1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-32.png">
+    <AppxPackagedFile Include="C:\Users\shawn\source\repos\SJHAFitness\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-32.png</PackagePath>
-      <Modified>2024-02-16T00:49:24.690</Modified>
+      <Modified>2024-02-16T23:04:08.003</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\shawn\source\repos\SJHA1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-48.png">
+    <AppxPackagedFile Include="C:\Users\shawn\source\repos\SJHAFitness\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-48.png</PackagePath>
-      <Modified>2024-02-16T00:49:24.697</Modified>
+      <Modified>2024-02-16T23:04:08.008</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\shawn\source\repos\SJHA1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\shawn\source\repos\SJHAFitness\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-100.png">
       <PackagePath>appiconLogo.scale-100.png</PackagePath>
-      <Modified>2024-02-16T00:49:24.575</Modified>
+      <Modified>2024-02-16T23:04:07.924</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\shawn\source\repos\SJHA1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\shawn\source\repos\SJHAFitness\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-125.png">
       <PackagePath>appiconLogo.scale-125.png</PackagePath>
-      <Modified>2024-02-16T00:49:24.584</Modified>
+      <Modified>2024-02-16T23:04:07.932</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\shawn\source\repos\SJHA1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\shawn\source\repos\SJHAFitness\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-150.png">
       <PackagePath>appiconLogo.scale-150.png</PackagePath>
-      <Modified>2024-02-16T00:49:24.592</Modified>
+      <Modified>2024-02-16T23:04:07.941</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\shawn\source\repos\SJHA1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\shawn\source\repos\SJHAFitness\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-200.png">
       <PackagePath>appiconLogo.scale-200.png</PackagePath>
-      <Modified>2024-02-16T00:49:24.601</Modified>
+      <Modified>2024-02-16T23:04:07.947</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\shawn\source\repos\SJHA1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\shawn\source\repos\SJHAFitness\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-400.png">
       <PackagePath>appiconLogo.scale-400.png</PackagePath>
-      <Modified>2024-02-16T00:49:24.611</Modified>
+      <Modified>2024-02-16T23:04:07.955</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\shawn\source\repos\SJHA1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-16.png">
+    <AppxPackagedFile Include="C:\Users\shawn\source\repos\SJHAFitness\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-16.png">
       <PackagePath>appiconLogo.targetsize-16.png</PackagePath>
-      <Modified>2024-02-16T00:49:24.620</Modified>
+      <Modified>2024-02-16T23:04:07.959</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\shawn\source\repos\SJHA1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-24.png">
+    <AppxPackagedFile Include="C:\Users\shawn\source\repos\SJHAFitness\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-24.png">
       <PackagePath>appiconLogo.targetsize-24.png</PackagePath>
-      <Modified>2024-02-16T00:49:24.628</Modified>
+      <Modified>2024-02-16T23:04:07.964</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\shawn\source\repos\SJHA1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-256.png">
+    <AppxPackagedFile Include="C:\Users\shawn\source\repos\SJHAFitness\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-256.png">
       <PackagePath>appiconLogo.targetsize-256.png</PackagePath>
-      <Modified>2024-02-16T00:49:24.665</Modified>
+      <Modified>2024-02-16T23:04:07.985</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\shawn\source\repos\SJHA1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-32.png">
+    <AppxPackagedFile Include="C:\Users\shawn\source\repos\SJHAFitness\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-32.png">
       <PackagePath>appiconLogo.targetsize-32.png</PackagePath>
-      <Modified>2024-02-16T00:49:24.636</Modified>
+      <Modified>2024-02-16T23:04:07.969</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\shawn\source\repos\SJHA1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-48.png">
+    <AppxPackagedFile Include="C:\Users\shawn\source\repos\SJHAFitness\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-48.png">
       <PackagePath>appiconLogo.targetsize-48.png</PackagePath>
-      <Modified>2024-02-16T00:49:24.642</Modified>
+      <Modified>2024-02-16T23:04:07.975</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\shawn\source\repos\SJHA1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\shawn\source\repos\SJHAFitness\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-100.png">
       <PackagePath>appiconMediumTile.scale-100.png</PackagePath>
-      <Modified>2024-02-16T00:49:24.875</Modified>
+      <Modified>2024-02-16T23:04:08.122</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\shawn\source\repos\SJHA1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\shawn\source\repos\SJHAFitness\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-125.png">
       <PackagePath>appiconMediumTile.scale-125.png</PackagePath>
-      <Modified>2024-02-16T00:49:24.887</Modified>
+      <Modified>2024-02-16T23:04:08.128</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\shawn\source\repos\SJHA1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\shawn\source\repos\SJHAFitness\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-150.png">
       <PackagePath>appiconMediumTile.scale-150.png</PackagePath>
-      <Modified>2024-02-16T00:49:24.902</Modified>
+      <Modified>2024-02-16T23:04:08.138</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\shawn\source\repos\SJHA1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\shawn\source\repos\SJHAFitness\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-200.png">
       <PackagePath>appiconMediumTile.scale-200.png</PackagePath>
-      <Modified>2024-02-16T00:49:24.920</Modified>
+      <Modified>2024-02-16T23:04:08.150</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\shawn\source\repos\SJHA1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\shawn\source\repos\SJHAFitness\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-400.png">
       <PackagePath>appiconMediumTile.scale-400.png</PackagePath>
-      <Modified>2024-02-16T00:49:24.955</Modified>
+      <Modified>2024-02-16T23:04:08.171</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\shawn\source\repos\SJHA1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\shawn\source\repos\SJHAFitness\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-100.png">
       <PackagePath>appiconSmallTile.scale-100.png</PackagePath>
-      <Modified>2024-02-16T00:49:24.822</Modified>
+      <Modified>2024-02-16T23:04:08.085</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\shawn\source\repos\SJHA1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\shawn\source\repos\SJHAFitness\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-125.png">
       <PackagePath>appiconSmallTile.scale-125.png</PackagePath>
-      <Modified>2024-02-16T00:49:24.829</Modified>
+      <Modified>2024-02-16T23:04:08.090</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\shawn\source\repos\SJHA1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\shawn\source\repos\SJHAFitness\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-150.png">
       <PackagePath>appiconSmallTile.scale-150.png</PackagePath>
-      <Modified>2024-02-16T00:49:24.837</Modified>
+      <Modified>2024-02-16T23:04:08.096</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\shawn\source\repos\SJHA1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\shawn\source\repos\SJHAFitness\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-200.png">
       <PackagePath>appiconSmallTile.scale-200.png</PackagePath>
-      <Modified>2024-02-16T00:49:24.847</Modified>
+      <Modified>2024-02-16T23:04:08.104</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\shawn\source\repos\SJHA1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\shawn\source\repos\SJHAFitness\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-400.png">
       <PackagePath>appiconSmallTile.scale-400.png</PackagePath>
-      <Modified>2024-02-16T00:49:24.865</Modified>
+      <Modified>2024-02-16T23:04:08.115</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\shawn\source\repos\SJHA1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\shawn\source\repos\SJHAFitness\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-100.png">
       <PackagePath>appiconStoreLogo.scale-100.png</PackagePath>
-      <Modified>2024-02-16T00:49:24.775</Modified>
+      <Modified>2024-02-16T23:04:08.055</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\shawn\source\repos\SJHA1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\shawn\source\repos\SJHAFitness\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-125.png">
       <PackagePath>appiconStoreLogo.scale-125.png</PackagePath>
-      <Modified>2024-02-16T00:49:24.784</Modified>
+      <Modified>2024-02-16T23:04:08.059</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\shawn\source\repos\SJHA1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\shawn\source\repos\SJHAFitness\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-150.png">
       <PackagePath>appiconStoreLogo.scale-150.png</PackagePath>
-      <Modified>2024-02-16T00:49:24.792</Modified>
+      <Modified>2024-02-16T23:04:08.064</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\shawn\source\repos\SJHA1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\shawn\source\repos\SJHAFitness\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-200.png">
       <PackagePath>appiconStoreLogo.scale-200.png</PackagePath>
-      <Modified>2024-02-16T00:49:24.800</Modified>
+      <Modified>2024-02-16T23:04:08.069</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\shawn\source\repos\SJHA1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\shawn\source\repos\SJHAFitness\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-400.png">
       <PackagePath>appiconStoreLogo.scale-400.png</PackagePath>
-      <Modified>2024-02-16T00:49:24.813</Modified>
+      <Modified>2024-02-16T23:04:08.080</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\shawn\source\repos\SJHA1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\shawn\source\repos\SJHAFitness\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-100.png">
       <PackagePath>appiconWideTile.scale-100.png</PackagePath>
-      <Modified>2024-02-16T00:49:24.969</Modified>
+      <Modified>2024-02-16T23:04:08.181</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\shawn\source\repos\SJHA1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\shawn\source\repos\SJHAFitness\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-125.png">
       <PackagePath>appiconWideTile.scale-125.png</PackagePath>
-      <Modified>2024-02-16T00:49:24.986</Modified>
+      <Modified>2024-02-16T23:04:08.190</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\shawn\source\repos\SJHA1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\shawn\source\repos\SJHAFitness\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-150.png">
       <PackagePath>appiconWideTile.scale-150.png</PackagePath>
-      <Modified>2024-02-16T00:49:25.004</Modified>
+      <Modified>2024-02-16T23:04:08.205</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\shawn\source\repos\SJHA1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\shawn\source\repos\SJHAFitness\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-200.png">
       <PackagePath>appiconWideTile.scale-200.png</PackagePath>
-      <Modified>2024-02-16T00:49:25.032</Modified>
+      <Modified>2024-02-16T23:04:08.224</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\shawn\source\repos\SJHA1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\shawn\source\repos\SJHAFitness\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
       <PackagePath>appiconWideTile.scale-400.png</PackagePath>
-      <Modified>2024-02-16T00:49:25.115</Modified>
+      <Modified>2024-02-16T23:04:08.272</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\shawn\source\repos\SJHA1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\sjhalogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\shawn\source\repos\SJHAFitness\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\sjhalogo.scale-100.png">
       <PackagePath>sjhalogo.scale-100.png</PackagePath>
       <Modified>2024-02-15T20:59:03.759</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\shawn\source\repos\SJHA1\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\SJHA1.deps.json">
-      <PackagePath>SJHA1.deps.json</PackagePath>
-      <Modified>2024-02-16T02:31:01.899</Modified>
+    <AppxPackagedFile Include="C:\Users\shawn\source\repos\SJHAFitness\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\SJHAFitness.deps.json">
+      <PackagePath>SJHAFitness.deps.json</PackagePath>
+      <Modified>2024-02-16T23:08:17.357</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\shawn\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.31\lib\net6.0\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>

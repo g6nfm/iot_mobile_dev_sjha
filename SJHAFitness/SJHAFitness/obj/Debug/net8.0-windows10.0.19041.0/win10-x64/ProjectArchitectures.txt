@@ -1,1 +1,1 @@
-C:\Users\shawn\source\repos\SJHA1\SJHA1.csproj;x64
+C:\Users\shawn\source\repos\SJHAFitness\SJHAFitness.csproj;x64

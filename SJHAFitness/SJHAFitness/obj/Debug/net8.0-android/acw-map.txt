@@ -1,9 +1,9 @@
-SJHA1.MainActivity, SJHA1;crc6444c9133bee7079c4.MainActivity
-SJHA1.MainActivity;crc6444c9133bee7079c4.MainActivity
-sjha1.MainActivity;crc6444c9133bee7079c4.MainActivity
-SJHA1.MainApplication, SJHA1;crc6444c9133bee7079c4.MainApplication
-SJHA1.MainApplication;crc6444c9133bee7079c4.MainApplication
-sjha1.MainApplication;crc6444c9133bee7079c4.MainApplication
+SJHAFitness.MainActivity, SJHAFitness;crc64b43385c8185a0e98.MainActivity
+SJHAFitness.MainActivity;crc64b43385c8185a0e98.MainActivity
+sjhafitness.MainActivity;crc64b43385c8185a0e98.MainActivity
+SJHAFitness.MainApplication, SJHAFitness;crc64b43385c8185a0e98.MainApplication
+SJHAFitness.MainApplication;crc64b43385c8185a0e98.MainApplication
+sjhafitness.MainApplication;crc64b43385c8185a0e98.MainApplication
 GoogleGson.IExclusionStrategy, GoogleGson;com.google.gson.ExclusionStrategy
 GoogleGson.IExclusionStrategy;com.google.gson.ExclusionStrategy
 com.google.gson.ExclusionStrategy;com.google.gson.ExclusionStrategy
