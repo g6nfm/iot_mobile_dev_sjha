@@ -8,7 +8,11 @@
     For more information on package manifest files, see http://go.microsoft.com/fwlink/?LinkID=241727
   -->
   <Identity Name="com.companyname.sjhafitness" Publisher="CN=User Name" Version="1.0.0.1" ProcessorArchitecture="x64" />
+<<<<<<< Updated upstream
   <mp:PhoneIdentity PhoneProductId="A0104EE6-AB9C-4677-86C8-22A8F3F0D9C4" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
+=======
+  <mp:PhoneIdentity PhoneProductId="34798850-4612-4635-82B7-FBF230426116" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
+>>>>>>> Stashed changes
   <Properties>
     <DisplayName>SJHAFitness</DisplayName>
     <PublisherDisplayName>User Name</PublisherDisplayName>

@@ -32909,24 +32909,44 @@
       "Microsoft.Extensions.Logging.Debug >= 8.0.0",
       "Microsoft.Maui.Controls >= 8.0.3",
       "Microsoft.Maui.Controls.Compatibility >= 8.0.3",
+<<<<<<< Updated upstream
       "Microsoft.NET.ILLink.Tasks >= 8.0.1"
+=======
+      "Microsoft.NET.ILLink.Tasks >= 8.0.1",
+      "QRCoder >= 1.4.3"
+>>>>>>> Stashed changes
     ],
     "net8.0-ios17.2": [
       "Microsoft.Extensions.Logging.Debug >= 8.0.0",
       "Microsoft.Maui.Controls >= 8.0.3",
       "Microsoft.Maui.Controls.Compatibility >= 8.0.3",
+<<<<<<< Updated upstream
       "Microsoft.NET.ILLink.Tasks >= 8.0.1"
+=======
+      "Microsoft.NET.ILLink.Tasks >= 8.0.1",
+      "QRCoder >= 1.4.3"
+>>>>>>> Stashed changes
     ],
     "net8.0-maccatalyst17.2": [
       "Microsoft.Extensions.Logging.Debug >= 8.0.0",
       "Microsoft.Maui.Controls >= 8.0.3",
       "Microsoft.Maui.Controls.Compatibility >= 8.0.3",
+<<<<<<< Updated upstream
       "Microsoft.NET.ILLink.Tasks >= 8.0.1"
+=======
+      "Microsoft.NET.ILLink.Tasks >= 8.0.1",
+      "QRCoder >= 1.4.3"
+>>>>>>> Stashed changes
     ],
     "net8.0-windows10.0.19041": [
       "Microsoft.Extensions.Logging.Debug >= 8.0.0",
       "Microsoft.Maui.Controls >= 8.0.3",
+<<<<<<< Updated upstream
       "Microsoft.Maui.Controls.Compatibility >= 8.0.3"
+=======
+      "Microsoft.Maui.Controls.Compatibility >= 8.0.3",
+      "QRCoder >= 1.4.3"
+>>>>>>> Stashed changes
     ]
   },
   "packageFolders": {
@@ -33131,6 +33151,13 @@
           "Microsoft.Maui.Controls.Compatibility": {
             "target": "Package",
             "version": "[8.0.3, )"
+<<<<<<< Updated upstream
+=======
+          },
+          "QRCoder": {
+            "target": "Package",
+            "version": "[1.4.3, )"
+>>>>>>> Stashed changes
           }
         },
         "imports": [
