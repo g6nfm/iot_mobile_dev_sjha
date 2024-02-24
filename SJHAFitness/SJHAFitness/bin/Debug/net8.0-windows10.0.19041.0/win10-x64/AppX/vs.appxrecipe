@@ -19,11 +19,7 @@
     <WindowsSdkPath>
     </WindowsSdkPath>
     <LayoutDir>C:\Users\Jakob\source\repos\iot_mobile_dev_sjha\SJHAFitness\SJHAFitness\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppX</LayoutDir>
-<<<<<<< Updated upstream
     <RegisteredManifestChecksum>B8D8DF180D79654F9C7139422F855C4F8AE3014DB8819A25686DE0772A6B1B9E</RegisteredManifestChecksum>
-=======
-    <RegisteredManifestChecksum>C3C896158225C6F8712CE49C80546FE9D91590D8D3BE5AE636AACD21738B077B</RegisteredManifestChecksum>
->>>>>>> Stashed changes
     <RegisteredPackageMoniker>com.companyname.sjhafitness_1.0.0.1_x64__9zz4h110yvjzm</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>com.companyname.sjhafitness_9zz4h110yvjzm!App</RegisteredUserModeAppID>
     <RegisteredPackageID>com.companyname.sjhafitness</RegisteredPackageID>
@@ -34,45 +30,25 @@
     <AppXManifest Include="C:\Users\Jakob\source\repos\iot_mobile_dev_sjha\SJHAFitness\SJHAFitness\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-<<<<<<< Updated upstream
-      <Modified>2024-02-15T21:08:07.910</Modified>
-=======
-      <Modified>2024-02-24T05:05:04.635</Modified>
->>>>>>> Stashed changes
+      <Modified>2024-02-24T23:47:10.294</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Jakob\source\repos\iot_mobile_dev_sjha\SJHAFitness\SJHAFitness\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-<<<<<<< Updated upstream
-      <Modified>2024-02-15T21:08:07.844</Modified>
+      <Modified>2024-02-24T23:47:10.163</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Jakob\source\repos\iot_mobile_dev_sjha\SJHAFitness\SJHAFitness\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\SJHAFitness.runtimeconfig.json">
       <PackagePath>SJHAFitness.runtimeconfig.json</PackagePath>
-      <Modified>2024-02-15T20:22:04.414</Modified>
+      <Modified>2024-02-24T23:47:09.970</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Jakob\source\repos\iot_mobile_dev_sjha\SJHAFitness\SJHAFitness\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\SJHAFitness.dll">
       <PackagePath>SJHAFitness.dll</PackagePath>
-      <Modified>2024-02-15T21:08:07.682</Modified>
+      <Modified>2024-02-24T23:47:09.134</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Jakob\source\repos\iot_mobile_dev_sjha\SJHAFitness\SJHAFitness\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>SJHAFitness.exe</PackagePath>
-      <Modified>2024-02-15T21:08:07.686</Modified>
-=======
-      <Modified>2024-02-24T05:05:04.514</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Jakob\source\repos\iot_mobile_dev_sjha\SJHAFitness\SJHAFitness\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\SJHAFitness.runtimeconfig.json">
-      <PackagePath>SJHAFitness.runtimeconfig.json</PackagePath>
-      <Modified>2024-02-24T04:14:12.912</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Jakob\source\repos\iot_mobile_dev_sjha\SJHAFitness\SJHAFitness\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\SJHAFitness.dll">
-      <PackagePath>SJHAFitness.dll</PackagePath>
-      <Modified>2024-02-24T05:05:03.772</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Jakob\source\repos\iot_mobile_dev_sjha\SJHAFitness\SJHAFitness\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
-      <PackagePath>SJHAFitness.exe</PackagePath>
-      <Modified>2024-02-24T05:05:03.782</Modified>
->>>>>>> Stashed changes
+      <Modified>2024-02-24T23:47:09.137</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Jakob\source\repos\iot_mobile_dev_sjha\SJHAFitness\SJHAFitness\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
@@ -100,19 +76,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Jakob\source\repos\iot_mobile_dev_sjha\SJHAFitness\SJHAFitness\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Regular.ttf">
       <PackagePath>OpenSans-Regular.ttf</PackagePath>
-<<<<<<< Updated upstream
-      <Modified>2024-02-15T20:18:10.443</Modified>
+      <Modified>2024-02-24T05:08:53.614</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Jakob\source\repos\iot_mobile_dev_sjha\SJHAFitness\SJHAFitness\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Semibold.ttf">
       <PackagePath>OpenSans-Semibold.ttf</PackagePath>
-      <Modified>2024-02-15T20:18:10.445</Modified>
-=======
-      <Modified>2024-02-24T02:46:01.725</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Jakob\source\repos\iot_mobile_dev_sjha\SJHAFitness\SJHAFitness\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Semibold.ttf">
-      <PackagePath>OpenSans-Semibold.ttf</PackagePath>
-      <Modified>2024-02-24T02:46:01.726</Modified>
->>>>>>> Stashed changes
+      <Modified>2024-02-24T05:08:53.615</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Jakob\source\repos\iot_mobile_dev_sjha\SJHAFitness\SJHAFitness\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
       <PackagePath>appicon.ico</PackagePath>
@@ -298,29 +266,14 @@
       <PackagePath>appiconWideTile.scale-400.png</PackagePath>
       <Modified>2024-02-15T20:18:20.794</Modified>
     </AppxPackagedFile>
-<<<<<<< Updated upstream
     <AppxPackagedFile Include="C:\Users\Jakob\source\repos\iot_mobile_dev_sjha\SJHAFitness\SJHAFitness\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\sjhalogo.scale-100.png">
       <PackagePath>sjhalogo.scale-100.png</PackagePath>
-      <Modified>2024-02-15T21:05:34.493</Modified>
+      <Modified>2024-02-24T05:08:53.616</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Jakob\source\repos\iot_mobile_dev_sjha\SJHAFitness\SJHAFitness\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\SJHAFitness.deps.json">
       <PackagePath>SJHAFitness.deps.json</PackagePath>
-      <Modified>2024-02-15T21:06:10.750</Modified>
+      <Modified>2024-02-24T23:47:09.880</Modified>
     </AppxPackagedFile>
-=======
-    <AppxPackagedFile Include="C:\Users\Jakob\source\repos\iot_mobile_dev_sjha\SJHAFitness\SJHAFitness\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\sjha1.scale-100.png">
-      <PackagePath>sjha1.scale-100.png</PackagePath>
-      <Modified>2024-02-24T04:11:34.635</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Jakob\source\repos\iot_mobile_dev_sjha\SJHAFitness\SJHAFitness\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\sjhalogo.scale-100.png">
-      <PackagePath>sjhalogo.scale-100.png</PackagePath>
-      <Modified>2024-02-24T02:46:01.731</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Jakob\source\repos\iot_mobile_dev_sjha\SJHAFitness\SJHAFitness\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\SJHAFitness.deps.json">
-      <PackagePath>SJHAFitness.deps.json</PackagePath>
-      <Modified>2024-02-24T04:55:03.785</Modified>
-    </AppxPackagedFile>
->>>>>>> Stashed changes
     <AppxPackagedFile Include="C:\Users\Jakob\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.31\lib\net6.0\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>
       <Modified>2023-10-16T19:41:08.000</Modified>
@@ -397,13 +350,10 @@
       <PackagePath>Microsoft.Maui.Graphics.Win2D.WinUI.Desktop.dll</PackagePath>
       <Modified>2023-11-07T20:47:42.000</Modified>
     </AppxPackagedFile>
-<<<<<<< Updated upstream
-=======
     <AppxPackagedFile Include="C:\Users\Jakob\.nuget\packages\microsoft.win32.systemevents\6.0.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll">
       <PackagePath>Microsoft.Win32.SystemEvents.dll</PackagePath>
       <Modified>2021-10-22T23:40:18.000</Modified>
     </AppxPackagedFile>
->>>>>>> Stashed changes
     <AppxPackagedFile Include="C:\Users\Jakob\.nuget\packages\microsoft.windowsappsdk\1.3.230724000\lib\net6.0-windows10.0.18362.0\Microsoft.InteractiveExperiences.Projection.dll">
       <PackagePath>Microsoft.InteractiveExperiences.Projection.dll</PackagePath>
       <Modified>2023-07-21T16:44:46.000</Modified>
@@ -464,8 +414,6 @@
       <PackagePath>Microsoft.WindowsAppRuntime.Release.Net.dll</PackagePath>
       <Modified>2023-07-24T19:10:10.000</Modified>
     </AppxPackagedFile>
-<<<<<<< Updated upstream
-=======
     <AppxPackagedFile Include="C:\Users\Jakob\.nuget\packages\qrcoder\1.4.3\lib\net6.0-windows7.0\QRCoder.dll">
       <PackagePath>QRCoder.dll</PackagePath>
       <Modified>2021-12-12T12:30:50.000</Modified>
@@ -474,7 +422,6 @@
       <PackagePath>System.Drawing.Common.dll</PackagePath>
       <Modified>2021-10-22T23:48:10.000</Modified>
     </AppxPackagedFile>
->>>>>>> Stashed changes
     <AppxPackagedFile Include="C:\Users\Jakob\.nuget\packages\microsoft.maui.controls.core\8.0.3\lib\net8.0-windows10.0.19041\ar\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>ar\Microsoft.Maui.Controls.resources.dll</PackagePath>
       <Modified>2023-11-07T20:44:30.000</Modified>

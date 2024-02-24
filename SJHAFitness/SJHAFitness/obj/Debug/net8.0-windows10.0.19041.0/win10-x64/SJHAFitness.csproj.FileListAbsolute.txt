@@ -352,4 +352,3 @@ C:\Users\Jakob\source\repos\iot_mobile_dev_sjha\SJHAFitness\SJHAFitness\obj\Debu
 C:\Users\Jakob\source\repos\iot_mobile_dev_sjha\SJHAFitness\SJHAFitness\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Win32.SystemEvents.dll
 C:\Users\Jakob\source\repos\iot_mobile_dev_sjha\SJHAFitness\SJHAFitness\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\QRCoder.dll
 C:\Users\Jakob\source\repos\iot_mobile_dev_sjha\SJHAFitness\SJHAFitness\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\System.Drawing.Common.dll
-C:\Users\Jakob\source\repos\iot_mobile_dev_sjha\SJHAFitness\SJHAFitness\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\sjha1.scale-100.png
