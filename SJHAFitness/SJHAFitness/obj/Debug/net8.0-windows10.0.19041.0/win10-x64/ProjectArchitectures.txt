@@ -1,1 +1,1 @@
-C:\Users\Jakob\source\repos\iot_mobile_dev_sjha\SJHAFitness\SJHAFitness\SJHAFitness.csproj;x64
+C:\Users\shawn\source\repos\iot_mobile_dev_sjha\SJHAFitness\SJHAFitness\SJHAFitness.csproj;x64

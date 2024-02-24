@@ -8,28 +8,39 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = SJHAFitness
-build_property.ProjectDir = C:\Users\Jakob\source\repos\iot_mobile_dev_sjha\SJHAFitness\SJHAFitness\
+build_property.ProjectDir = C:\Users\shawn\source\repos\iot_mobile_dev_sjha\SJHAFitness\SJHAFitness\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 
-[C:/Users/Jakob/source/repos/iot_mobile_dev_sjha/SJHAFitness/SJHAFitness/App.xaml]
+[C:/Users/shawn/source/repos/iot_mobile_dev_sjha/SJHAFitness/SJHAFitness/App.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = SJHAFitness.App.xaml
 build_metadata.AdditionalFiles.TargetPath = App.xaml
 build_metadata.AdditionalFiles.RelativePath = App.xaml
 
-[C:/Users/Jakob/source/repos/iot_mobile_dev_sjha/SJHAFitness/SJHAFitness/AppShell.xaml]
+[C:/Users/shawn/source/repos/iot_mobile_dev_sjha/SJHAFitness/SJHAFitness/AppShell.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = SJHAFitness.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
+<<<<<<< Updated upstream
 [C:/Users/Jakob/source/repos/iot_mobile_dev_sjha/SJHAFitness/SJHAFitness/MainPage.xaml]
+=======
+[C:/Users/shawn/source/repos/iot_mobile_dev_sjha/SJHAFitness/SJHAFitness/LandingPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = SJHAFitness.LandingPage.xaml
+build_metadata.AdditionalFiles.TargetPath = LandingPage.xaml
+build_metadata.AdditionalFiles.RelativePath = LandingPage.xaml
+
+[C:/Users/shawn/source/repos/iot_mobile_dev_sjha/SJHAFitness/SJHAFitness/MainPage.xaml]
+>>>>>>> Stashed changes
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = SJHAFitness.MainPage.xaml
 build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
 
+<<<<<<< Updated upstream
 [C:/Users/Jakob/source/repos/iot_mobile_dev_sjha/SJHAFitness/SJHAFitness/MenuPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = SJHAFitness.MenuPage.xaml
@@ -37,30 +48,43 @@ build_metadata.AdditionalFiles.TargetPath = MenuPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MenuPage.xaml
 
 [C:/Users/Jakob/source/repos/iot_mobile_dev_sjha/SJHAFitness/SJHAFitness/Resources/Styles/Colors.xaml]
+=======
+[C:/Users/shawn/source/repos/iot_mobile_dev_sjha/SJHAFitness/SJHAFitness/Resources/Styles/Colors.xaml]
+>>>>>>> Stashed changes
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = SJHAFitness.Resources.Styles.Colors.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
 
-[C:/Users/Jakob/source/repos/iot_mobile_dev_sjha/SJHAFitness/SJHAFitness/Resources/Styles/Styles.xaml]
+[C:/Users/shawn/source/repos/iot_mobile_dev_sjha/SJHAFitness/SJHAFitness/Resources/Styles/Styles.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = SJHAFitness.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
 
+<<<<<<< Updated upstream
 [C:/Users/Jakob/source/repos/iot_mobile_dev_sjha/SJHAFitness/SJHAFitness/SignupPage.xaml]
+=======
+[C:/Users/shawn/source/repos/iot_mobile_dev_sjha/SJHAFitness/SJHAFitness/ScanPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = SJHAFitness.ScanPage.xaml
+build_metadata.AdditionalFiles.TargetPath = ScanPage.xaml
+build_metadata.AdditionalFiles.RelativePath = ScanPage.xaml
+
+[C:/Users/shawn/source/repos/iot_mobile_dev_sjha/SJHAFitness/SJHAFitness/SignupPage.xaml]
+>>>>>>> Stashed changes
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = SJHAFitness.SignupPage.xaml
 build_metadata.AdditionalFiles.TargetPath = SignupPage.xaml
 build_metadata.AdditionalFiles.RelativePath = SignupPage.xaml
 
-[C:/Users/Jakob/source/repos/iot_mobile_dev_sjha/SJHAFitness/SJHAFitness/TermsAndConditions.xaml]
+[C:/Users/shawn/source/repos/iot_mobile_dev_sjha/SJHAFitness/SJHAFitness/TermsAndConditions.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = SJHAFitness.TermsAndConditions.xaml
 build_metadata.AdditionalFiles.TargetPath = TermsAndConditions.xaml
 build_metadata.AdditionalFiles.RelativePath = TermsAndConditions.xaml
 
-[C:/Users/Jakob/source/repos/iot_mobile_dev_sjha/SJHAFitness/SJHAFitness/Waiver.xaml]
+[C:/Users/shawn/source/repos/iot_mobile_dev_sjha/SJHAFitness/SJHAFitness/Waiver.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = SJHAFitness.Waiver.xaml
 build_metadata.AdditionalFiles.TargetPath = Waiver.xaml

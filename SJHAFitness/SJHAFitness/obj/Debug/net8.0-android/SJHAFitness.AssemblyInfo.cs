@@ -14,7 +14,11 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SJHAFitness")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
+<<<<<<< Updated upstream
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+dd6d34658b900dacbc0b7a11d5237e5e0b3070e7")]
+=======
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+a06b11ddc89e863a71bdf28df608fb5675083b74")]
+>>>>>>> Stashed changes
 [assembly: System.Reflection.AssemblyProductAttribute("SJHAFitness")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SJHAFitness")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

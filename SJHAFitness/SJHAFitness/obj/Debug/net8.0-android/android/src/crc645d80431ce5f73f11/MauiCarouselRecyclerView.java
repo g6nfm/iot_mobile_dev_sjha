@@ -12,6 +12,11 @@ public class MauiCarouselRecyclerView
 		__md_methods = 
 			"n_onInterceptTouchEvent:(Landroid/view/MotionEvent;)Z:GetOnInterceptTouchEvent_Landroid_view_MotionEvent_Handler\n" +
 			"n_onTouchEvent:(Landroid/view/MotionEvent;)Z:GetOnTouchEvent_Landroid_view_MotionEvent_Handler\n" +
+<<<<<<< Updated upstream
+=======
+			"n_onAttachedToWindow:()V:GetOnAttachedToWindowHandler\n" +
+			"n_onDetachedFromWindow:()V:GetOnDetachedFromWindowHandler\n" +
+>>>>>>> Stashed changes
 			"n_onMeasure:(II)V:GetOnMeasure_IIHandler\n" +
 			"";
 		mono.android.Runtime.register ("Microsoft.Maui.Controls.Handlers.Items.MauiCarouselRecyclerView, Microsoft.Maui.Controls", MauiCarouselRecyclerView.class, __md_methods);
@@ -61,6 +66,25 @@ public class MauiCarouselRecyclerView
 	private native boolean n_onTouchEvent (android.view.MotionEvent p0);
 
 
+<<<<<<< Updated upstream
+=======
+	public void onAttachedToWindow ()
+	{
+		n_onAttachedToWindow ();
+	}
+
+	private native void n_onAttachedToWindow ();
+
+
+	public void onDetachedFromWindow ()
+	{
+		n_onDetachedFromWindow ();
+	}
+
+	private native void n_onDetachedFromWindow ();
+
+
+>>>>>>> Stashed changes
 	public void onMeasure (int p0, int p1)
 	{
 		n_onMeasure (p0, p1);

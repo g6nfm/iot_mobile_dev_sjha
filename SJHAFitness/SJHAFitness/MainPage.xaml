@@ -2,52 +2,60 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SJHAFitness.MainPage"
-             BackgroundColor="White">
+             Background="White">
 
-    <Grid VerticalOptions="FillAndExpand"
+
+    <ScrollView>
+        <Grid VerticalOptions="FillAndExpand"
           HorizontalOptions="FillAndExpand"
           Padding="20"
           Margin="30,0,30,0">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-        </Grid.RowDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
 
-        <!-- Logo -->
-        <Image Source="sjhalogo.png" HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="200" Grid.Row="0" />
-        <Label Text="SJHA Fitness Center" HorizontalOptions="Center" TextColor="Gray" FontSize="Subtitle" Grid.Row="1"/>
+            <!-- Logo -->
+            <Image Source="sjhalogo.png" HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="200" Grid.Row="0" />
+            <Label Text="SJHA Fitness Center" HorizontalOptions="Center" TextColor="Gray" FontSize="Subtitle" Grid.Row="1"/>
 
-        <!-- Label1 -->
-        <Label Text="Sign In" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Center" FontSize="Large" Margin="0,30,0,10" Grid.Row="2" />
-        <Label Text="Welcome Back! Please sign in." HorizontalOptions="Center" TextColor="Gray" Grid.Row="3" />
+            <!-- Label1 -->
+            <Label Text="Sign In" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Center" FontSize="Large" Margin="0,30,0,10" Grid.Row="2" />
+            <Label Text="Welcome Back! Please sign in." HorizontalOptions="Center" TextColor="Gray" Grid.Row="3" />
 
-        <!-- Email Input -->
-        <Label Text="Email" FontAttributes="Bold"  TextColor="Green" Margin="0,20,0,0" Grid.Row="4"/>
-        <Entry Placeholder="Email" TextColor="Black" Grid.Row="5" />
+            <!-- Email Input -->
+            <Label Text="Email" FontAttributes="Bold"  TextColor="Green" Margin="0,20,0,0" Grid.Row="4"/>
+            <Entry Placeholder="Email" TextColor="Black" Grid.Row="5" />
 
-        <!-- Password Input -->
-        <Label Text="Password" FontAttributes="Bold"  TextColor="Green" Margin="0,10,0,0" Grid.Row="6"/>
-        <Entry Placeholder="Password" TextColor="Black" IsPassword="True" Grid.Row="7" />
-        <!-- We can put a button here that sets "IsPassword" to false so that it toggles
+            <!-- Password Input -->
+            <Label Text="Password" FontAttributes="Bold"  TextColor="Green" Margin="0,10,0,0" Grid.Row="6"/>
+            <Entry Placeholder="Password" TextColor="Black" IsPassword="True" Grid.Row="7" />
+            <!-- We can put a button here that sets "IsPassword" to false so that it toggles
              the visibility of the password being typed -->
 
-        <!-- Sign-in Button -->
-        <Button Text="Sign In" BackgroundColor="Green"  TextColor="White" Margin="0,10,0,0" Grid.Row="8" />
+            <!-- Sign-in Button -->
+            <Button Text="Sign In" BackgroundColor="Green"  TextColor="White" Margin="0,10,0,0" Grid.Row="8" />
 
-        <!-- Label3 -->
-        <Label Text="Don't have an account? Join the SJHA Army Today!" TextColor="Gray" HorizontalTextAlignment="Center"  HorizontalOptions="Center" Margin="0,50,0,0" Grid.Row="9"/>
+            <!-- Label3 -->
+            <Label Text="Don't have an account? Join the SJHA Army Today!" TextColor="Gray" HorizontalTextAlignment="Center"  HorizontalOptions="Center" Margin="0,50,0,0" Grid.Row="9"/>
 
-        <!-- Forgot Password Button -->
-        <Button Text="Forgot Password?" Background="Transparent" TextColor="Gray"  HorizontalOptions="Start" Margin="-20,100" Grid.Row="10"/>
-        <Button Text="Sign-up" BackgroundColor="Transparent" Clicked="OnButtonClicked" TextColor="Green" HorizontalOptions="End"  Margin="-20,100" Grid.Row="10"/>
+            <!-- Forgot Password Button -->
+            <Button Text="Forgot Password?" Background="Transparent" TextColor="Gray"  HorizontalOptions="Start" Margin="-20,100" Grid.Row="10"/>
+            <Button Text="Sign-up" BackgroundColor="Transparent" Clicked="OnButtonClicked" TextColor="Green" HorizontalOptions="End"  Margin="-20,100" Grid.Row="10"/>
 
+<<<<<<< Updated upstream
     </Grid>
+=======
+            <!--  Stashed changes -->
+        </Grid>
+    </ScrollView>
+>>>>>>> Stashed changes
 </ContentPage>
