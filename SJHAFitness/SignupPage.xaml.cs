@@ -26,14 +26,16 @@ public partial class SignupPage : ContentPage
     
     async void OnContinueClicked(object sender, EventArgs e)
     {
+        var firstName = FirstName.Text;
+        var lastName = LastName.Text;
         var email = emailEntry.Text;
         var password = passwordEntry.Text;
         var weight = Convert.ToInt32(weightEntry.Text);
         var height = Convert.ToInt32(heightEntry.Text);
-        DateTime birthday;
+        DateTime birthday = birthdayEntry.Date;
 
         // validate + parse birthday 
-        if (!DateTime.TryParse(birthdayEntry.Text, out birthday))
+        if (birthday == DateTime.Today)
         {
             // if invalid
             return;
