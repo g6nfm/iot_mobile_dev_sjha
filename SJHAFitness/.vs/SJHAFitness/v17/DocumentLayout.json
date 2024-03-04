@@ -1,33 +1,37 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\shawn\\source\\repos\\SJHAFitness\\",
+  "WorkspaceRootPath": "C:\\Users\\andre\\source\\repos\\iot_mobile_dev_sjha\\SJHAFitness\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8BCE4E8E-C397-48DF-BDBD-08487359B011}|SJHAFitness.csproj|c:\\users\\shawn\\source\\repos\\sjhafitness\\signuppage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{8BCE4E8E-C397-48DF-BDBD-08487359B011}|SJHAFitness.csproj|solutionrelative:signuppage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{8BCE4E8E-C397-48DF-BDBD-08487359B011}|SJHAFitness.csproj|c:\\users\\andre\\source\\repos\\iot_mobile_dev_sjha\\sjhafitness\\loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BCE4E8E-C397-48DF-BDBD-08487359B011}|SJHAFitness.csproj|solutionrelative:loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8BCE4E8E-C397-48DF-BDBD-08487359B011}|SJHAFitness.csproj|c:\\users\\shawn\\source\\repos\\sjhafitness\\signuppage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8BCE4E8E-C397-48DF-BDBD-08487359B011}|SJHAFitness.csproj|c:\\users\\andre\\source\\repos\\iot_mobile_dev_sjha\\sjhafitness\\signuppage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8BCE4E8E-C397-48DF-BDBD-08487359B011}|SJHAFitness.csproj|solutionrelative:signuppage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8BCE4E8E-C397-48DF-BDBD-08487359B011}|SJHAFitness.csproj|c:\\users\\shawn\\source\\repos\\sjhafitness\\models\\sessions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8BCE4E8E-C397-48DF-BDBD-08487359B011}|SJHAFitness.csproj|c:\\users\\andre\\source\\repos\\iot_mobile_dev_sjha\\sjhafitness\\signuppage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{8BCE4E8E-C397-48DF-BDBD-08487359B011}|SJHAFitness.csproj|solutionrelative:signuppage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BCE4E8E-C397-48DF-BDBD-08487359B011}|SJHAFitness.csproj|c:\\users\\andre\\source\\repos\\iot_mobile_dev_sjha\\sjhafitness\\models\\sessions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8BCE4E8E-C397-48DF-BDBD-08487359B011}|SJHAFitness.csproj|solutionrelative:models\\sessions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8BCE4E8E-C397-48DF-BDBD-08487359B011}|SJHAFitness.csproj|c:\\users\\shawn\\source\\repos\\sjhafitness\\views\\managesessionitems.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "AbsoluteMoniker": "D:0:0:{8BCE4E8E-C397-48DF-BDBD-08487359B011}|SJHAFitness.csproj|c:\\users\\andre\\source\\repos\\iot_mobile_dev_sjha\\sjhafitness\\views\\managesessionitems.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
       "RelativeMoniker": "D:0:0:{8BCE4E8E-C397-48DF-BDBD-08487359B011}|SJHAFitness.csproj|solutionrelative:views\\managesessionitems.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8BCE4E8E-C397-48DF-BDBD-08487359B011}|SJHAFitness.csproj|c:\\users\\shawn\\source\\repos\\sjhafitness\\managesessions.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{8BCE4E8E-C397-48DF-BDBD-08487359B011}|SJHAFitness.csproj|c:\\users\\andre\\source\\repos\\iot_mobile_dev_sjha\\sjhafitness\\managesessions.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{8BCE4E8E-C397-48DF-BDBD-08487359B011}|SJHAFitness.csproj|solutionrelative:managesessions.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8BCE4E8E-C397-48DF-BDBD-08487359B011}|SJHAFitness.csproj|c:\\users\\shawn\\source\\repos\\sjhafitness\\managesessions.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "AbsoluteMoniker": "D:0:0:{8BCE4E8E-C397-48DF-BDBD-08487359B011}|SJHAFitness.csproj|c:\\users\\andre\\source\\repos\\iot_mobile_dev_sjha\\sjhafitness\\managesessions.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
       "RelativeMoniker": "D:0:0:{8BCE4E8E-C397-48DF-BDBD-08487359B011}|SJHAFitness.csproj|solutionrelative:managesessions.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8BCE4E8E-C397-48DF-BDBD-08487359B011}|SJHAFitness.csproj|c:\\users\\shawn\\source\\repos\\sjhafitness\\views\\managesessionitems.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{8BCE4E8E-C397-48DF-BDBD-08487359B011}|SJHAFitness.csproj|c:\\users\\andre\\source\\repos\\iot_mobile_dev_sjha\\sjhafitness\\views\\managesessionitems.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{8BCE4E8E-C397-48DF-BDBD-08487359B011}|SJHAFitness.csproj|solutionrelative:views\\managesessionitems.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
@@ -41,25 +45,42 @@
           "SelectedChildIndex": 1,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LoginPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\andre\\source\\repos\\iot_mobile_dev_sjha\\SJHAFitness\\LoginPage.xaml.cs",
+              "RelativeDocumentMoniker": "LoginPage.xaml.cs",
+              "ToolTip": "C:\\Users\\andre\\source\\repos\\iot_mobile_dev_sjha\\SJHAFitness\\LoginPage.xaml.cs",
+              "RelativeToolTip": "LoginPage.xaml.cs",
+              "ViewState": "AQIAACYAAAAAAAAAAAAgwDkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-04T23:07:24.572Z",
+              "EditorCaption": ""
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "SignupPage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\shawn\\source\\repos\\SJHAFitness\\SignupPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\andre\\source\\repos\\iot_mobile_dev_sjha\\SJHAFitness\\SignupPage.xaml.cs",
               "RelativeDocumentMoniker": "SignupPage.xaml.cs",
-              "ToolTip": "C:\\Users\\shawn\\source\\repos\\SJHAFitness\\SignupPage.xaml.cs",
+              "ToolTip": "C:\\Users\\andre\\source\\repos\\iot_mobile_dev_sjha\\SJHAFitness\\SignupPage.xaml.cs",
               "RelativeToolTip": "SignupPage.xaml.cs",
-              "ViewState": "AQIAABoAAAAAAAAAAAAIwCEAAAA3AAAA",
+              "ViewState": "AQIAACYAAAAAAAAAAAAIwCEAAAA3AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-04T22:37:06.41Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "SignupPage.xaml",
-              "DocumentMoniker": "C:\\Users\\shawn\\source\\repos\\SJHAFitness\\SignupPage.xaml",
+              "DocumentMoniker": "C:\\Users\\andre\\source\\repos\\iot_mobile_dev_sjha\\SJHAFitness\\SignupPage.xaml",
               "RelativeDocumentMoniker": "SignupPage.xaml",
-              "ToolTip": "C:\\Users\\shawn\\source\\repos\\SJHAFitness\\SignupPage.xaml",
+              "ToolTip": "C:\\Users\\andre\\source\\repos\\iot_mobile_dev_sjha\\SJHAFitness\\SignupPage.xaml",
               "RelativeToolTip": "SignupPage.xaml",
               "ViewState": "AQIAABsAAAAAAAAAAAAAACcAAABfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
@@ -68,68 +89,63 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Sessions.cs",
-              "DocumentMoniker": "C:\\Users\\shawn\\source\\repos\\SJHAFitness\\Models\\Sessions.cs",
+              "DocumentMoniker": "C:\\Users\\andre\\source\\repos\\iot_mobile_dev_sjha\\SJHAFitness\\Models\\Sessions.cs",
               "RelativeDocumentMoniker": "Models\\Sessions.cs",
-              "ToolTip": "C:\\Users\\shawn\\source\\repos\\SJHAFitness\\Models\\Sessions.cs",
+              "ToolTip": "C:\\Users\\andre\\source\\repos\\iot_mobile_dev_sjha\\SJHAFitness\\Models\\Sessions.cs",
               "RelativeToolTip": "Models\\Sessions.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAAAmwA4AAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-01T03:50:19.18Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ManageSessionItems.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\shawn\\source\\repos\\SJHAFitness\\Views\\ManageSessionItems.xaml.cs",
-              "RelativeDocumentMoniker": "Views\\ManageSessionItems.xaml.cs",
-              "ToolTip": "C:\\Users\\shawn\\source\\repos\\SJHAFitness\\Views\\ManageSessionItems.xaml.cs",
-              "RelativeToolTip": "Views\\ManageSessionItems.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAXAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-01T03:37:29.963Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ManageSessionItems.xaml",
-              "DocumentMoniker": "C:\\Users\\shawn\\source\\repos\\SJHAFitness\\Views\\ManageSessionItems.xaml",
-              "RelativeDocumentMoniker": "Views\\ManageSessionItems.xaml",
-              "ToolTip": "C:\\Users\\shawn\\source\\repos\\SJHAFitness\\Views\\ManageSessionItems.xaml",
-              "RelativeToolTip": "Views\\ManageSessionItems.xaml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACcAAAAvAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-02-29T23:49:55.798Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ManageSessions.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\shawn\\source\\repos\\SJHAFitness\\ManageSessions.xaml.cs",
-              "RelativeDocumentMoniker": "ManageSessions.xaml.cs",
-              "ToolTip": "C:\\Users\\shawn\\source\\repos\\SJHAFitness\\ManageSessions.xaml.cs",
-              "RelativeToolTip": "ManageSessions.xaml.cs",
-              "ViewState": "AQIAACAAAAAAAAAAAAAwwDYAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-29T22:27:05.41Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-01T03:50:19.18Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "ManageSessionItems.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\andre\\source\\repos\\iot_mobile_dev_sjha\\SJHAFitness\\Views\\ManageSessionItems.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\ManageSessionItems.xaml.cs",
+              "ToolTip": "C:\\Users\\andre\\source\\repos\\iot_mobile_dev_sjha\\SJHAFitness\\Views\\ManageSessionItems.xaml.cs",
+              "RelativeToolTip": "Views\\ManageSessionItems.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-01T03:37:29.963Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ManageSessionItems.xaml",
+              "DocumentMoniker": "C:\\Users\\andre\\source\\repos\\iot_mobile_dev_sjha\\SJHAFitness\\Views\\ManageSessionItems.xaml",
+              "RelativeDocumentMoniker": "Views\\ManageSessionItems.xaml",
+              "ToolTip": "C:\\Users\\andre\\source\\repos\\iot_mobile_dev_sjha\\SJHAFitness\\Views\\ManageSessionItems.xaml",
+              "RelativeToolTip": "Views\\ManageSessionItems.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACcAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-02-29T23:49:55.798Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ManageSessions.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\andre\\source\\repos\\iot_mobile_dev_sjha\\SJHAFitness\\ManageSessions.xaml.cs",
+              "RelativeDocumentMoniker": "ManageSessions.xaml.cs",
+              "ToolTip": "C:\\Users\\andre\\source\\repos\\iot_mobile_dev_sjha\\SJHAFitness\\ManageSessions.xaml.cs",
+              "RelativeToolTip": "ManageSessions.xaml.cs",
+              "ViewState": "AQIAACAAAAAAAAAAAAAwwDYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-29T22:27:05.41Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "ManageSessions.xaml",
-              "DocumentMoniker": "C:\\Users\\shawn\\source\\repos\\SJHAFitness\\ManageSessions.xaml",
+              "DocumentMoniker": "C:\\Users\\andre\\source\\repos\\iot_mobile_dev_sjha\\SJHAFitness\\ManageSessions.xaml",
               "RelativeDocumentMoniker": "ManageSessions.xaml",
-              "ToolTip": "C:\\Users\\shawn\\source\\repos\\SJHAFitness\\ManageSessions.xaml",
+              "ToolTip": "C:\\Users\\andre\\source\\repos\\iot_mobile_dev_sjha\\SJHAFitness\\ManageSessions.xaml",
               "RelativeToolTip": "ManageSessions.xaml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAFoAAAA+AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-02-29T22:22:47.428Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-02-29T22:22:47.428Z"
             }
           ]
         }

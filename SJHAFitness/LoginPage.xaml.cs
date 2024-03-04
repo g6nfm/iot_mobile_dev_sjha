@@ -46,6 +46,12 @@ namespace SJHAFitness
             
             return enteredPassword == storedPassword; // repalce later with proper password verification
         }
+
+        protected override bool OnBackButtonPressed()
+        {
+            DisplayAlert("Alert", "Unable to perform action", "OK");
+            return true;
+        }
     }
 
 }
