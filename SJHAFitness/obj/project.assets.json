@@ -1,6 +1,7 @@
 {
   "version": 3,
   "targets": {
+<<<<<<< Updated upstream
     "net8.0-android34.0": {
       "CommunityToolkit.Maui/7.0.1": {
         "type": "package",
@@ -39308,23 +39309,51 @@
   },
   "packageFolders": {
     "C:\\Users\\Jakob\\.nuget\\packages\\": {},
+=======
+    "net8.0-android": {},
+    "net8.0-ios": {},
+    "net8.0-maccatalyst": {},
+    "net8.0-windows10.0.19041": {}
+  },
+  "libraries": {},
+  "projectFileDependencyGroups": {
+    "net8.0-android": [],
+    "net8.0-ios": [],
+    "net8.0-maccatalyst": [],
+    "net8.0-windows10.0.19041": []
+  },
+  "packageFolders": {
+    "C:\\Users\\tong9\\.nuget\\packages\\": {},
+>>>>>>> Stashed changes
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< Updated upstream
       "projectUniqueName": "C:\\Users\\Jakob\\source\\repos\\iot_mobile_dev_sjha\\SJHAFitness\\SJHAFitness.csproj",
       "projectName": "SJHAFitness",
       "projectPath": "C:\\Users\\Jakob\\source\\repos\\iot_mobile_dev_sjha\\SJHAFitness\\SJHAFitness.csproj",
       "packagesPath": "C:\\Users\\Jakob\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Jakob\\source\\repos\\iot_mobile_dev_sjha\\SJHAFitness\\obj\\",
+=======
+      "projectUniqueName": "C:\\Users\\tong9\\source\\repos\\iot_mobile_dev_sjha - Copy\\SJHAFitness\\SJHAFitness.csproj",
+      "projectName": "SJHAFitness",
+      "projectPath": "C:\\Users\\tong9\\source\\repos\\iot_mobile_dev_sjha - Copy\\SJHAFitness\\SJHAFitness.csproj",
+      "packagesPath": "C:\\Users\\tong9\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\tong9\\source\\repos\\iot_mobile_dev_sjha - Copy\\SJHAFitness\\obj\\",
+>>>>>>> Stashed changes
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
+<<<<<<< Updated upstream
         "C:\\Users\\Jakob\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+        "C:\\Users\\tong9\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> Stashed changes
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -39340,6 +39369,7 @@
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
+<<<<<<< Updated upstream
         "net8.0-android34.0": {
           "targetAlias": "net8.0-android",
           "projectReferences": {}
@@ -39349,6 +39379,17 @@
           "projectReferences": {}
         },
         "net8.0-maccatalyst17.2": {
+=======
+        "net8.0-android": {
+          "targetAlias": "net8.0-android",
+          "projectReferences": {}
+        },
+        "net8.0-ios": {
+          "targetAlias": "net8.0-ios",
+          "projectReferences": {}
+        },
+        "net8.0-maccatalyst": {
+>>>>>>> Stashed changes
           "targetAlias": "net8.0-maccatalyst",
           "projectReferences": {}
         },
@@ -39364,6 +39405,7 @@
       }
     },
     "frameworks": {
+<<<<<<< Updated upstream
       "net8.0-android34.0": {
         "targetAlias": "net8.0-android",
         "dependencies": {
@@ -39402,6 +39444,10 @@
             "version": "[1.8.116, )"
           }
         },
+=======
+      "net8.0-android": {
+        "targetAlias": "net8.0-android",
+>>>>>>> Stashed changes
         "imports": [
           "net461",
           "net462",
@@ -39413,6 +39459,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+<<<<<<< Updated upstream
         "frameworkReferences": {
           "Microsoft.Android": {
             "privateAssets": "all"
@@ -39461,6 +39508,12 @@
             "version": "[1.8.116, )"
           }
         },
+=======
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
+      },
+      "net8.0-ios": {
+        "targetAlias": "net8.0-ios",
+>>>>>>> Stashed changes
         "imports": [
           "net461",
           "net462",
@@ -39472,6 +39525,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+<<<<<<< Updated upstream
         "frameworkReferences": {
           "Microsoft.iOS": {
             "privateAssets": "all"
@@ -39522,6 +39576,13 @@
         },
         "imports": [
           "xamarinios10",
+=======
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
+      },
+      "net8.0-maccatalyst": {
+        "targetAlias": "net8.0-maccatalyst",
+        "imports": [
+>>>>>>> Stashed changes
           "net461",
           "net462",
           "net47",
@@ -39532,6 +39593,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+<<<<<<< Updated upstream
         "frameworkReferences": {
           "Microsoft.MacCatalyst": {
             "privateAssets": "all"
@@ -39574,6 +39636,12 @@
             "version": "[1.8.116, )"
           }
         },
+=======
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
+      },
+      "net8.0-windows10.0.19041": {
+        "targetAlias": "net8.0-windows10.0.19041.0",
+>>>>>>> Stashed changes
         "imports": [
           "net461",
           "net462",
@@ -39585,6 +39653,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+<<<<<<< Updated upstream
         "downloadDependencies": [
           {
             "name": "Microsoft.Windows.SDK.NET.Ref",
@@ -39626,4 +39695,17 @@
       }
     }
   }
+=======
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
+      }
+    }
+  },
+  "logs": [
+    {
+      "code": "NU1012",
+      "level": "Error",
+      "message": "Platform version is not present for one or more target frameworks, even though they have specified a platform: net8.0-android, net8.0-ios, net8.0-maccatalyst"
+    }
+  ]
+>>>>>>> Stashed changes
 }

@@ -1,5 +1,6 @@
 {
   "version": 2,
+<<<<<<< Updated upstream
   "dgSpecHash": "XC5EpEbWIbRBQe3EuDwRZSSTZ6uWwJz3/7lhRKRAWPUUVStAt47ldQCk75osj5d1R4U1oWVNi/uJhalzKCWC7A==",
   "success": true,
   "projectFilePath": "C:\\Users\\Jakob\\source\\repos\\iot_mobile_dev_sjha\\SJHAFitness\\SJHAFitness.csproj",
@@ -133,4 +134,17 @@
     "C:\\Users\\Jakob\\.nuget\\packages\\microsoft.windows.sdk.net.ref\\10.0.19041.31\\microsoft.windows.sdk.net.ref.10.0.19041.31.nupkg.sha512"
   ],
   "logs": []
+=======
+  "dgSpecHash": "UPofo+5msuenXT8s7BGryZgqXW5oylpq7ERq944LAl9g3XuzRI/v9oSokYvHBCSu6fA9GGCnS6a7HNLyGfAGKQ==",
+  "success": false,
+  "projectFilePath": "C:\\Users\\tong9\\source\\repos\\iot_mobile_dev_sjha - Copy\\SJHAFitness\\SJHAFitness.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1012",
+      "level": "Error",
+      "message": "Platform version is not present for one or more target frameworks, even though they have specified a platform: net8.0-android, net8.0-ios, net8.0-maccatalyst"
+    }
+  ]
+>>>>>>> Stashed changes
 }
