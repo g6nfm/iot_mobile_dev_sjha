@@ -7,6 +7,7 @@ namespace SJHAFitness
         public App()
         {
             InitializeComponent();
+            DatabaseHelper.InitializeDatabase();
 
             MainPage = new NavigationPage(new LoginPage());
         }
