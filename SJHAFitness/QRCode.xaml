@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SJHAFitness.QRCode"
+             BackgroundColor="White"
+             NavigationPage.HasNavigationBar="False">
+
+    <ScrollView>
+        <Grid Padding="20"
+              RowSpacing="10">
+
+            <!-- Row Definitions -->
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <!--0-->
+                <RowDefinition Height="Auto" />
+                <!--1-->
+                <RowDefinition Height="Auto" />
+                <!--2-->
+                <RowDefinition Height="Auto" />
+                <!--3-->
+                <RowDefinition Height="Auto" />
+                <!--4-->
+                <RowDefinition Height="Auto" />
+                <!--5-->
+                <RowDefinition Height="Auto" />
+                <!--6-->
+                <RowDefinition Height="Auto" />
+                <!--7-->
+                <RowDefinition Height="Auto" />
+                <!--8-->
+                <RowDefinition Height="Auto" />
+                <!--9-->
+                <RowDefinition Height="Auto" />
+                <!--10-->
+                <RowDefinition Height="Auto" />
+                <!--11-->
+            </Grid.RowDefinitions>
+
+            <!-- Column Definitions -->
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <!-- Hamburger button -->
+            <Button Text="☰" Grid.Row="0" FontSize="20" FontAttributes="Bold" WidthRequest="60" HeightRequest="50" BackgroundColor="Transparent"
+                        VerticalOptions="StartAndExpand" HorizontalOptions="StartAndExpand"
+                        Margin="-20,0,0,0" TextColor="Black" BorderColor="Black" Clicked="MenuPopup"/>
+
+            <!-- Logo -->
+            <Image Source="sjhalogo.png" HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="100" Grid.Row="0" Grid.Column="2"/>
+
+            <!-- Title -->
+            <Label Text="Scan Card"
+                   Grid.Row="1"
+                   Grid.Column="0"
+                   Grid.ColumnSpan="3"
+                   TextColor="Black"
+                   FontAttributes="Bold"
+                   FontSize="Large"
+                   HorizontalOptions="Start"
+                   VerticalOptions="Start"
+                   LineBreakMode="WordWrap"
+                   Margin="0,-30,0,0"/>
+
+            <!-- Line -->
+            <BoxView Color="Black"
+                     Grid.Row="2"
+                     Grid.Column="0"
+                     Grid.ColumnSpan="3"
+                     HeightRequest="1"
+                     WidthRequest="350"
+                     HorizontalOptions="Start"
+                     Margin="0,20,0,10" />
+
+            <!-- Account Number -->
+            <Label Text="To sign in at the front desk, scan the QR Code below to gain entry to the facility."
+                   Grid.Row="3"
+                   Grid.Column="0"
+                   Grid.ColumnSpan="1"
+                   TextColor="ForestGreen"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Start"
+                   VerticalOptions="Center"
+                   LineBreakMode="WordWrap"
+                   WidthRequest="300"
+                   Margin="0,0,0,30" 
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center"/>
+
+            <Label Text="Account Number:"
+                   Grid.Row="4"
+                   Grid.Column="0"
+                   Grid.ColumnSpan="1"
+                   TextColor="Black"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   LineBreakMode="WordWrap"
+                   Margin="0,0,0,0" />
+
+            <Label Text="{Binding}"
+                   Grid.Row="4"
+                   Grid.Column="1"
+                   TextColor="Black"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   LineBreakMode="WordWrap"
+                   Margin="0,0,0,0" />
+
+            <!-- QR Code Image -->
+            <Image x:Name="QrCodeImage"
+                   Grid.Row="5"
+                   Grid.Column="1"
+                   Grid.ColumnSpan="1"
+                   HeightRequest="250"
+                   WidthRequest="250"
+                   Aspect="AspectFit"
+                   HorizontalOptions="Center"
+                   VerticalOptions="CenterAndExpand"
+                   Margin="0,0,0,10" />
+
+            <!-- Button -->
+            <Button x:Name="GenerateBtn"
+                    Grid.Row="6"
+                    Grid.Column="1"
+                    Grid.ColumnSpan="1"
+                    Text="Generate QR Code"
+                    BackgroundColor="LimeGreen"
+                    HeightRequest="50"
+                    WidthRequest="250"
+                    FontAttributes="Bold"
+                    FontSize="Body"
+                    HorizontalOptions="Center"
+                    Clicked="OnGenerateClicked"
+                    Margin="0,0,0,20"/>
+
+            <!-- Line -->
+            <BoxView Color="Black"
+                     Grid.Row="7"
+                     Grid.Column="0"
+                     Grid.ColumnSpan="3"
+                     HeightRequest="1"
+                     WidthRequest="350"
+                     HorizontalOptions="Start"
+                     Margin="0,0,0,20" />
+
+            <!-- Account Information -->
+            <Label Text="Account Information:"
+                   Grid.Row="8"
+                   Grid.Column="0"
+                   Grid.ColumnSpan="3"
+                   TextColor="Black"
+                   FontAttributes="Bold"
+                   HorizontalOptions="StartAndExpand"
+                   VerticalOptions="Center"
+                   LineBreakMode="WordWrap"
+                   Margin="0,0,0,10" />
+
+            <!-- Frame and info -->
+            <Frame Grid.Row="9" Grid.Column="0" Grid.ColumnSpan="3" 
+                   BackgroundColor="LightGray" 
+                   CornerRadius="5" 
+                   Padding="10"
+                   BorderColor="White"
+                   HasShadow="False"
+                   HorizontalOptions="Center">
+                <Label Text="//Functions from the sign in page + info from Database"
+                   TextColor="Black"
+                   FontAttributes="Italic"
+                   LineBreakMode="WordWrap"
+                   Margin="0,0,0,10" />
+            </Frame>
+
+            <Button Grid.Row="10" Grid.Column="1" Grid.ColumnSpan="1"
+                    Text="Manage Membership"
+                    FontSize="Body"
+                    BorderColor="White"
+                    BackgroundColor="LimeGreen"
+                    FontAttributes="Bold"
+                    HeightRequest="50"
+                    WidthRequest="250"
+                    HorizontalOptions="Center"
+                    Margin="0,10,0,10"/>
+        </Grid>
+    </ScrollView>
+</ContentPage>

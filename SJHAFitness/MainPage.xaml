@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SJHAFitness.MainPage"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="White">
+
+    <ScrollView>
+        <Grid VerticalOptions="FillAndExpand"
+              HorizontalOptions="FillAndExpand"
+              Padding="10"
+              Margin="20,0,20,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            
+            
+
+            <StackLayout>
+                <!-- Logo -->
+                <Image Source="sjhalogo.png" HorizontalOptions="EndAndExpand" VerticalOptions="EndAndExpand" HeightRequest="125"
+                               Margin="0,0,-10,0" Grid.Row="0" />
+                <!-- Hamburger Button -->
+                <Button Text="☰" Grid.Row="0" FontSize="20" FontAttributes="Bold" WidthRequest="60" HeightRequest="50" BackgroundColor="Transparent"
+                        VerticalOptions="StartAndExpand" HorizontalOptions="StartAndExpand"
+                        Margin="-20,-110,0,0" Clicked="MenuPopup" TextColor="Black" BorderColor="Black"/>
+
+            </StackLayout>
+
+                <Label Text="Welcome back! (Name)" TextColor="Black" Grid.Row="1" VerticalOptions="End"
+             FontAttributes="Bold" FontSize="17" Margin="0,-40,0,0"/>
+
+            <Line X1="700" Y1="220" X2="0" Y2="220" Stroke="Gray" StrokeThickness="1.5" Grid.ColumnSpan="3" 
+                     Grid.RowSpan="12" Margin="0,-60,0,0" Grid.Row="0"/>
+
+            <StackLayout Grid.Row="2" Margin="0,60,0,0" Spacing="15">
+                <Label Text="Here are your upcoming classes:" TextColor="Green" FontSize="15" FontAttributes="Bold"/>
+                <Frame CornerRadius="5" BackgroundColor="LightGray" BorderColor="Transparent" Padding="10" >
+                    <StackLayout>
+                        <Label Text="(Date and Time) ◴" TextColor="Black" FontAttributes="Bold" FontSize="15"/>
+                        <Label Text="(Description)" TextColor="Black"/>
+                    </StackLayout>
+                </Frame>
+                <Frame CornerRadius="5" BackgroundColor="LightGray" BorderColor="Transparent" Padding="10" >
+                    <StackLayout>
+                        <Label Text="(Date and Time) ◴" TextColor="Black" FontAttributes="Bold" FontSize="15"/>
+                        <Label Text="(Description)" TextColor="Black"/>
+                    </StackLayout>
+                </Frame>
+                <Button  Text="Schedule New Training Session" BackgroundColor="LimeGreen" FontAttributes="Bold" 
+                 TextColor="White" />
+            </StackLayout>
+
+
+            <Line X1="700" Y1="220" X2="0" Y2="220" Stroke="Gray" StrokeThickness="1.5" Grid.ColumnSpan="3" 
+          Grid.RowSpan="12" Margin="0,-190,0,0" Grid.Row="3"/>
+
+            <StackLayout Grid.Row="4" Margin="0,60,0,0" Spacing="15">
+                <Label Text="SJHA Army Newsletter:" TextColor="Green" FontSize="15" FontAttributes="Bold"/>
+                <Frame CornerRadius="5" BackgroundColor="LightGray" BorderColor="Transparent" Padding="10" >
+                    <StackLayout>
+                        <Label Text="📰 SJHA Army Newsletter" TextColor="Black" FontAttributes="Bold" FontSize="15"/>
+                        <Label Text="(Description) " TextColor="Black"/>
+                        <Label Text="(Description) " TextColor="Black"/>
+                        <Label Text="(Description) " TextColor="Black"/>
+                        <Label Text="(Description) " TextColor="Black"/>
+                        <Label Text="(Description) " TextColor="Black"/>
+                        <Label Text="(Description) " TextColor="Black"/>
+                        <Label Text="(Description) " TextColor="Black"/>
+                        <Label Text="(Description) " TextColor="Black"/>
+
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+
+        </Grid>
+    </ScrollView>
+</ContentPage>  

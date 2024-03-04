@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SJHAFitness.Waiver"
+             Padding="20">
+    <ScrollView>
+        <VerticalStackLayout>
+            <Label Text="Waiver" FontAttributes="Bold" FontSize="20" VerticalOptions="Center" HorizontalOptions="Center"/>
+            <Label Text="RE: WAIVER OF LIABILITY AND ASSUMPTION OF RISK AGREEMENT:" HorizontalTextAlignment="Start" VerticalTextAlignment="Start" VerticalOptions="StartAndExpand" HorizontalOptions="StartAndExpand" FontSize="Subtitle"  Margin="0,40,0,20"/>
+            <Label Text="               I, the undersigned, understand that my participation in physical activities and use of the SJHA Fitness Center mobile application involves inherent risks and dangers. In consideration of being allowed to use the gym mobile application and its services, I agree to the following terms:" 
+           HorizontalOptions="StartAndExpand" VerticalOptions="StartAndExpand" VerticalTextAlignment="Start" HorizontalTextAlignment="Start" 
+           FontAutoScalingEnabled="True" FontSize="13"/>
+            <Label Text="1. I acknowledge and understand that engaging in physical activities, whether at the gym or through the mobile application, carries inherent risks of injury, including but not limited to, strains, sprains, fractures, and other potential serious injuries."
+           HorizontalOptions="StartAndExpand" VerticalOptions="StartAndExpand" VerticalTextAlignment="Start" HorizontalTextAlignment="Start" 
+           FontAutoScalingEnabled="True" FontSize="11" FontAttributes="Italic" Margin="20,10,0,10"/>
+            <Label Text="2. I acknowledge that the SJHA Fitness mobile application is provided on an as-is basis, and SJHA makes no warranties regarding the accuracy, completeness, or reliability of the information and services provided through the application."
+           HorizontalOptions="StartAndExpand" VerticalOptions="StartAndExpand" VerticalTextAlignment="Start" HorizontalTextAlignment="Start" 
+           FontAutoScalingEnabled="True" FontSize="11" FontAttributes="Italic" Margin="20,10,0,10"/>
+            <Label Text="3. I agree to follow all safety guidelines, instructions, and rules provided by SJHA while using the mobile application."
+           HorizontalOptions="StartAndExpand" VerticalOptions="StartAndExpand" VerticalTextAlignment="Start" HorizontalTextAlignment="Start" 
+           FontAutoScalingEnabled="True" FontSize="11" FontAttributes="Italic" Margin="20,10,0,10"/>
+            <Label Text="4. I understand that SJHA is not liable for any loss, damage, or theft of personal belongings while using the mobile application."
+           HorizontalOptions="StartAndExpand" VerticalOptions="StartAndExpand" VerticalTextAlignment="Start" HorizontalTextAlignment="Start" 
+           FontAutoScalingEnabled="True" FontSize="11" FontAttributes="Italic" Margin="20,10,0,10"/>
+            <Label Text="5. I release, waive, discharge, and covenant not to sue SJHA, its employees, agents, and representatives from any and all liability for any injury, loss, damage, or expense that may arise from my use of the gym mobile application."
+           HorizontalOptions="StartAndExpand" VerticalOptions="StartAndExpand" VerticalTextAlignment="Start" HorizontalTextAlignment="Start" 
+           FontAutoScalingEnabled="True" FontSize="11" FontAttributes="Italic" Margin="20,10,0,10"/>
+            <Label Text="6. I understand that this waiver is intended to be as broad and inclusive as permitted by the laws of the state/country in which SJHA operates and that if any portion is held invalid, the remainder will continue in full legal force and effect."
+           HorizontalOptions="StartAndExpand" VerticalOptions="StartAndExpand" VerticalTextAlignment="Start" HorizontalTextAlignment="Start" 
+           FontAutoScalingEnabled="True" FontSize="11" FontAttributes="Italic" Margin="20,10,0,10"/>
+            <Label Text="               I have read and voluntarily signed this Waiver of Liability and Assumption of Risk Agreement, and I understand its terms. I am aware that by signing this document, I am waiving certain legal rights, including the right to sue."
+           HorizontalOptions="StartAndExpand" VerticalOptions="StartAndExpand" VerticalTextAlignment="Start" HorizontalTextAlignment="Start" 
+           FontAutoScalingEnabled="True" Margin="0,20,0,0" FontSize="13"/>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
