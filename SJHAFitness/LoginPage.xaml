@@ -24,7 +24,7 @@
 
         <!-- Logo -->
         <Image Source="sjhalogo.png" HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="200" Grid.Row="0" />
-        <Label Text="SJHA Fitness Center" HorizontalOptions="Center" TextColor="Gray" FontSize="21" Grid.Row="1"/>
+        <Label Text="SJHA Fitness Center" HorizontalOptions="Center" TextColor="Gray" FontSize="Subtitle" Grid.Row="1"/>
 
         <!-- Label1 -->
         <Label Text="Sign In" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Center" FontSize="Large" Margin="0,30,0,10" Grid.Row="2" />
