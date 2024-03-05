@@ -31,7 +31,7 @@ public static class DatabaseHelper
         }
     }
 
-    public static bool SignupUser(string email, string password, int height, int weight, DateTime birthday)
+    public static bool SignupUser(string firstName, string lastName, string email, string password, int height, int weight, DateTime birthday)
     {
         using (var db = new SQLiteConnection(dbPath))
         {
@@ -46,7 +46,8 @@ public static class DatabaseHelper
 
             var account = new Account
             {
-                //Name = name,
+                FirstName = firstName,
+                LastName = lastName,
                 Password = password, // maybe we look at hashing passwords.
                 Email = email,
                 Height = height,

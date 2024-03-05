@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\andre\\source\\repos\\iot_mobile_dev_sjha\\SJHAFitness\\SJHAFitness.csproj": {}
+    "C:\\Users\\shawn\\source\\repos\\iot_mobile_dev_sjha\\SJHAFitness\\SJHAFitness.csproj": {}
   },
   "projects": {
-    "C:\\Users\\andre\\source\\repos\\iot_mobile_dev_sjha\\SJHAFitness\\SJHAFitness.csproj": {
+    "C:\\Users\\shawn\\source\\repos\\iot_mobile_dev_sjha\\SJHAFitness\\SJHAFitness.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\andre\\source\\repos\\iot_mobile_dev_sjha\\SJHAFitness\\SJHAFitness.csproj",
+        "projectUniqueName": "C:\\Users\\shawn\\source\\repos\\iot_mobile_dev_sjha\\SJHAFitness\\SJHAFitness.csproj",
         "projectName": "SJHAFitness",
-        "projectPath": "C:\\Users\\andre\\source\\repos\\iot_mobile_dev_sjha\\SJHAFitness\\SJHAFitness.csproj",
-        "packagesPath": "C:\\Users\\andre\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\andre\\source\\repos\\iot_mobile_dev_sjha\\SJHAFitness\\obj\\",
+        "projectPath": "C:\\Users\\shawn\\source\\repos\\iot_mobile_dev_sjha\\SJHAFitness\\SJHAFitness.csproj",
+        "packagesPath": "C:\\Users\\shawn\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\shawn\\source\\repos\\iot_mobile_dev_sjha\\SJHAFitness\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\andre\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\shawn\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

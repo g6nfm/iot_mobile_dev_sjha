@@ -3283,3 +3283,4 @@ C:\Users\shawn\source\repos\SJHAFitness\obj\Debug\net8.0-android\android\assets\
 C:\Users\shawn\source\repos\SJHAFitness\obj\Debug\net8.0-android\android\assets\SQLitePCLRaw.nativelibrary.dll
 C:\Users\shawn\source\repos\SJHAFitness\obj\Debug\net8.0-android\android\assets\SQLitePCLRaw.provider.dynamic_cdecl.dll
 C:\Users\shawn\source\repos\SJHAFitness\obj\Debug\net8.0-android\android\assets\SQLitePCLRaw.provider.e_sqlite3.dll
+C:\Users\shawn\source\repos\iot_mobile_dev_sjha\SJHAFitness\obj\Debug\net8.0-android\android\assets\SQLitePCLRaw.provider.dynamic_cdecl.dll

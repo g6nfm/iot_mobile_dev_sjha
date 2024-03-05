@@ -49,7 +49,7 @@ public partial class SignupPage : ContentPage
         }
 
         // DatabaseHelper.SignupUser returns a boolean
-        var isSignupSuccessful = DatabaseHelper.SignupUser(email, password, height, weight, birthday);
+        var isSignupSuccessful = DatabaseHelper.SignupUser(firstName, lastName, email, password, height, weight, birthday);
 
         if (isSignupSuccessful)
         {
