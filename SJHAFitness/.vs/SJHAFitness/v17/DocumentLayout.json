@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\shawn\\source\\repos\\iot_mobile_dev_sjha\\SJHAFitness\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{8BCE4E8E-C397-48DF-BDBD-08487359B011}|SJHAFitness.csproj|c:\\users\\shawn\\source\\repos\\iot_mobile_dev_sjha\\sjhafitness\\loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{8BCE4E8E-C397-48DF-BDBD-08487359B011}|SJHAFitness.csproj|solutionrelative:loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BCE4E8E-C397-48DF-BDBD-08487359B011}|SJHAFitness.csproj|c:\\users\\shawn\\source\\repos\\iot_mobile_dev_sjha\\sjhafitness\\manageaccount.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{8BCE4E8E-C397-48DF-BDBD-08487359B011}|SJHAFitness.csproj|solutionrelative:manageaccount.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{8BCE4E8E-C397-48DF-BDBD-08487359B011}|SJHAFitness.csproj|c:\\users\\shawn\\source\\repos\\iot_mobile_dev_sjha\\sjhafitness\\databasehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8BCE4E8E-C397-48DF-BDBD-08487359B011}|SJHAFitness.csproj|solutionrelative:databasehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -63,6 +71,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "LoginPage.xaml",
+              "DocumentMoniker": "C:\\Users\\shawn\\source\\repos\\iot_mobile_dev_sjha\\SJHAFitness\\LoginPage.xaml",
+              "RelativeDocumentMoniker": "LoginPage.xaml",
+              "ToolTip": "C:\\Users\\shawn\\source\\repos\\iot_mobile_dev_sjha\\SJHAFitness\\LoginPage.xaml",
+              "RelativeToolTip": "LoginPage.xaml",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAABsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-03-05T00:23:28.66Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ManageAccount.xaml",
+              "DocumentMoniker": "C:\\Users\\shawn\\source\\repos\\iot_mobile_dev_sjha\\SJHAFitness\\ManageAccount.xaml",
+              "RelativeDocumentMoniker": "ManageAccount.xaml",
+              "ToolTip": "C:\\Users\\shawn\\source\\repos\\iot_mobile_dev_sjha\\SJHAFitness\\ManageAccount.xaml",
+              "RelativeToolTip": "ManageAccount.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-03-05T00:14:16.151Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "DatabaseHelper.cs",
               "DocumentMoniker": "C:\\Users\\shawn\\source\\repos\\iot_mobile_dev_sjha\\SJHAFitness\\DatabaseHelper.cs",
               "RelativeDocumentMoniker": "DatabaseHelper.cs",
@@ -70,12 +104,11 @@
               "RelativeToolTip": "DatabaseHelper.cs",
               "ViewState": "AQIAAB0AAAAAAAAAAAAwwC8AAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-04T23:18:37.046Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-04T23:18:37.046Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Account.cs",
               "DocumentMoniker": "C:\\Users\\shawn\\source\\repos\\iot_mobile_dev_sjha\\SJHAFitness\\Account.cs",
               "RelativeDocumentMoniker": "Account.cs",
@@ -83,12 +116,11 @@
               "RelativeToolTip": "Account.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-04T23:17:38.085Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-04T23:17:38.085Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "MainPage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\shawn\\source\\repos\\iot_mobile_dev_sjha\\SJHAFitness\\MainPage.xaml.cs",
               "RelativeDocumentMoniker": "MainPage.xaml.cs",
@@ -96,12 +128,11 @@
               "RelativeToolTip": "MainPage.xaml.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-04T23:16:39.775Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-04T23:16:39.775Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "MainPage.xaml",
               "DocumentMoniker": "C:\\Users\\shawn\\source\\repos\\iot_mobile_dev_sjha\\SJHAFitness\\MainPage.xaml",
               "RelativeDocumentMoniker": "MainPage.xaml",
@@ -109,12 +140,11 @@
               "RelativeToolTip": "MainPage.xaml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-03-04T23:16:38.18Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-04T23:16:38.18Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "LoginPage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\shawn\\source\\repos\\iot_mobile_dev_sjha\\SJHAFitness\\LoginPage.xaml.cs",
               "RelativeDocumentMoniker": "LoginPage.xaml.cs",
@@ -122,12 +152,11 @@
               "RelativeToolTip": "LoginPage.xaml.cs",
               "ViewState": "AQIAACkAAAAAAAAAAAAwwDQAAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-04T23:07:24.572Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-04T23:07:24.572Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "SignupPage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\shawn\\source\\repos\\iot_mobile_dev_sjha\\SJHAFitness\\SignupPage.xaml.cs",
               "RelativeDocumentMoniker": "SignupPage.xaml.cs",
@@ -139,7 +168,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "SignupPage.xaml",
               "DocumentMoniker": "C:\\Users\\shawn\\source\\repos\\iot_mobile_dev_sjha\\SJHAFitness\\SignupPage.xaml",
               "RelativeDocumentMoniker": "SignupPage.xaml",
@@ -151,7 +180,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "Sessions.cs",
               "DocumentMoniker": "C:\\Users\\shawn\\source\\repos\\iot_mobile_dev_sjha\\SJHAFitness\\Models\\Sessions.cs",
               "RelativeDocumentMoniker": "Models\\Sessions.cs",
@@ -163,7 +192,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "ManageSessionItems.xaml.cs",
               "DocumentMoniker": "C:\\Users\\shawn\\source\\repos\\iot_mobile_dev_sjha\\SJHAFitness\\Views\\ManageSessionItems.xaml.cs",
               "RelativeDocumentMoniker": "Views\\ManageSessionItems.xaml.cs",
@@ -175,7 +204,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "ManageSessionItems.xaml",
               "DocumentMoniker": "C:\\Users\\shawn\\source\\repos\\iot_mobile_dev_sjha\\SJHAFitness\\Views\\ManageSessionItems.xaml",
               "RelativeDocumentMoniker": "Views\\ManageSessionItems.xaml",
@@ -187,7 +216,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "ManageSessions.xaml.cs",
               "DocumentMoniker": "C:\\Users\\shawn\\source\\repos\\iot_mobile_dev_sjha\\SJHAFitness\\ManageSessions.xaml.cs",
               "RelativeDocumentMoniker": "ManageSessions.xaml.cs",
@@ -199,7 +228,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "ManageSessions.xaml",
               "DocumentMoniker": "C:\\Users\\shawn\\source\\repos\\iot_mobile_dev_sjha\\SJHAFitness\\ManageSessions.xaml",
               "RelativeDocumentMoniker": "ManageSessions.xaml",

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SJHAFitness")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+b7bb61524073a3610cf097754856faec5b4426ec")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+52482095be1cc1b0cce8f6f9af5aff7337d5926b")]
 [assembly: System.Reflection.AssemblyProductAttribute("SJHAFitness")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SJHAFitness")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

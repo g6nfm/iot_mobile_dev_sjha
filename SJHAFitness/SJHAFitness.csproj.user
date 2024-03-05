@@ -14,6 +14,9 @@
     <MauiXaml Update="LoginPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
+    <MauiXaml Update="ManageAccount.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
     <MauiXaml Update="ManageSessions.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
