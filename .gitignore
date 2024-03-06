@@ -1,0 +1,37 @@
+# User-specific files
+SJHAFitness/*.suo
+SJHAFitness/*.user
+SJHAFitness/*.userosscache
+SJHAFitness/*.sln.docstates
+
+# User-specific files (MonoDevelop/Xamarin Studio)
+SJHAFitness/*.userprefs
+
+# IDE - Visual Studio Code
+SJHAFitness/.vscode/
+
+# IDE - Visual Studio
+SJHAFitness/.vs/
+
+# Build results
+SJHAFitness/[Dd]ebug/
+SJHAFitness/[Rr]elease/
+SJHAFitness/x64/
+SJHAFitness/x86/
+SJHAFitness/[Aa][Rr][Mm]/
+SJHAFitness/[Aa][Rr][Mm]64/
+SJHAFitness/bld/
+SJHAFitness/bin/
+SJHAFitness/obj/
+
+# NuGet Packages Directory
+SJHAFitness/**/packages/
+
+# OS generated files
+SJHAFitness/.DS_Store
+SJHAFitness/.DS_Store?
+SJHAFitness/._*
+SJHAFitness/.Spotlight-V100
+SJHAFitness/.Trashes
+SJHAFitness/ehthumbs.db
+SJHAFitness/Thumbs.db
