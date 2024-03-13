@@ -7,8 +7,6 @@ public partial class MenuBarItems : Popup
     public MenuBarItems()
     {
         InitializeComponent();
-
-        currentUser.Text = $"{App.CurrentUser.FirstName}";
     }
 
     private void CloseMenu(object sender, EventArgs e)
@@ -44,6 +42,16 @@ public partial class MenuBarItems : Popup
     }
 
     async void Logout(object sender, EventArgs e)
+    {
+        if (Application.Current?.MainPage?.Navigation != null)
+        {
+            await Application.Current.MainPage.Navigation.PushAsync(new LoginPage());
+            Close();
+        }
+    }
+
+
+    async void ManageAccount(object sender, EventArgs e)
     {
         if (Application.Current?.MainPage?.Navigation != null)
         {

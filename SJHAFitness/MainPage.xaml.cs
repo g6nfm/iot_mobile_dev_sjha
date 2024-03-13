@@ -10,12 +10,6 @@ namespace SJHAFitness
         public MainPage()
         {
             InitializeComponent();
-
-            var sessions = DatabaseHelper.GetSessionsByUser(App.CurrentUser.UserID);
-
-            sessionList.ItemsSource = sessions;
-
-            welcomeLabel.Text = $"Welcome back, {App.CurrentUser.FirstName}";
         }
 
         private void MenuPopup(object sender, EventArgs e)

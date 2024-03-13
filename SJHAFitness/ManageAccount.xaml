@@ -1,12 +1,39 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="SJHAFitness.ManageAccount"
-             Title="ManageAccount">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
-</ContentPage>
+             x:Class="SJHAFitness.Views.ManageAccount"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="White">
+
+    <ScrollView>
+        <Grid VerticalOptions="FillAndExpand"
+              HorizontalOptions="FillAndExpand"
+              Padding="10"
+              Margin="20,0,20,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+
+
+            <StackLayout>
+                <!-- Logo -->
+                <Image Source="sjhalogo.png" HorizontalOptions="EndAndExpand" VerticalOptions="EndAndExpand" HeightRequest="125"
+                               Margin="0,0,-10,0" Grid.Row="0" />
+                <!-- Hamburger Button -->
+                <Button Text="☰" Grid.Row="0" FontSize="20" FontAttributes="Bold" WidthRequest="60" HeightRequest="50" BackgroundColor="Transparent"
+                        VerticalOptions="StartAndExpand" HorizontalOptions="StartAndExpand"
+                        Margin="-20,-110,0,0" Clicked="MenuPopup" TextColor="Black" BorderColor="Black"/>
+            </StackLayout>
+        </Grid>
+    </ScrollView>
+</ContentPage>  
