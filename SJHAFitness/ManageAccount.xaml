@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="SJHAFitness.Views.ManageAccount"
-             NavigationPage.HasNavigationBar="False"
-             BackgroundColor="White">
-
+             xmlns:model="clr-namespace:SJHAFitness.Models"
+             x:Class="SJHAFitness.ManageAccount"
+             Title="">
     <ScrollView>
         <Grid VerticalOptions="FillAndExpand"
-              HorizontalOptions="FillAndExpand"
-              Padding="10"
-              Margin="20,0,20,0">
+          HorizontalOptions="FillAndExpand"
+          Padding="10"
+          Margin="20,0,20,0">
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
@@ -23,17 +22,37 @@
                 <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
 
-
-
             <StackLayout>
                 <!-- Logo -->
                 <Image Source="sjhalogo.png" HorizontalOptions="EndAndExpand" VerticalOptions="EndAndExpand" HeightRequest="125"
-                               Margin="0,0,-10,0" Grid.Row="0" />
+                   Margin="0,0,-10,0" Grid.Row="0" />
                 <!-- Hamburger Button -->
                 <Button Text="☰" Grid.Row="0" FontSize="20" FontAttributes="Bold" WidthRequest="60" HeightRequest="50" BackgroundColor="Transparent"
-                        VerticalOptions="StartAndExpand" HorizontalOptions="StartAndExpand"
-                        Margin="-20,-110,0,0" Clicked="MenuPopup" TextColor="Black" BorderColor="Black"/>
+            VerticalOptions="StartAndExpand" HorizontalOptions="StartAndExpand"
+            Margin="-20,-110,0,0" TextColor="Black" BorderColor="Black"/>
             </StackLayout>
+
+            <Label Text="Manage Account" TextColor="Black" Grid.Row="1" VerticalOptions="End"
+                   FontAttributes="Bold" FontSize="25" Margin="0,-10,0,0"/>
+
+            <Line X1="700" Y1="220" X2="0" Y2="220" Stroke="Gray" StrokeThickness="1.5" Grid.ColumnSpan="3" 
+                  Grid.RowSpan="12" Margin="0,-60,0,0" Grid.Row="0"/>
+
+            <StackLayout Grid.Row="2" Margin="0,30,0,0" Spacing="15">
+
+                <Image x:Name="ProfilePicture" Aspect="AspectFit" HeightRequest="100" WidthRequest="100" Margin="0,10,0,0"/>
+                <Button Text="Upload Profile Picture" Clicked="OnUploadPictureClicked" BackgroundColor="Green" TextColor="White" Margin="0,10,0,0"/>
+                <!-- Button to change password -->
+                <Button Text="Change Password" Clicked="OnChangePasswordClicked" BackgroundColor="Green" TextColor="White"/>
+                <!-- New password fields -->
+                <StackLayout x:Name="PasswordFields" IsVisible="False">
+                    <Entry x:Name="NewPassword" Placeholder="New password" IsPassword="True" />
+                    <Entry x:Name="ConfirmPassword" Placeholder="Confirm new password" IsPassword="True" />
+                    <Button Text="Submit" Clicked="OnSubmitClicked" BackgroundColor="Green" TextColor="White"/>
+                </StackLayout>
+
+            </StackLayout>
+
         </Grid>
     </ScrollView>
-</ContentPage>  
+</ContentPage>

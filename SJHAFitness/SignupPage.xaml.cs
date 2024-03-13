@@ -26,16 +26,14 @@ public partial class SignupPage : ContentPage
     
     async void OnContinueClicked(object sender, EventArgs e)
     {
-        var firstName = FirstName.Text;
-        var lastName = LastName.Text;
         var email = emailEntry.Text;
         var password = passwordEntry.Text;
         var weight = Convert.ToInt32(weightEntry.Text);
         var height = Convert.ToInt32(heightEntry.Text);
-        DateTime birthday = birthdayEntry.Date;
+        DateTime birthday;
 
         // validate + parse birthday 
-        if (birthday == DateTime.Today)
+        if (!DateTime.TryParse(birthdayEntry.Text, out birthday))
         {
             // if invalid
             return;
@@ -49,7 +47,7 @@ public partial class SignupPage : ContentPage
         }
 
         // DatabaseHelper.SignupUser returns a boolean
-        var isSignupSuccessful = DatabaseHelper.SignupUser(firstName, lastName, email, password, height, weight, birthday);
+        var isSignupSuccessful = DatabaseHelper.SignupUser(email, password, height, weight, birthday);
 
         if (isSignupSuccessful)
         {

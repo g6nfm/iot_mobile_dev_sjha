@@ -58,7 +58,7 @@
                                     Padding="5"
                                     CornerRadius="20">  
                                     <Grid
-                                        RowDefinitions="Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto"
+                                        RowDefinitions="Auto, Auto, Auto, Auto, Auto, Auto, Auto"
                                         ColumnDefinitions="4*,3*,3*"
                                         Padding="20">
                                         <Label
@@ -122,17 +122,6 @@
                                             VerticalOptions="EndAndExpand"
                                             HorizontalOptions="EndAndExpand"
                                             Grid.Column="2"/>
-                                        <Button
-                                            Text="Cancel"
-                                            TextColor="White"
-                                            FontAttributes="Bold"
-                                            WidthRequest="75"
-                                            HeightRequest="40"
-                                            Clicked="CancelButton"
-                                            Background="Green"
-                                            Margin="-20,20,0,0"
-                                            Grid.Row="7"
-                                            Grid.Column="1"/>
                                     </Grid>
                                 </Frame>
                             </DataTemplate>

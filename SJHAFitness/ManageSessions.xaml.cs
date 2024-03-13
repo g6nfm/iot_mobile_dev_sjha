@@ -55,21 +55,4 @@ public partial class ManageSessions : ContentPage
 
         }
     }
-
-    private void CancelButton(object sender, EventArgs e)
-    {
-        var button = sender as Button;
-
-        var session = button?.BindingContext as Sessions;
-
-        if (session != null)
-        {
-            var items = sessionsList.ItemsSource as ObservableCollection<Sessions>;
-
-            if (items != null)
-            {
-                items.Remove(session);
-            }
-        }
-    }
 }

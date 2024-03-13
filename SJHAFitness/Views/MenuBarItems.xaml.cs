@@ -48,15 +48,15 @@ public partial class MenuBarItems : Popup
             await Application.Current.MainPage.Navigation.PushAsync(new LoginPage());
             Close();
         }
+
     }
-
-
-    async void ManageAccount(object sender, EventArgs e)
+    async void ManageAccount (object sender, EventArgs e)
     {
         if (Application.Current?.MainPage?.Navigation != null)
         {
-            await Application.Current.MainPage.Navigation.PushAsync(new LoginPage());
+            await Application.Current.MainPage.Navigation.PushAsync(new ManageAccount());
             Close();
         }
     }
+
 }

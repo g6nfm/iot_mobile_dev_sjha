@@ -31,7 +31,7 @@ public static class DatabaseHelper
         }
     }
 
-    public static bool SignupUser(string firstName, string lastName, string email, string password, int height, int weight, DateTime birthday)
+    public static bool SignupUser(string email, string password, int height, int weight, DateTime birthday)
     {
         using (var db = new SQLiteConnection(dbPath))
         {
@@ -46,8 +46,7 @@ public static class DatabaseHelper
 
             var account = new Account
             {
-                FirstName = firstName,
-                LastName = lastName,
+                //Name = name,
                 Password = password, // maybe we look at hashing passwords.
                 Email = email,
                 Height = height,
@@ -59,4 +58,18 @@ public static class DatabaseHelper
             return true; // this conmfirms that signup was a success
         }
     }
+    public static bool UpdatePassword(Account account, string newPassword)
+    {
+        using (var db = new SQLiteConnection(dbPath))
+        {
+            // Update the password
+            account.Password = newPassword; // Consider hashing the password
+
+            // Update the account in the database
+            db.Update(account);
+            return true; // Password update was successful
+        }
+    }
+    public static Account CurrentAccount { get; set; }
+
 }
