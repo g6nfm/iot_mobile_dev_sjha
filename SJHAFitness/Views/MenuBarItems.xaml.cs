@@ -7,6 +7,8 @@ public partial class MenuBarItems : Popup
     public MenuBarItems()
     {
         InitializeComponent();
+
+        currentUser.Text = $"{App.CurrentUser.FirstName}";
     }
 
     private void CloseMenu(object sender, EventArgs e)

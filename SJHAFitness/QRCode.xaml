@@ -109,7 +109,7 @@
                    HorizontalOptions="Center"
                    VerticalOptions="Center"
                    LineBreakMode="WordWrap"
-                   Margin="0,0,0,0" />
+                   Margin="-100,0,0,0" />
 
             <!-- QR Code Image -->
             <Image x:Name="QrCodeImage"
@@ -122,21 +122,6 @@
                    HorizontalOptions="Center"
                    VerticalOptions="CenterAndExpand"
                    Margin="0,0,0,10" />
-
-            <!-- Button -->
-            <Button x:Name="GenerateBtn"
-                    Grid.Row="6"
-                    Grid.Column="1"
-                    Grid.ColumnSpan="1"
-                    Text="Generate QR Code"
-                    BackgroundColor="LimeGreen"
-                    HeightRequest="50"
-                    WidthRequest="250"
-                    FontAttributes="Bold"
-                    FontSize="Body"
-                    HorizontalOptions="Center"
-                    Clicked="OnGenerateClicked"
-                    Margin="0,0,0,20"/>
 
             <!-- Line -->
             <BoxView Color="Black"

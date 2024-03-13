@@ -2,6 +2,8 @@ using CommunityToolkit.Maui.Views;
 using SJHAFitness.Models;
 using SJHAFitness.Views;
 using System.Collections.ObjectModel;
+using SQLite;
+using System.Runtime.CompilerServices;
 
 namespace SJHAFitness;
 
@@ -12,7 +14,8 @@ public partial class ManageSessions : ContentPage
 	public ManageSessions()
 	{
 		InitializeComponent();
-        Session = new ObservableCollection<Sessions>();
+
+        LoadSessionsFromDatabase();
 	}
 
     private void MenuPopup(object sender, EventArgs e)
@@ -31,6 +34,8 @@ public partial class ManageSessions : ContentPage
         if (result != null)
         {
             var session = (Sessions)result;
+
+            session.UserID = App.CurrentUser.UserID;
 
             if (session.Session == "Andrew")
             {
@@ -69,7 +74,28 @@ public partial class ManageSessions : ContentPage
             if (items != null)
             {
                 items.Remove(session);
+
+                DatabaseHelper.DeleteSession(session);
             }
         }
+    }
+
+
+    public void LoadSessionsFromDatabase()
+    {
+        var sessions = DatabaseHelper.GetSessionsByUser(App.CurrentUser.UserID);
+
+        Session = new ObservableCollection<Sessions>(sessions);
+
+        sessionsList.ItemsSource = Session;
+    }
+
+    public void LoadAccountInformation()
+    {
+        var sessions = DatabaseHelper.GetSessionsByUser(App.CurrentUser.UserID);
+
+        sessionsList.ItemsSource = sessions;
+
+        memberNameInformation.Text = $"{App.CurrentUser.FirstName} {App.CurrentUser.LastName}";
     }
 }

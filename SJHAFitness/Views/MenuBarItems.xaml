@@ -49,7 +49,8 @@
             Margin="-10,-35,0,0"/>
 
         <Label
-            Text="User555555"
+            x:Name="currentUser"
+            Text="First Name"
             Grid.Row="0"
             Margin="5,45,0,0"
             FontAttributes="Bold"

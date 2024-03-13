@@ -1,3 +1,4 @@
+
 namespace SJHAFitness
 {
     public partial class LoginPage : ContentPage
@@ -12,6 +13,8 @@ namespace SJHAFitness
         {
             await Navigation.PushAsync(new SignupPage());
         }
+
+
 
         private async void Login(object sender, EventArgs e)
         {
@@ -31,6 +34,7 @@ namespace SJHAFitness
             if (account != null && VerifyPassword(password, account.Password))
             {
                 // verification success
+                App.CurrentUser = account;
                 await DisplayAlert("Login Success", "You are now logged in!", "OK");
                 await Navigation.PushAsync(new MainPage()); // go to mainpage
             }
