@@ -1,3 +1,4 @@
+
 namespace SJHAFitness
 {
     public partial class LoginPage : ContentPage
@@ -12,6 +13,8 @@ namespace SJHAFitness
         {
             await Navigation.PushAsync(new SignupPage());
         }
+
+
 
         private async void Login(object sender, EventArgs e)
         {
@@ -30,10 +33,8 @@ namespace SJHAFitness
 
             if (account != null && VerifyPassword(password, account.Password))
             {
-                // The user is logged in
-                DatabaseHelper.CurrentAccount = account;
-
                 // verification success
+                App.CurrentUser = account;
                 await DisplayAlert("Login Success", "You are now logged in!", "OK");
                 await Navigation.PushAsync(new MainPage()); // go to mainpage
             }
@@ -50,6 +51,11 @@ namespace SJHAFitness
             return enteredPassword == storedPassword; // repalce later with proper password verification
         }
 
+        protected override bool OnBackButtonPressed()
+        {
+            DisplayAlert("Alert", "Unable to perform action", "OK");
+            return true;
+        }
     }
-    
+
 }

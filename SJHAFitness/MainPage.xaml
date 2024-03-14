@@ -36,7 +36,7 @@
 
             </StackLayout>
 
-                <Label Text="Welcome back! (Name)" TextColor="Black" Grid.Row="1" VerticalOptions="End"
+                <Label x:Name="welcomeLabel" Text="Welcome back!" TextColor="Black" Grid.Row="1" VerticalOptions="End"
              FontAttributes="Bold" FontSize="17" Margin="0,-40,0,0"/>
 
             <Line X1="700" Y1="220" X2="0" Y2="220" Stroke="Gray" StrokeThickness="1.5" Grid.ColumnSpan="3" 
@@ -45,19 +45,88 @@
             <StackLayout Grid.Row="2" Margin="0,60,0,0" Spacing="15">
                 <Label Text="Here are your upcoming classes:" TextColor="Green" FontSize="15" FontAttributes="Bold"/>
                 <Frame CornerRadius="5" BackgroundColor="LightGray" BorderColor="Transparent" Padding="10" >
-                    <StackLayout>
-                        <Label Text="(Date and Time) ◴" TextColor="Black" FontAttributes="Bold" FontSize="15"/>
-                        <Label Text="(Description)" TextColor="Black"/>
-                    </StackLayout>
+                    <CollectionView x:Name="sessionList">
+                        <CollectionView.ItemTemplate>
+                            <DataTemplate>
+                                <Frame
+                                    Padding="5"
+                                    CornerRadius="20">
+                                    <Grid
+                                        RowDefinitions="Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto"
+                                        ColumnDefinitions="4*,3*,3*"
+                                        Padding="20">
+                                        <Label                               
+                                            Text="Trainer:"
+                                            TextColor="Black"
+                                            Grid.Row="0"
+                                            HeightRequest="20"
+                                            WidthRequest="55"
+                                            Grid.Column="0"
+                                            HorizontalOptions="Start"
+                                            HorizontalTextAlignment="Start"/>
+                                        <Label
+                                            Text="{Binding Session}"
+                                            TextColor="Black"
+                                            FontAttributes="Bold, Italic"
+                                            FontSize="25"
+                                            Grid.Column="0"
+                                            Grid.Row="1"
+                                            Margin="0,-55,0,40"/>
+                                        <Label
+                                            Text="Date:"
+                                            TextColor="Black"
+                                            Grid.Row="2"/>
+                                        <Label
+                                            Text="{Binding Date, StringFormat='{0:dd MMM yyyy}'}"
+                                            TextColor="Black"
+                                            FontAttributes="Bold"
+                                            Grid.Row="3"
+                                            Grid.Column="0"
+                                            WidthRequest="200"
+                                            Margin="100,10,0,0"/>
+                                        <Label
+                                            Text="{Binding Time, StringFormat='{0:HH:mm}'}"
+                                            TextColor="Black"
+                                            FontAttributes="Bold"
+                                            Grid.Row="4"
+                                            Grid.Column="0"
+                                            WidthRequest="200"
+                                            Margin="100,10,0,0"/>
+
+                                        <Label
+                                            Text="Focus of the Session:"
+                                            TextColor="Black"
+                                            Grid.Row="5"
+                                            Grid.Column="0"
+                                            WidthRequest="200"
+                                            Margin="99,15,0,0"/>
+                                        <Frame 
+                                            Grid.Row="6" 
+                                            WidthRequest="250" 
+                                            Grid.Column="1" 
+                                            Margin="-27,0,0,0">
+                                            <Label
+                                                Text="{Binding Focus}"
+                                                TextColor="Black"
+                                                HorizontalOptions="Start"
+                                                HorizontalTextAlignment="Start"
+                                                WidthRequest="250"
+                                                Margin="10,-13,0,0"
+                                                FontAttributes="Italic"/>
+                                        </Frame>
+                                        <Image
+                                            Source="{Binding Image}"
+                                            WidthRequest="125"
+                                            HeightRequest="125"
+                                            VerticalOptions="EndAndExpand"
+                                            HorizontalOptions="EndAndExpand"
+                                            Grid.Column="2"/>
+                                    </Grid>
+                                </Frame>
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
                 </Frame>
-                <Frame CornerRadius="5" BackgroundColor="LightGray" BorderColor="Transparent" Padding="10" >
-                    <StackLayout>
-                        <Label Text="(Date and Time) ◴" TextColor="Black" FontAttributes="Bold" FontSize="15"/>
-                        <Label Text="(Description)" TextColor="Black"/>
-                    </StackLayout>
-                </Frame>
-                <Button  Text="Schedule New Training Session" BackgroundColor="LimeGreen" FontAttributes="Bold" 
-                 TextColor="White" />
             </StackLayout>
 
 

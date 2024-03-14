@@ -1,4 +1,5 @@
 ﻿using SJHAFitness;
+using SJHAFitness.Models;
 using SQLite;
 
 public static class DatabaseHelper
@@ -9,7 +10,10 @@ public static class DatabaseHelper
     {
         using (var db = new SQLiteConnection(dbPath))
         {
+
             db.CreateTable<Account>();
+
+            db.CreateTable<Sessions>();
         }
     }
 
@@ -18,6 +22,38 @@ public static class DatabaseHelper
         using (var db = new SQLiteConnection(dbPath))
         {
             db.Insert(account);
+        }
+    }
+
+    public static void AddSession(Sessions session)
+    {
+        using (var db = new SQLiteConnection(dbPath))
+        {
+            db.Insert(session);
+        }
+    }
+
+    public static List<Sessions> GetSessions()
+    {
+        using (var db = new SQLiteConnection(dbPath))
+        {
+            return db.Table<Sessions>().ToList();
+        }
+    }
+
+    public static List<Sessions> GetSessionsByUser(int userID)
+    {
+        using (var db = new SQLiteConnection(dbPath))
+        {
+            return db.Table<Sessions>().Where(s => s.UserID == userID).ToList();
+        }
+    }
+
+    public static void DeleteSession(Sessions sessions)
+    {
+        using (var db = new SQLiteConnection(dbPath))
+        {
+            db.Delete(sessions);
         }
     }
 
@@ -31,7 +67,7 @@ public static class DatabaseHelper
         }
     }
 
-    public static bool SignupUser(string email, string password, int height, int weight, DateTime birthday)
+    public static bool SignupUser(string firstName, string lastName, string email, string password, int height, int weight, DateTime birthday)
     {
         using (var db = new SQLiteConnection(dbPath))
         {
@@ -46,7 +82,8 @@ public static class DatabaseHelper
 
             var account = new Account
             {
-                //Name = name,
+                FirstName = firstName,
+                LastName = lastName,
                 Password = password, // maybe we look at hashing passwords.
                 Email = email,
                 Height = height,
