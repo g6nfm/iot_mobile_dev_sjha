@@ -56,7 +56,7 @@
                             <DataTemplate x:DataType="model:Sessions">
                                 <Frame
                                     Padding="5"
-                                    CornerRadius="20">  
+                                    CornerRadius="30">  
                                     <Grid
                                         RowDefinitions="Auto, Auto, Auto, Auto, Auto, Auto, Auto"
                                         ColumnDefinitions="4*,3*,3*"
@@ -69,7 +69,8 @@
                                             WidthRequest="55"
                                             Grid.Column="0"
                                             HorizontalOptions="Start"
-                                            HorizontalTextAlignment="Start"/>
+                                            HorizontalTextAlignment="Start"
+                                            Margin="0,0,0,20"/>
                                         <Label
                                             Text="{Binding Session}"
                                             TextColor="Black"
@@ -87,17 +88,17 @@
                                             TextColor="Black"
                                             FontAttributes="Bold"
                                             Grid.Row="3"
-                                            Grid.Column="1"
+                                            Grid.Column="0"
                                             WidthRequest="200"
-                                            Margin="0,10,0,0"/>
+                                            Margin="100,10,0,0"/>
                                         <Label
                                             Text="{Binding Time, StringFormat='{0:HH:mm}'}"
                                             TextColor="Black"
                                             FontAttributes="Bold"
                                             Grid.Row="4"
-                                            Grid.Column="1"
+                                            Grid.Column="0"
                                             WidthRequest="200"
-                                            Margin="0,10,0,0"/>
+                                            Margin="100,10,0,0"/>
 
                                         <Label
                                             Text="Focus of the Session:"
@@ -115,13 +116,23 @@
                                             WidthRequest="250"
                                             Margin="-35,10,0,0"
                                             FontAttributes="Italic"/>
-                                        <Image
-                                            Source="{Binding Image}"
-                                            WidthRequest="125"
-                                            HeightRequest="125"
-                                            VerticalOptions="EndAndExpand"
-                                            HorizontalOptions="EndAndExpand"
-                                            Grid.Column="2"/>
+
+                                        <Frame WidthRequest="105"
+                                               HeightRequest="105"
+                                               VerticalOptions="EndAndExpand"
+                                               HorizontalOptions="EndAndExpand"
+                                               Grid.Column="2"
+                                               CornerRadius="60"
+                                               Padding="2"
+                                               BackgroundColor="Transparent"
+                                               HasShadow="False">
+                                            <Image
+                                                Source="{Binding Image}"
+                                                WidthRequest="138"
+                                                HeightRequest="138"
+                                                Aspect="AspectFit"
+                                                Grid.Column="2"/>
+                                        </Frame>
                                     </Grid>
                                 </Frame>
                             </DataTemplate>
@@ -142,8 +153,7 @@
                         <Label Text="Account Information" TextColor="Black" FontAttributes="Bold" FontSize="15" Margin="0,0,0,10"/>
                         <StackLayout Margin="30,0,0,0">
                             <HorizontalStackLayout Spacing="10">
-                                <Label Text="Member Name:" FontAttributes="Bold" TextColor="Black" Background="Transparent"/>
-                                <Label Text="(Enter Member Name)" TextColor="Black" Background="Transparent"/>
+                                <Label x:Name="fullNameLabel" Text=" Member Name:" FontAttributes="Bold" TextColor="Black" Background="Transparent"/>
                             </HorizontalStackLayout>
                             <HorizontalStackLayout Spacing="10">
                                 <Label Text="Member Since:" FontAttributes="Bold" TextColor="Black" Background="Transparent"/>
@@ -160,6 +170,9 @@
                             <HorizontalStackLayout Spacing="10">
                                 <Label Text="Membership Type:" FontAttributes="Bold" TextColor="Black" Background="Transparent"/>
                                 <Label Text="(Type)" TextColor="Black" Background="Transparent"/>
+                            </HorizontalStackLayout>
+                            <HorizontalStackLayout Spacing="10">
+                                <Label x:Name="emailLabel" Text=" Member Email:" FontAttributes="Bold" TextColor="Black" Background="Transparent"/>
                             </HorizontalStackLayout>
                         </StackLayout>
 

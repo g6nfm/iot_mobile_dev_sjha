@@ -63,7 +63,8 @@
                                             WidthRequest="55"
                                             Grid.Column="0"
                                             HorizontalOptions="Start"
-                                            HorizontalTextAlignment="Start"/>
+                                            HorizontalTextAlignment="Start"
+                                            Margin="0,0,0,20"/>
                                         <Label
                                             Text="{Binding Session}"
                                             TextColor="Black"
@@ -114,13 +115,22 @@
                                                 Margin="10,-13,0,0"
                                                 FontAttributes="Italic"/>
                                         </Frame>
-                                        <Image
-                                            Source="{Binding Image}"
-                                            WidthRequest="125"
-                                            HeightRequest="125"
-                                            VerticalOptions="EndAndExpand"
-                                            HorizontalOptions="EndAndExpand"
-                                            Grid.Column="2"/>
+                                        <Frame WidthRequest="105"
+                                               HeightRequest="105"
+                                               VerticalOptions="EndAndExpand"
+                                               HorizontalOptions="EndAndExpand"
+                                               Grid.Column="2"
+                                               CornerRadius="60"
+                                               Padding="2"
+                                               BackgroundColor="Transparent"
+                                               HasShadow="False">
+                                            <Image
+                                                Source="{Binding Image}"
+                                                WidthRequest="138"
+                                                HeightRequest="138"
+                                                Aspect="AspectFit"
+                                                Grid.Column="2"/>
+                                        </Frame>
                                     </Grid>
                                 </Frame>
                             </DataTemplate>

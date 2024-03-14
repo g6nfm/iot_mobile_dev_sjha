@@ -13,7 +13,13 @@ public partial class ManageSessions : ContentPage
 	{
 		InitializeComponent();
         Session = new ObservableCollection<Sessions>();
-	}
+
+        var sessions = DatabaseHelper.GetSessionsByUser(App.CurrentUser.UserID);
+        fullNameLabel.Text = $"Member Name: {App.CurrentUser.FirstName} {App.CurrentUser.LastName}";
+
+        emailLabel.Text = $"Member Email: {App.CurrentUser.Email}";
+    }
+
 
     private void MenuPopup(object sender, EventArgs e)
     {
