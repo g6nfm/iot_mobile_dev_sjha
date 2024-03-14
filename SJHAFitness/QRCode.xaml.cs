@@ -21,6 +21,16 @@ namespace SJHAFitness
             PngByteQRCode qRCode = new PngByteQRCode(qrCodeData);
             byte[] qrCodeBytes = qRCode.GetGraphic(20);
             QrCodeImage.Source = ImageSource.FromStream(() => new MemoryStream(qrCodeBytes));
+
+
+            var sessions = DatabaseHelper.GetSessionsByUser(App.CurrentUser.UserID);
+            firstNameLabel.Text = $"First Name: {App.CurrentUser.FirstName}";
+
+            lastNameLabel.Text = $"Last Name: {App.CurrentUser.LastName}";
+
+            birthdayLabel.Text = $"D.O.B: {App.CurrentUser.Birthday}";
+
+            emailLabel.Text = $"Email: {App.CurrentUser.Email}";
         }
         private void MenuPopup(object sender, EventArgs e)
         {

@@ -153,11 +153,36 @@
                    BorderColor="White"
                    HasShadow="False"
                    HorizontalOptions="Center">
-                <Label Text="//Functions from the sign in page + info from Database"
-                   TextColor="Black"
-                   FontAttributes="Italic"
-                   LineBreakMode="WordWrap"
-                   Margin="0,0,0,10" />
+                <StackLayout>
+
+                    <Label x:Name="firstNameLabel"
+                       Text="First Name:"
+                       TextColor="Black"
+                       FontAttributes="Bold"
+                       LineBreakMode="WordWrap"
+                       Margin="0,0,0,10" />
+
+                    <Label x:Name="lastNameLabel"
+                       Text="Last Name:"
+                       TextColor="Black"
+                       FontAttributes="Bold"
+                       LineBreakMode="WordWrap"
+                       Margin="0,0,0,10" />
+
+                    <Label x:Name="birthdayLabel"
+                       Text="D.O.B:"
+                       TextColor="Black"
+                       FontAttributes="Bold"
+                       LineBreakMode="WordWrap"
+                       Margin="0,0,0,10" />
+
+                    <Label x:Name="emailLabel"
+                       Text="Email:"
+                       TextColor="Black"
+                       FontAttributes="Bold"
+                       LineBreakMode="WordWrap"
+                       Margin="0,0,0,10" />
+                </StackLayout>
             </Frame>
 
             <Button Grid.Row="10" Grid.Column="1" Grid.ColumnSpan="1"
