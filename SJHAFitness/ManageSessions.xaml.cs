@@ -2,6 +2,8 @@ using CommunityToolkit.Maui.Views;
 using SJHAFitness.Models;
 using SJHAFitness.Views;
 using System.Collections.ObjectModel;
+using SQLite;
+using System.Runtime.CompilerServices;
 
 namespace SJHAFitness;
 
@@ -12,14 +14,9 @@ public partial class ManageSessions : ContentPage
 	public ManageSessions()
 	{
 		InitializeComponent();
-        Session = new ObservableCollection<Sessions>();
 
-        var sessions = DatabaseHelper.GetSessionsByUser(App.CurrentUser.UserID);
-        fullNameLabel.Text = $"Member Name: {App.CurrentUser.FirstName} {App.CurrentUser.LastName}";
-
-        emailLabel.Text = $"Member Email: {App.CurrentUser.Email}";
-    }
-
+        LoadSessionsFromDatabase();
+	}
 
     private void MenuPopup(object sender, EventArgs e)
     {
@@ -37,6 +34,8 @@ public partial class ManageSessions : ContentPage
         if (result != null)
         {
             var session = (Sessions)result;
+
+            session.UserID = App.CurrentUser.UserID;
 
             if (session.Session == "Andrew")
             {
@@ -61,4 +60,43 @@ public partial class ManageSessions : ContentPage
 
         }
     }
+
+    private void CancelButton(object sender, EventArgs e)
+    {
+        var button = sender as Button;
+
+        var session = button?.BindingContext as Sessions;
+
+        if (session != null)
+        {
+            var items = sessionsList.ItemsSource as ObservableCollection<Sessions>;
+
+            if (items != null)
+            {
+                items.Remove(session);
+
+                DatabaseHelper.DeleteSession(session);
+            }
+        }
+    }
+
+
+    public void LoadSessionsFromDatabase()
+    {
+        var sessions = DatabaseHelper.GetSessionsByUser(App.CurrentUser.UserID);
+
+        Session = new ObservableCollection<Sessions>(sessions);
+
+        sessionsList.ItemsSource = Session;
+    }
+    /* NEEDS FIXING
+    public void LoadAccountInformation()
+    {
+        var sessions = DatabaseHelper.GetSessionsByUser(App.CurrentUser.UserID);
+
+        sessionsList.ItemsSource = sessions;
+
+        memberNameInformation.Text = $"{App.CurrentUser.FirstName} {App.CurrentUser.LastName}";
+    }
+    */
 }

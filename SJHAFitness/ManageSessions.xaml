@@ -56,9 +56,9 @@
                             <DataTemplate x:DataType="model:Sessions">
                                 <Frame
                                     Padding="5"
-                                    CornerRadius="30">  
+                                    CornerRadius="20">  
                                     <Grid
-                                        RowDefinitions="Auto, Auto, Auto, Auto, Auto, Auto, Auto"
+                                        RowDefinitions="Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto"
                                         ColumnDefinitions="4*,3*,3*"
                                         Padding="20">
                                         <Label
@@ -69,8 +69,7 @@
                                             WidthRequest="55"
                                             Grid.Column="0"
                                             HorizontalOptions="Start"
-                                            HorizontalTextAlignment="Start"
-                                            Margin="0,0,0,20"/>
+                                            HorizontalTextAlignment="Start"/>
                                         <Label
                                             Text="{Binding Session}"
                                             TextColor="Black"
@@ -107,32 +106,32 @@
                                             Grid.Column="0"
                                             WidthRequest="200"
                                             Margin="99,15,0,0"/>
-                                        <Label
-                                            Text="{Binding Focus}"
-                                            TextColor="Black"
-                                            Grid.Row="6"
-                                            Grid.ColumnSpan="2"
-                                            Grid.Column="1"
-                                            WidthRequest="250"
-                                            Margin="-35,10,0,0"
-                                            FontAttributes="Italic"/>
-
-                                        <Frame WidthRequest="105"
-                                               HeightRequest="105"
-                                               VerticalOptions="EndAndExpand"
-                                               HorizontalOptions="EndAndExpand"
-                                               Grid.Column="2"
-                                               CornerRadius="60"
-                                               Padding="2"
-                                               BackgroundColor="Transparent"
-                                               HasShadow="False">
-                                            <Image
-                                                Source="{Binding Image}"
-                                                WidthRequest="138"
-                                                HeightRequest="138"
-                                                Aspect="AspectFit"
-                                                Grid.Column="2"/>
+                                        <Frame Grid.Row="6" WidthRequest="250" Grid.Column="1" Margin="-27,0,0,0">
+                                            <Label
+                                                Text="{Binding Focus}"
+                                                TextColor="Black"
+                                                WidthRequest="250"
+                                                Margin="10,-13,0,0"
+                                                FontAttributes="Italic"/>
                                         </Frame>
+                                            <Image
+                                            Source="{Binding Image}"
+                                            WidthRequest="125"
+                                            HeightRequest="125"
+                                            VerticalOptions="EndAndExpand"
+                                            HorizontalOptions="EndAndExpand"
+                                            Grid.Column="2"/>
+                                        <Button
+                                            Text="Cancel"
+                                            TextColor="White"
+                                            FontAttributes="Bold"
+                                            WidthRequest="75"
+                                            HeightRequest="40"
+                                            Clicked="CancelButton"
+                                            Background="Green"
+                                            Margin="-20,20,0,0"
+                                            Grid.Row="7"
+                                            Grid.Column="1"/>
                                     </Grid>
                                 </Frame>
                             </DataTemplate>
@@ -153,7 +152,8 @@
                         <Label Text="Account Information" TextColor="Black" FontAttributes="Bold" FontSize="15" Margin="0,0,0,10"/>
                         <StackLayout Margin="30,0,0,0">
                             <HorizontalStackLayout Spacing="10">
-                                <Label x:Name="fullNameLabel" Text=" Member Name:" FontAttributes="Bold" TextColor="Black" Background="Transparent"/>
+                                <Label Text="Member Name:" FontAttributes="Bold" TextColor="Black" Background="Transparent"/>
+                                <Label x:Name="memberNameInformation" Text="(Enter Member Name)" TextColor="Black" Background="Transparent"/>
                             </HorizontalStackLayout>
                             <HorizontalStackLayout Spacing="10">
                                 <Label Text="Member Since:" FontAttributes="Bold" TextColor="Black" Background="Transparent"/>
@@ -170,9 +170,6 @@
                             <HorizontalStackLayout Spacing="10">
                                 <Label Text="Membership Type:" FontAttributes="Bold" TextColor="Black" Background="Transparent"/>
                                 <Label Text="(Type)" TextColor="Black" Background="Transparent"/>
-                            </HorizontalStackLayout>
-                            <HorizontalStackLayout Spacing="10">
-                                <Label x:Name="emailLabel" Text=" Member Email:" FontAttributes="Bold" TextColor="Black" Background="Transparent"/>
                             </HorizontalStackLayout>
                         </StackLayout>
 
