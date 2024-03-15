@@ -28,7 +28,7 @@
                    Margin="0,0,-10,0" Grid.Row="0" />
                 <!-- Hamburger Button -->
                 <Button Text="☰" Grid.Row="0" FontSize="20" FontAttributes="Bold" WidthRequest="60" HeightRequest="50" BackgroundColor="Transparent"
-            VerticalOptions="StartAndExpand" HorizontalOptions="StartAndExpand"
+            VerticalOptions="StartAndExpand" HorizontalOptions="StartAndExpand" Clicked="MenuPopup"
             Margin="-20,-110,0,0" TextColor="Black" BorderColor="Black"/>
             </StackLayout>
 
