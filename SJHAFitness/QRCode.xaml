@@ -133,18 +133,6 @@
                      HorizontalOptions="Start"
                      Margin="0,0,0,20" />
 
-            <!-- Account Information -->
-            <Label Text="Account Information:"
-                   Grid.Row="8"
-                   Grid.Column="0"
-                   Grid.ColumnSpan="3"
-                   TextColor="Black"
-                   FontAttributes="Bold"
-                   HorizontalOptions="StartAndExpand"
-                   VerticalOptions="Center"
-                   LineBreakMode="WordWrap"
-                   Margin="0,0,0,10" />
-
             <!-- Frame and info -->
             <Frame Grid.Row="9" Grid.Column="0" Grid.ColumnSpan="3" 
                    BackgroundColor="LightGray" 
@@ -152,37 +140,47 @@
                    Padding="10"
                    BorderColor="White"
                    HasShadow="False"
-                   HorizontalOptions="Center">
+                   HorizontalOptions="FillAndExpand">
                 
                 <StackLayout>
+
+                    <!-- Account Information -->
+                    <Label Text="Account Information:"
+                       TextColor="Black"
+                       FontAttributes="Bold"
+                       HorizontalOptions="StartAndExpand"
+                       VerticalOptions="Center"
+                       LineBreakMode="WordWrap"
+                       Margin="0,0,0,5" />
+
 
                     <Label x:Name="firstNameLabel"
                        Text="First Name:"
                        TextColor="Black"
                        FontAttributes="Bold"
                        LineBreakMode="WordWrap"
-                       Margin="0,0,0,10" />
+                       Margin="60,0,0,0" />
 
                     <Label x:Name="lastNameLabel"
                        Text="Last Name:"
                        TextColor="Black"
                        FontAttributes="Bold"
                        LineBreakMode="WordWrap"
-                       Margin="0,0,0,10" />
+                       Margin="60,0,0,0" />
 
                     <Label x:Name="birthdayLabel"
                        Text="D.O.B:"
                        TextColor="Black"
                        FontAttributes="Bold"
                        LineBreakMode="WordWrap"
-                       Margin="0,0,0,10" />
+                       Margin="60,0,0,0" />
 
                     <Label x:Name="emailLabel"
                        Text="Email:"
                        TextColor="Black"
                        FontAttributes="Bold"
                        LineBreakMode="WordWrap"
-                       Margin="0,0,0,10" />
+                       Margin="60,0,0,0" />
                 </StackLayout>
             </Frame>
 

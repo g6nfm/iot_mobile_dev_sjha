@@ -16,7 +16,13 @@ public partial class ManageSessions : ContentPage
 		InitializeComponent();
 
         LoadSessionsFromDatabase();
-	}
+
+        var sessions = DatabaseHelper.GetSessionsByUser(App.CurrentUser.UserID);
+        fullNameLabel.Text = $"Full Name: {App.CurrentUser.FirstName} {App.CurrentUser.LastName}";
+
+        emailLabel.Text = $"Email: {App.CurrentUser.Email}";
+
+    }
 
     private void MenuPopup(object sender, EventArgs e)
     {
@@ -61,7 +67,7 @@ public partial class ManageSessions : ContentPage
         }
     }
 
-    private void CancelButton(object sender, EventArgs e)
+    private async void CancelButton(object sender, EventArgs e)
     {
         var button = sender as Button;
 
@@ -69,16 +75,21 @@ public partial class ManageSessions : ContentPage
 
         if (session != null)
         {
-            var items = sessionsList.ItemsSource as ObservableCollection<Sessions>;
+            bool answer = await DisplayAlert("Confirmation", "Are you sure you want to cancel?", "Yes", "No");
 
-            if (items != null)
+            if (answer)
             {
-                items.Remove(session);
+                var items = sessionsList.ItemsSource as ObservableCollection<Sessions>;
 
-                DatabaseHelper.DeleteSession(session);
+                if (items != null)
+                {
+                    items.Remove(session);
+                    DatabaseHelper.DeleteSession(session);
+                }
             }
         }
     }
+
 
 
     public void LoadSessionsFromDatabase()

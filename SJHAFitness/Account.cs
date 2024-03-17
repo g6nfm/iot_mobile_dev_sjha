@@ -9,11 +9,13 @@ namespace SJHAFitness
         [PrimaryKey, AutoIncrement]
         public int UserID { get; set; }
 
-        [Unique]
-        public string Email { get; set; }
 
         public string FirstName { get; set; }
         public string LastName { get; set; }
+
+        [Unique]
+        public string Email { get; set; }
+
         public string Password { get; set; }
         public int Height { get; set; }
         public int Weight { get; set; }
