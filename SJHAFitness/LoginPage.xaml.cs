@@ -1,9 +1,10 @@
 
+using SJHAFitness;
+
 namespace SJHAFitness
 {
     public partial class LoginPage : ContentPage
     {
-
         public LoginPage()
         {
             InitializeComponent();
@@ -13,8 +14,6 @@ namespace SJHAFitness
         {
             await Navigation.PushAsync(new SignupPage());
         }
-
-
 
         private async void Login(object sender, EventArgs e)
         {
@@ -31,7 +30,7 @@ namespace SJHAFitness
             // grab account from database
             var account = DatabaseHelper.GetAccountByEmail(email);
 
-            if (account != null && VerifyPassword(password, account.Password))
+            if (account != null && PasswordHasher.VerifyPassword(password, account.Password))
             {
                 // verification success
                 App.CurrentUser = account;
@@ -45,17 +44,10 @@ namespace SJHAFitness
             }
         }
 
-        private bool VerifyPassword(string enteredPassword, string storedPassword)
-        {
-            
-            return enteredPassword == storedPassword; // repalce later with proper password verification
-        }
-
         protected override bool OnBackButtonPressed()
         {
             DisplayAlert("Alert", "Unable to perform action", "OK");
             return true;
         }
     }
-
 }
