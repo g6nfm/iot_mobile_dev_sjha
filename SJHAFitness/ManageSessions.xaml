@@ -186,7 +186,6 @@
 
                     </StackLayout>
                 </Frame>
-                <Button Text="Manage Membership" TextColor="White" BackgroundColor="LimeGreen" FontAttributes="Bold"/>
             </StackLayout>
         </Grid>
     </ScrollView>

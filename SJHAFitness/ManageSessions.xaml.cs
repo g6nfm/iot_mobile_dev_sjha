@@ -100,14 +100,4 @@ public partial class ManageSessions : ContentPage
 
         sessionsList.ItemsSource = Session;
     }
-    /* NEEDS FIXING
-    public void LoadAccountInformation()
-    {
-        var sessions = DatabaseHelper.GetSessionsByUser(App.CurrentUser.UserID);
-
-        sessionsList.ItemsSource = sessions;
-
-        memberNameInformation.Text = $"{App.CurrentUser.FirstName} {App.CurrentUser.LastName}";
-    }
-    */
 }

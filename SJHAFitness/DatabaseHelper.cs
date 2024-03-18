@@ -99,14 +99,26 @@ public static class DatabaseHelper
     {
         using (var db = new SQLiteConnection(dbPath))
         {
-            // Update the password
-            account.Password = newPassword; // Consider hashing the password
+            // Check if the account exists in the database
+            var existingAccount = db.Table<Account>().FirstOrDefault(a => a.UserID == account.UserID);
 
-            // Update the account in the database
-            db.Update(account);
-            return true; // Password update was successful
+            if (existingAccount != null)
+            {
+                // Update the password
+                existingAccount.Password = newPassword; // Consider hashing the password
+
+                // Update the account in the database
+                db.Update(existingAccount);
+                return true; // Password update was successful
+            }
+            else
+            {
+                return false; // Account not found in the database
+            }
         }
     }
-    public static Account CurrentAccount { get; set; }
+
+
+public static Account CurrentAccount { get; set; }
 
 }
