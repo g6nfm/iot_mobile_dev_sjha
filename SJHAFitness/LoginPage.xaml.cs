@@ -32,8 +32,10 @@ namespace SJHAFitness
 
             if (account != null && PasswordHasher.VerifyPassword(password, account.Password))
             {
-                // verification success
+                // Set the current logged-in account
                 App.CurrentUser = account;
+
+                // verification success
                 await DisplayAlert("Login Success", "You are now logged in!", "OK");
                 await Navigation.PushAsync(new MainPage()); // go to mainpage
             }
@@ -42,12 +44,6 @@ namespace SJHAFitness
                 // failed login
                 await DisplayAlert("Login Failed", "Incorrect email or password.", "OK");
             }
-        }
-
-        protected override bool OnBackButtonPressed()
-        {
-            DisplayAlert("Alert", "Unable to perform action", "OK");
-            return true;
         }
     }
 }

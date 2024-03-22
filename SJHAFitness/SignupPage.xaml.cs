@@ -30,37 +30,48 @@ namespace SJHAFitness
             var lastName = LastName.Text;
             var email = emailEntry.Text;
             var password = passwordEntry.Text;
-            var weight = Convert.ToInt32(weightEntry.Text);
-            var height = Convert.ToInt32(heightEntry.Text);
             DateTime birthday = birthdayEntry.Date;
+            // Initialize weight and height variables
+            int weight;
+            int height;
 
-            // validate + parse birthday 
-            if (birthday == DateTime.Today)
+            // Validate and parse weight input
+            if (!int.TryParse(weightEntry.Text, out weight))
             {
-                // if invalid
+                // Display an alert if weight input is invalid
+                await DisplayAlert("Error", "Please enter a valid weight.", "OK");
                 return;
             }
 
-            // are checkboxes checked
-            if (!myCheckBox1.IsChecked || !myCheckBox2.IsChecked)
+            // Validate and parse height input
+            if (!int.TryParse(heightEntry.Text, out height))
             {
-                // maybe show a message to the user here if boxes aren't checked.
+                // Display an alert if height input is invalid
+                await DisplayAlert("Error", "Please enter a valid height.", "OK");
                 return;
             }
+
+            // Validate other input fields (e.g., email, password, etc.)
+            // Proceed with signup logic if all input is valid
 
             // Hash the password before storing it in the database
             string hashedPassword = PasswordHasher.HashPassword(password);
 
-            // DatabaseHelper.SignupUser returns a boolean
+            // Attempt to sign up the user
             var isSignupSuccessful = DatabaseHelper.SignupUser(firstName, lastName, email, hashedPassword, height, weight, birthday);
 
             if (isSignupSuccessful)
             {
-                await Navigation.PushAsync(new LoginPage());
+                // Set the current logged-in user after successful signup
+                App.CurrentUser = DatabaseHelper.GetAccountByEmail(email);
+
+                // Navigate to the ManageAccount page after successful signup
+                await Navigation.PushAsync(new ManageAccount());
             }
             else
             {
-                // failed signup show error
+                // If signup fails, show an error message
+                // You can handle this based on your application's logic
             }
         }
     }

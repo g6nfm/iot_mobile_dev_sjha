@@ -21,5 +21,7 @@ namespace SJHAFitness
         public int Weight { get; set; }
         public DateTime Birthday { get; set; }
 
+
+
     }
 }

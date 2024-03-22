@@ -16,7 +16,7 @@ public static class DatabaseHelper
             db.CreateTable<Sessions>();
         }
     }
-
+    public static Account CurrentAccount { get; set; }
     public static void AddAccount(Account account)
     {
         using (var db = new SQLiteConnection(dbPath))
@@ -99,13 +99,13 @@ public static class DatabaseHelper
     {
         using (var db = new SQLiteConnection(dbPath))
         {
-            // Check if the account exists in the database
+            // Find the account in the database
             var existingAccount = db.Table<Account>().FirstOrDefault(a => a.UserID == account.UserID);
 
             if (existingAccount != null)
             {
                 // Update the password
-                existingAccount.Password = newPassword; // Consider hashing the password
+                existingAccount.Password = newPassword; // Make sure to hash the password if necessary
 
                 // Update the account in the database
                 db.Update(existingAccount);
@@ -118,7 +118,5 @@ public static class DatabaseHelper
         }
     }
 
-
-public static Account CurrentAccount { get; set; }
 
 }
