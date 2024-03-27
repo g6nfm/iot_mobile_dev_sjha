@@ -1,5 +1,6 @@
 
 using SJHAFitness;
+using YourNamespace;
 
 namespace SJHAFitness
 {
@@ -14,6 +15,13 @@ namespace SJHAFitness
         {
             await Navigation.PushAsync(new SignupPage());
         }
+
+        void OnForgotPasswordClicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new ForgotPasswordPage());
+        }
+
+
 
         private async void Login(object sender, EventArgs e)
         {

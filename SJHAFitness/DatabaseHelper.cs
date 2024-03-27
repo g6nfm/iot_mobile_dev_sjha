@@ -118,5 +118,29 @@ public static class DatabaseHelper
         }
     }
 
+    public static bool UpdatePasswordByEmail(string email, string newPassword)
+    {
+        using (var db = new SQLiteConnection(dbPath))
+        {
+            // Find the account in the database
+            var existingAccount = db.Table<Account>().FirstOrDefault(a => a.Email == email);
+
+            if (existingAccount != null)
+            {
+                // Update the password
+                existingAccount.Password = newPassword; // Make sure to hash the password if necessary
+
+                // Update the account in the database
+                db.Update(existingAccount);
+                return true; // Password update was successful
+            }
+            else
+            {
+                return false; // Account not found in the database
+            }
+        }
+    }
+
+
 
 }

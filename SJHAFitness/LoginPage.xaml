@@ -47,7 +47,8 @@
         <Label Text="Don't have an account? Join the SJHA Army Today!" TextColor="Gray" HorizontalTextAlignment="Center"  HorizontalOptions="Center" Margin="0,50,0,0" Grid.Row="9"/>
 
         <!-- Forgot Password Button -->
-        <Button Text="Forgot Password?" Background="Transparent" TextColor="Gray"  HorizontalOptions="Start" Margin="-20,100" Grid.Row="10"/>
+        <Button Text="Forgot Password?" Clicked="OnForgotPasswordClicked" Background="Transparent" TextColor="Gray"  HorizontalOptions="Start" Margin="-20,100" Grid.Row="10"/>
+
         <Button Text="Sign-up" BackgroundColor="Transparent" Clicked="OnButtonClicked" TextColor="Green" HorizontalOptions="End"  Margin="-20,100" Grid.Row="10"/>
 
     </Grid>
