@@ -1,6 +1,7 @@
 ﻿using SJHAFitness;
 using SJHAFitness.Models;
 using SQLite;
+using System.Reflection;
 
 public static class DatabaseHelper
 {
@@ -88,7 +89,7 @@ public static class DatabaseHelper
                 Email = email,
                 Height = height,
                 Weight = weight,
-                Birthday = birthday
+                Birthday = birthday,
             };
 
             db.Insert(account);
@@ -147,4 +148,15 @@ public static class DatabaseHelper
             }
         }
     }
+
+    public static bool UpdateAccount(Account account)
+    {
+        using (var db = new SQLiteConnection(dbPath))
+        {
+            int rowsAffected = db.Update(account);
+
+            return rowsAffected == 1;
+        }
+    }
+
 }

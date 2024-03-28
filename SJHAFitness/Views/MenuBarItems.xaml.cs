@@ -9,6 +9,33 @@ public partial class MenuBarItems : Popup
         InitializeComponent();
 
         currentUser.Text = $"{App.CurrentUser.FirstName}";
+
+        var account = DatabaseHelper.GetAccountByEmail(App.CurrentUser.Email);
+        if (account.ProfilePicture != null)
+        {
+            ProfilePicture.Source = ImageSource.FromStream(() => new MemoryStream(account.ProfilePicture));
+        }
+    }
+
+    async void OnUploadPictureClicked(object sender, EventArgs e)
+    {
+        var result = await MediaPicker.Default.PickPhotoAsync();
+        if (result != null)
+        {
+            var stream = await result.OpenReadAsync();
+
+            using (MemoryStream ms = new MemoryStream())
+            {
+                stream.CopyTo(ms);
+                byte[] imageBytes = ms.ToArray();
+
+                App.CurrentUser.ProfilePicture = imageBytes;
+
+                DatabaseHelper.UpdateAccount(App.CurrentUser);
+            }
+        }
+
+        Close();
     }
 
     private void CloseMenu(object sender, EventArgs e)

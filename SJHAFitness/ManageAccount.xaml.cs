@@ -31,7 +31,16 @@ namespace SJHAFitness
             if (result != null)
             {
                 var stream = await result.OpenReadAsync();
-                ProfilePicture.Source = ImageSource.FromStream(() => stream);
+
+                using (MemoryStream ms = new MemoryStream())
+                {
+                    stream.CopyTo(ms);
+                    byte[] imageBytes = ms.ToArray();
+
+                    App.CurrentUser.ProfilePicture = imageBytes;
+
+                    DatabaseHelper.UpdateAccount(App.CurrentUser);
+                }
             }
         }
 

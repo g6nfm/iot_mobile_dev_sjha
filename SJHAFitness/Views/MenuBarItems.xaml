@@ -27,14 +27,21 @@
             <RowDefinition Height="40"/>
 
         </Grid.RowDefinitions>
-
-        <Image 
-            Source="profile.png"
+        
+        <Frame
             Grid.Row="0"
             HorizontalOptions="EndAndExpand"
             VerticalOptions="EndAndExpand"
             HeightRequest="70"
-            WidthRequest="70"/>
+            WidthRequest="70"
+            CornerRadius="120">
+            <ImageButton 
+                x:Name="ProfilePicture"
+                Source="profile.png"
+                HeightRequest="70"
+                WidthRequest="70"
+                Clicked="OnUploadPictureClicked"/>
+        </Frame>
 
         <Button
             Text="✕"

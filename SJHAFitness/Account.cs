@@ -16,6 +16,7 @@ namespace SJHAFitness
         [Unique]
         public string Email { get; set; }
 
+        public byte[] ProfilePicture { get; set; }
         public string Password { get; set; }
         public int Height { get; set; }
         public int Weight { get; set; }
