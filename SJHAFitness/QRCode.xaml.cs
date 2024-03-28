@@ -28,7 +28,7 @@ namespace SJHAFitness
 
             lastNameLabel.Text = $"Last Name: {App.CurrentUser.LastName}";
 
-            birthdayLabel.Text = $"D.O.B: {App.CurrentUser.Birthday.Date.ToShortDateString()}";
+            birthdayLabel.Text = $"Birthday: {App.CurrentUser.Birthday.Date.ToShortDateString()}";
 
             emailLabel.Text = $"Email: {App.CurrentUser.Email}";
         }

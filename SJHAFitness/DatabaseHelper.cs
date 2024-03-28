@@ -95,6 +95,7 @@ public static class DatabaseHelper
             return true; // this conmfirms that signup was a success
         }
     }
+
     public static bool UpdatePassword(Account account, string newPassword)
     {
         using (var db = new SQLiteConnection(dbPath))
@@ -104,8 +105,11 @@ public static class DatabaseHelper
 
             if (existingAccount != null)
             {
+                // Hash the new password
+                string hashedPassword = PasswordHasher.HashPassword(newPassword);
+
                 // Update the password
-                existingAccount.Password = newPassword; // Make sure to hash the password if necessary
+                existingAccount.Password = hashedPassword; // Make sure to hash the password if necessary
 
                 // Update the account in the database
                 db.Update(existingAccount);
@@ -127,8 +131,11 @@ public static class DatabaseHelper
 
             if (existingAccount != null)
             {
+                // Hash the new password
+                string hashedPassword = PasswordHasher.HashPassword(newPassword);
+
                 // Update the password
-                existingAccount.Password = newPassword; // Make sure to hash the password if necessary
+                existingAccount.Password = hashedPassword; // Store the hased password
 
                 // Update the account in the database
                 db.Update(existingAccount);
@@ -140,7 +147,4 @@ public static class DatabaseHelper
             }
         }
     }
-
-
-
 }

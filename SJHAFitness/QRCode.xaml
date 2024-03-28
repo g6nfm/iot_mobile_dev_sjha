@@ -169,7 +169,7 @@
                        Margin="60,0,0,0" />
 
                     <Label x:Name="birthdayLabel"
-                       Text="D.O.B:"
+                       Text="Birthday: "
                        TextColor="Black"
                        FontAttributes="Bold"
                        LineBreakMode="WordWrap"

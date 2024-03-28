@@ -9,52 +9,41 @@ namespace YourNamespace
         {
             InitializeComponent();
         }
-
         private async void OnSubmitClicked(object sender, EventArgs e)
         {
-            // Check if the new password field is not null or empty
-            if (!string.IsNullOrEmpty(newPasswordEntry.Text))
+            // Retrieve the email and new password entered by the user
+            string email = emailEntry.Text;
+            string newPassword = newPasswordEntry.Text;
+
+            // Validate that the email and new password fields are not empty
+            if (string.IsNullOrWhiteSpace(email) || string.IsNullOrWhiteSpace(newPassword))
             {
-                // Validate the new password and confirmation match
-                if (newPasswordEntry.Text == confirmPasswordEntry.Text)
-                {
-                    // Update the password for the account associated with the email
-                    var account = DatabaseHelper.GetAccountByEmail(emailEntry.Text);
-                    if (account != null)
-                    {
-                        // Update the password in the database
-                        bool success = DatabaseHelper.UpdatePassword(account, newPasswordEntry.Text);
+                await DisplayAlert("Validation Error", "Email and new password are required.", "OK");
+                return;
+            }
 
-                        if (success)
-                        {
-                            // Display the new password in an alert
-                            await DisplayAlert("Success!", $"Password updated successfully.\n\nNew Password: {newPasswordEntry.Text}", "OK");
+            // Validate the new password and confirmation match
+            if (newPasswordEntry.Text != confirmPasswordEntry.Text)
+            {
+                await DisplayAlert("Error", "New password and confirmation do not match.", "OK");
+                return;
+            }
 
-                            // Navigate back to the login page
-                            await Navigation.PopToRootAsync();
-                        }
-                        else
-                        {
-                            // Display error message if password update fails
-                            await DisplayAlert("Error", "Failed to update the password.", "OK");
-                        }
-                    }
-                    else
-                    {
-                        // Handle the case where no user is logged in
-                        await DisplayAlert("Error", "No user is currently logged in.", "OK");
-                    }
-                }
-                else
-                {
-                    // Provide feedback to the user if passwords don't match
-                    await DisplayAlert("Error", "New password and confirmation do not match.", "OK");
-                }
+            // Update the password in the database
+            bool success = DatabaseHelper.UpdatePasswordByEmail(email, newPassword);
+
+            if (success)
+            {
+                // Display the new password in an alert
+                await DisplayAlert("Success!", $"Password updated successfully.\n\nNew Password: {newPasswordEntry.Text}", "OK");
+
+                // Navigate back to the login page
+                await Navigation.PopToRootAsync();
             }
             else
             {
-                // Provide feedback to the user if new password is empty
-                await DisplayAlert("Error", "New password field cannot be empty.", "OK");
+                // Handle the case where the email is not associated with any account
+                await DisplayAlert("Error", "No account associated with this email.", "OK");
             }
         }
     }

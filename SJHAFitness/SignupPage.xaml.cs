@@ -1,4 +1,5 @@
 using System;
+using System.Reflection;
 
 namespace SJHAFitness
 {
@@ -66,12 +67,12 @@ namespace SJHAFitness
                 App.CurrentUser = DatabaseHelper.GetAccountByEmail(email);
 
                 // Navigate to the ManageAccount page after successful signup
-                await Navigation.PushAsync(new ManageAccount());
+                await Navigation.PushAsync(new MainPage());
             }
             else
             {
                 // If signup fails, show an error message
-                // You can handle this based on your application's logic
+                //
             }
         }
     }
