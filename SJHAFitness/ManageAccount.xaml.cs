@@ -25,6 +25,11 @@ namespace SJHAFitness
             this.ShowPopup(popup);
         }
 
+        async void OnManageMembershipClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new ManageMembership());
+        }
+
         async void OnUploadPictureClicked(object sender, EventArgs e)
         {
             var result = await MediaPicker.Default.PickPhotoAsync();

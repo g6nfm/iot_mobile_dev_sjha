@@ -50,7 +50,7 @@
                     <Entry x:Name="ConfirmPassword" Placeholder="Confirm new password" IsPassword="True" />
                     <Button Text="Submit" Clicked="OnSubmitClicked" BackgroundColor="Green" TextColor="White"/>
                 </StackLayout>
-                <Button Text="Manage Membership" TextColor="White" BackgroundColor="LimeGreen" FontAttributes="Bold" Grid.Row="4"/>
+                <Button Text="Manage Membership" Clicked="OnManageMembershipClicked" TextColor="White" BackgroundColor="LimeGreen" FontAttributes="Bold" Grid.Row="4"/>
             </StackLayout>
             
             <Line X1="700" Y1="220" X2="0" Y2="220" Stroke="Gray" StrokeThickness="1.5" Grid.ColumnSpan="3" 

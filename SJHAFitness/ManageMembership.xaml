@@ -1,0 +1,51 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:model="clr-namespace:SJHAFitness.Models"
+             x:Class="SJHAFitness.ManageMembership"
+             Title=""
+             NavigationPage.HasNavigationBar="False">
+    <ScrollView>
+        <Grid VerticalOptions="FillAndExpand"
+          HorizontalOptions="FillAndExpand"
+          Padding="10"
+          Margin="20,0,20,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <StackLayout>
+                <!-- Logo -->
+                <Image Source="sjhalogo.png" HorizontalOptions="EndAndExpand" VerticalOptions="EndAndExpand" HeightRequest="125"
+                   Margin="0,0,-10,0" Grid.Row="0" />
+                <!-- Hamburger Button -->
+                <Button Text="☰" Grid.Row="0" FontSize="20" FontAttributes="Bold" WidthRequest="60" HeightRequest="50" BackgroundColor="Transparent"
+            VerticalOptions="StartAndExpand" HorizontalOptions="StartAndExpand"
+            Margin="-20,-110,0,0" TextColor="Black" BorderColor="Black"/>
+            </StackLayout>
+
+            <Label Text="Manage Membership" TextColor="Black" Grid.Row="1" VerticalOptions="End"
+                   FontAttributes="Bold" FontSize="25" Margin="0,-10,0,0"/>
+
+            <Line X1="700" Y1="220" X2="0" Y2="220" Stroke="Gray" StrokeThickness="1.5" Grid.ColumnSpan="3" 
+                  Grid.RowSpan="12" Margin="0,-60,0,0" Grid.Row="0"/>
+            <Frame Grid.Row="2" Grid.Column="3" Grid.ColumnSpan="3" Grid.RowSpan="3"
+                   BackgroundColor="LightGray" 
+                   CornerRadius="5" 
+                   Padding="10"
+                   BorderColor="White"
+                   HasShadow="False"
+                   HorizontalOptions="FillAndExpand"
+                   Margin="0,-60,0,0">
+            </Frame>
+        </Grid>
+    </ScrollView>
+</ContentPage>
