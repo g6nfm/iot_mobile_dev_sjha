@@ -36,7 +36,7 @@
 
             </StackLayout>
 
-                <Label x:Name="welcomeLabel" Text="Welcome back!" TextColor="Black" Grid.Row="1" VerticalOptions="End"
+             <Label x:Name="welcomeLabel" Text="Welcome back!" TextColor="Black" Grid.Row="1" VerticalOptions="End"
              FontAttributes="Bold" FontSize="17" Margin="0,-40,0,0"/>
 
             <Line X1="700" Y1="220" X2="0" Y2="220" Stroke="Gray" StrokeThickness="1.5" Grid.ColumnSpan="3" 

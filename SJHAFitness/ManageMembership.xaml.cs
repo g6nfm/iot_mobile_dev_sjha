@@ -11,6 +11,11 @@ public partial class ManageMembership : ContentPage
 {
     ObservableCollection<Sessions> Session;
 
+    async void OnMembershipClicked(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new ManageMembership());
+    }
+
     public ManageMembership()
     {
        InitializeComponent();
