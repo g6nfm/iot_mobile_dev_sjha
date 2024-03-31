@@ -38,14 +38,22 @@
             <Line X1="700" Y1="220" X2="0" Y2="220" Stroke="Gray" StrokeThickness="1.5" Grid.ColumnSpan="3" 
                   Grid.RowSpan="12" Margin="0,-60,0,0" Grid.Row="0"/>
 
-            <StackLayout Grid.Row="2" Grid.RowSpan="5" Margin="0,60,0,0" Spacing="15">
+            <StackLayout Grid.Row="2" Margin="0,40,0,0" Spacing="15">
                 <!-- <Label Text="Here are your upcoming classes:" TextColor="Green" FontSize="15" FontAttributes="Bold"/> -->
-                <Frame CornerRadius="5" BackgroundColor="LightGray" BorderColor="Transparent" Padding="10" >
-                    <Button Text="Change Membership Type" Clicked="OnMembershipClicked" BackgroundColor="LimeGreen" TextColor="White" Margin="0,10,0,0" Grid.Row="2"/>
-                    <!-- Modify Membership Type -->
-                    <Button Text="Cancel" Clicked="OnMembershipClicked" BackgroundColor="LimeGreen" TextColor="White" Margin="0,10,0,0" Grid.Row="4"/>
-                    <!-- Cancel Membership -->
-                    
+                <Frame CornerRadius="20" BackgroundColor="LightGray" BorderColor="Transparent" Padding="10" >
+                    <StackLayout>
+                        <Button Text="Change Membership Type" Clicked="OnMembershipClicked" BackgroundColor="LimeGreen" TextColor="White" Margin="0,10,0,0"/>
+                        <!-- Modify Membership Type -->
+                        <Button Text="Cancel Membership" Clicked="OnMembershipClicked" BackgroundColor="LimeGreen" TextColor="White" Margin="0,10,0,0" />
+                        <!-- Cancel Membership -->
+                        
+                    </StackLayout>
+                </Frame>
+                <!-- Frame 2 -->
+                <Frame CornerRadius="20" BackgroundColor="LightGray" BorderColor="Transparent" Padding="10">
+                    <StackLayout>
+                        <Label Text="Placeholder text:" TextColor="Black" FontSize="15" FontAttributes="Bold"/>
+                    </StackLayout>
                 </Frame>
             </StackLayout>
         </Grid>
