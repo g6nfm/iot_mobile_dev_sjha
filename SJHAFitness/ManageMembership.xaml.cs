@@ -11,6 +11,12 @@ public partial class ManageMembership : ContentPage
 {
     ObservableCollection<Sessions> Session;
 
+    private void MenuPopup(object sender, EventArgs e)
+    {
+        var popup = new MenuBarItems();
+        this.ShowPopup(popup);
+    }
+
     private async void OnCancelMembershipClicked(object sender, EventArgs e)
     {
         // Ask the user for confirmation

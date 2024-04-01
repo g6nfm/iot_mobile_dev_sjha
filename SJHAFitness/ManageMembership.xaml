@@ -29,7 +29,7 @@
                 <!-- Hamburger Button -->
                 <Button Text="☰" Grid.Row="0" FontSize="20" FontAttributes="Bold" WidthRequest="60" HeightRequest="50" BackgroundColor="Transparent"
             VerticalOptions="StartAndExpand" HorizontalOptions="StartAndExpand"
-            Margin="-20,-110,0,0" TextColor="Black" BorderColor="Black"/>
+            Margin="-20,-110,0,0" TextColor="Black" BorderColor="Black" Clicked="MenuPopup"/>
             </StackLayout>
 
             <Label Text="Manage Membership" TextColor="Black" Grid.Row="1" VerticalOptions="End"
@@ -52,7 +52,7 @@
                 <Frame CornerRadius="10" BackgroundColor="LightGray" BorderColor="Transparent" Padding="10">
                     <StackLayout>
                         <Label Text="Current Membership Information" TextColor="Black" Grid.Row="1" VerticalOptions="End"
-                               FontAttributes="Bold" FontSize="25" Margin="0,-10,0,0"/>
+                               FontAttributes="Bold" FontSize="25"/>
                         <Label Text="Membership Type: (Placeholder) " TextColor="Black" Margin="10,0,0,0"/>
                         <Label Text="Recurring Payment Term: (1 / 3 / 6 / 12 Month)" TextColor="Black" Margin="10,0,0,0"/>
                         <Label Text="Membership Renewal Date: (MM / DD / YYYY)" TextColor="Black" Margin="10,0,0,0"/>
