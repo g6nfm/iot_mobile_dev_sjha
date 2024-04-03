@@ -75,5 +75,44 @@ namespace SJHAFitness
                 //
             }
         }
+
+        private Button _selectedSubscriptionButton = null;
+
+        private void OnSubscriptionOptionClicked(object sender, EventArgs e)
+        {
+            var clickedButton = sender as Button;
+
+            // Deselect the previously selected button if it's not the same as the clicked one
+            if (_selectedSubscriptionButton != null && _selectedSubscriptionButton != clickedButton)
+            {
+                DeselectButton(_selectedSubscriptionButton);
+            }
+
+            // Select the clicked button if it was not already selected, otherwise deselect it
+            if (_selectedSubscriptionButton == clickedButton)
+            {
+                // Button was already selected, so deselect it
+                DeselectButton(clickedButton);
+                _selectedSubscriptionButton = null; // Clear the current selection
+            }
+            else
+            {
+                // Button is now selected
+                SelectButton(clickedButton);
+                _selectedSubscriptionButton = clickedButton; // Set the new selection
+            }
+        }
+
+        // Method to visually mark a button as selected
+        private void SelectButton(Button button)
+        {
+            button.BackgroundColor = Color.FromArgb("#00510A"); // Or any other color to indicate selection
+        }
+
+        // Method to revert a button's visual state to deselected
+        private void DeselectButton(Button button)
+        {
+            button.BackgroundColor = Colors.Green; // Use the default or another color to indicate deselection
+        }
     }
 }

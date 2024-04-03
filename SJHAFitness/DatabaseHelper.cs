@@ -15,9 +15,20 @@ public static class DatabaseHelper
             db.CreateTable<Account>();
 
             db.CreateTable<Sessions>();
+
+            db.CreateTable<Membership>();
         }
     }
     public static Account CurrentAccount { get; set; }
+
+    // Add Membership WIP
+    public static void AddMembership(Membership membership)
+    {
+        using (var db = new SQLiteConnection(dbPath))
+        {
+            db.Insert(membership);
+        }
+    }
     public static void AddAccount(Account account)
     {
         using (var db = new SQLiteConnection(dbPath))
