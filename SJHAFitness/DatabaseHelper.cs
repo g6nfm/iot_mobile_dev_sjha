@@ -189,4 +189,49 @@ public static class DatabaseHelper
         }
     }
 
+    public static bool CancelMembership(int userId)
+    {
+        using (var db = new SQLiteConnection(dbPath))
+        {
+            var account = db.Table<Account>().FirstOrDefault(a => a.UserID == userId);
+            if (account != null)
+            {
+                // change membership details to cancel the membership
+                account.MembershipEndDate = DateTime.Now;
+                account.MembershipName = string.Empty;
+                account.MembershipTerm = 0;
+
+                db.Update(account);
+                return true;
+            }
+            else
+            {
+                return false; // account not found
+            }
+        }
+    }
+
+    public static bool ChangeMembership(int userId, int newMembershipTerm, string newMembershipName)
+    {
+        using (var db = new SQLiteConnection(dbPath))
+        {
+            var account = db.Table<Account>().FirstOrDefault(a => a.UserID == userId);
+            if (account != null)
+            {
+                // update membership details
+                account.MembershipTerm = newMembershipTerm;
+                account.MembershipStartDate = DateTime.Now;
+                account.MembershipEndDate = account.MembershipStartDate.AddMonths(newMembershipTerm);
+                account.MembershipName = newMembershipName;
+
+                db.Update(account);
+                return true;
+            }
+            else
+            {
+                return false; // account not found
+            }
+        }
+    }
+
 }
