@@ -38,10 +38,14 @@
                 <Label Text="Choose your Subscription Length" TextColor="Green" FontAttributes="Bold" Margin="0,20"/>
 
                 <StackLayout Orientation="Horizontal" HorizontalOptions="Start" Spacing="40">
-                    <Button x:Name="oneMonthSubscriptionButton" Text="1 Month" Clicked="OnSubscriptionOptionClicked" CommandParameter="1" BackgroundColor="Green" WidthRequest="125"/>
-                    <Button x:Name="threeMonthsSubscriptionButton" Text="3 Months" Clicked="OnSubscriptionOptionClicked" CommandParameter="3" BackgroundColor="Green" WidthRequest="125"/>
-                    <Button x:Name="sixMonthsSubscriptionButton" Text="6 Months" Clicked="OnSubscriptionOptionClicked" CommandParameter="6" BackgroundColor="Green" WidthRequest="125"/>
-                    <Button x:Name="twelveMonthsSubscriptionButton" Text="12 Months" Clicked="OnSubscriptionOptionClicked" CommandParameter="12" BackgroundColor="Green" WidthRequest="125"/>
+                    <Button x:Name="oneMonthSubscriptionButton" Text="1 Month" FontSize="12" Clicked="OnSubscriptionOptionClicked" CommandParameter="1" 
+                            BackgroundColor="LimeGreen" WidthRequest="80" Margin="-15,0,0,0"/>
+                    <Button x:Name="threeMonthsSubscriptionButton" Text="3 Months" FontSize="12" Clicked="OnSubscriptionOptionClicked" CommandParameter="3" 
+                            BackgroundColor="LimeGreen" WidthRequest="85" Margin="-30,0,0,0"/>
+                    <Button x:Name="sixMonthsSubscriptionButton" Text="6 Months" FontSize="12" Clicked="OnSubscriptionOptionClicked" CommandParameter="6" 
+                            BackgroundColor="LimeGreen" WidthRequest="83" Margin="-30,0,0,0"/>
+                    <Button x:Name="twelveMonthsSubscriptionButton" Text="12 Months" FontSize="12" Clicked="OnSubscriptionOptionClicked" CommandParameter="12" 
+                            BackgroundColor="LimeGreen" WidthRequest="89" Margin="-30,0,0,0"/>
                 </StackLayout>
 
                 <Label Text="First Name" TextColor="Green" FontAttributes="Bold" Margin="0,10"/>
