@@ -24,7 +24,8 @@ public partial class ManageMembership : ContentPage
 
         if (isUserSure)
         {
-            // logic for removing account from database will be here
+            // logic for removing account from database will be here 
+            // will do this tomorrow
 
             // Show a confirmation message
             await DisplayAlert("Membership Cancelled", "Your membership has been cancelled.", "OK");
@@ -48,6 +49,10 @@ public partial class ManageMembership : ContentPage
         lastNameLabel.Text = $"Last Name: {App.CurrentUser.LastName}";
         birthdayLabel.Text = $"Birthday: {App.CurrentUser.Birthday.Date.ToShortDateString()}";
         emailLabel.Text = $"Email: {App.CurrentUser.Email}";
+        membershipNameLabel.Text = $"Membership Type: {App.CurrentUser.MembershipName}";
+        membershipTermLabel.Text = $"Membership Length: {App.CurrentUser.MembershipTerm} Months";
+        membershipStartLabel.Text = $"Membership Start Date: {App.CurrentUser.MembershipStartDate.Date.ToShortDateString()}";
+        membershipEndLabel.Text = $"Membership Expiry Date: {App.CurrentUser.MembershipEndDate.Date.ToShortDateString()}";
     }
 
 }

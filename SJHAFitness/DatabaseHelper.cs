@@ -16,19 +16,33 @@ public static class DatabaseHelper
 
             db.CreateTable<Sessions>();
 
-            db.CreateTable<Membership>();
+            /* Dropping Table Functions if needed.
+                DropAccountTable();
+                DropSessionsTable();
+            */
         }
     }
-    public static Account CurrentAccount { get; set; }
 
-    // Add Membership WIP
-    public static void AddMembership(Membership membership)
+    
+    public static void DropSessionsTable()
     {
         using (var db = new SQLiteConnection(dbPath))
         {
-            db.Insert(membership);
+            db.Execute("DROP TABLE IF EXISTS Sessions");
         }
     }
+
+    public static void DropAccountTable()
+    {
+        using (var db = new SQLiteConnection(dbPath))
+        {
+            db.Execute("DROP TABLE IF EXISTS Account");
+        }
+    }
+
+    public static Account CurrentAccount { get; set; }
+
+ 
     public static void AddAccount(Account account)
     {
         using (var db = new SQLiteConnection(dbPath))
@@ -79,7 +93,8 @@ public static class DatabaseHelper
         }
     }
 
-    public static bool SignupUser(string firstName, string lastName, string email, string password, int height, int weight, DateTime birthday)
+    public static bool SignupUser(string firstName, string lastName, string email, string password, int height, int weight, DateTime birthday, int membershipTerm,
+        DateTime membershipStartDate, DateTime membershipEndDate, string membershipName)
     {
         using (var db = new SQLiteConnection(dbPath))
         {
@@ -101,6 +116,10 @@ public static class DatabaseHelper
                 Height = height,
                 Weight = weight,
                 Birthday = birthday,
+                MembershipTerm = membershipTerm,
+                MembershipStartDate = membershipStartDate,
+                MembershipEndDate = membershipEndDate,
+                MembershipName = membershipName
             };
 
             db.Insert(account);

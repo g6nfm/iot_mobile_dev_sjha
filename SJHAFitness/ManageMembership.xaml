@@ -53,10 +53,10 @@
                     <StackLayout>
                         <Label Text="Current Membership Information" TextColor="Black" Grid.Row="1" VerticalOptions="End"
                                FontAttributes="Bold" FontSize="25"/>
-                        <Label Text="Membership Type: (Placeholder) " TextColor="Black" Margin="10,0,0,0"/>
-                        <Label Text="Recurring Payment Term: (1 / 3 / 6 / 12 Month)" TextColor="Black" Margin="10,0,0,0"/>
-                        <Label Text="Membership Renewal Date: (MM / DD / YYYY)" TextColor="Black" Margin="10,0,0,0"/>
-                        <Label Text="Member Since: (MM / DD / YYYY)" TextColor="Black" Margin="10,0,0,0"/>
+                        <Label x:Name="membershipNameLabel" Text="Membership Type:" TextColor="Black" Margin="10,0,0,0"/>
+                        <Label x:Name="membershipTermLabel" Text="Membership Term:" TextColor="Black" Margin="10,0,0,0"/>
+                        <Label x:Name="membershipEndLabel" Text="Membership Renewal Date:" TextColor="Black" Margin="10,0,0,0"/>
+                        <Label x:Name="membershipStartLabel" Text="Member Since:" TextColor="Black" Margin="10,0,0,0"/>
                     </StackLayout>
                 </Frame>
                 

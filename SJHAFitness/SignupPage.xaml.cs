@@ -1,14 +1,26 @@
 using System;
 using System.Reflection;
 
+
 namespace SJHAFitness
 {
     public partial class SignupPage : ContentPage
     {
+        private Button _selectedSubscriptionButton;
+        private int _selectedMembershipLength; // selected membership length
+
         public SignupPage()
         {
             InitializeComponent();
         }
+
+        private Dictionary<int, string> _membershipOptions = new Dictionary<int, string>
+        {
+        { 1, "One Month All Access" },
+        { 3, "Three Month All Access" },
+        { 6, "Six Month All Access" },
+        { 12,"One Year All Access" }
+        };
 
         void OnGoBackButton(object sender, EventArgs e)
         {
@@ -32,87 +44,88 @@ namespace SJHAFitness
             var email = emailEntry.Text;
             var password = passwordEntry.Text;
             DateTime birthday = birthdayEntry.Date;
-            // Initialize weight and height variables
             int weight;
             int height;
 
-            // Validate and parse weight input
             if (!int.TryParse(weightEntry.Text, out weight))
             {
-                // Display an alert if weight input is invalid
                 await DisplayAlert("Error", "Please enter a valid weight.", "OK");
                 return;
             }
 
-            // Validate and parse height input
             if (!int.TryParse(heightEntry.Text, out height))
             {
-                // Display an alert if height input is invalid
                 await DisplayAlert("Error", "Please enter a valid height.", "OK");
                 return;
             }
 
-            // Validate other input fields (e.g., email, password, etc.)
-            // Proceed with signup logic if all input is valid
+            if (_selectedMembershipLength == 0)
+            {
+                await DisplayAlert("Error", "Please select a membership length.", "OK");
+                return;
+            }
 
-            // Hash the password before storing it in the database
+            string membershipName = _membershipOptions.ContainsKey(_selectedMembershipLength)
+                            ? _membershipOptions[_selectedMembershipLength]
+                            : "Unknown";
+
+            DateTime membershipStartDate = DateTime.Now;
+
+            // Calculate the end date based on the selected membership length
+            DateTime membershipEndDate = membershipStartDate.AddMonths(_selectedMembershipLength);
+
             string hashedPassword = PasswordHasher.HashPassword(password);
 
-            // Attempt to sign up the user
-            var isSignupSuccessful = DatabaseHelper.SignupUser(firstName, lastName, email, hashedPassword, height, weight, birthday);
+            var isSignupSuccessful = DatabaseHelper.SignupUser(firstName, lastName, email, hashedPassword, height, weight, birthday, _selectedMembershipLength,
+                membershipStartDate, membershipEndDate, membershipName);
 
             if (isSignupSuccessful)
             {
-                // Set the current logged-in user after successful signup
                 App.CurrentUser = DatabaseHelper.GetAccountByEmail(email);
-
-                // Navigate to the ManageAccount page after successful signup
                 await Navigation.PushAsync(new MainPage());
             }
             else
             {
-                // If signup fails, show an error message
-                //
+                // Handle signup failure, such as displaying an error message to the user
             }
         }
-
-        private Button _selectedSubscriptionButton = null;
 
         private void OnSubscriptionOptionClicked(object sender, EventArgs e)
         {
             var clickedButton = sender as Button;
+            if (clickedButton != null)
+            {
+                int membershipLength = Convert.ToInt32(clickedButton.CommandParameter);
 
-            // Deselect the previously selected button if it's not the same as the clicked one
-            if (_selectedSubscriptionButton != null && _selectedSubscriptionButton != clickedButton)
-            {
-                DeselectButton(_selectedSubscriptionButton);
-            }
-
-            // Select the clicked button if it was not already selected, otherwise deselect it
-            if (_selectedSubscriptionButton == clickedButton)
-            {
-                // Button was already selected, so deselect it
-                DeselectButton(clickedButton);
-                _selectedSubscriptionButton = null; // Clear the current selection
-            }
-            else
-            {
-                // Button is now selected
-                SelectButton(clickedButton);
-                _selectedSubscriptionButton = clickedButton; // Set the new selection
+                if (_selectedSubscriptionButton != clickedButton)
+                {
+                    if (_selectedSubscriptionButton != null)
+                    {
+                        DeselectButton(_selectedSubscriptionButton);
+                    }
+                    SelectButton(clickedButton);
+                    _selectedSubscriptionButton = clickedButton;
+                    _selectedMembershipLength = membershipLength;
+                }
+                else
+                {
+                    DeselectButton(clickedButton);
+                    _selectedSubscriptionButton = null;
+                    _selectedMembershipLength = 0;
+                }
             }
         }
 
-        // Method to visually mark a button as selected
         private void SelectButton(Button button)
         {
-            button.BackgroundColor = Color.FromArgb("#00510A"); // Or any other color to indicate selection
+            button.BackgroundColor = Color.FromArgb("#00510A");
+            // Other visual changes to indicate selection, if needed
         }
 
-        // Method to revert a button's visual state to deselected
         private void DeselectButton(Button button)
         {
-            button.BackgroundColor = Colors.Green; // Use the default or another color to indicate deselection
+            button.BackgroundColor = Colors.Green;
+            // Revert any visual changes that indicate selection, if needed
         }
     }
 }
