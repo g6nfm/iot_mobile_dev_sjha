@@ -10,11 +10,10 @@
         BackgroundColor="LightGray"
         Padding="20"
         RowSpacing="10"
-        WidthRequest="200">
+        WidthRequest="200"
+        HeightRequest="405">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
-            <RowDefinition Height="1"/>
-            <RowDefinition Height="40"/>
             <RowDefinition Height="1"/>
             <RowDefinition Height="40"/>
             <RowDefinition Height="1"/>
@@ -125,6 +124,7 @@
             Grid.Row="8"
             Clicked="QRCode"/>
 
+
         <Line
             Stroke="Black"
             X1="0"
@@ -134,26 +134,11 @@
             Grid.Row="9"/>
 
         <Button
-            Text="Help and FAQ"
-            TextColor="Black"
-            FontAttributes="Bold"
-            BackgroundColor="Transparent"
-            Grid.Row="10"/>
-
-        <Line
-            Stroke="Black"
-            X1="0"
-            X2="200"
-            Y1="0"
-            Y2="0"
-            Grid.Row="11"/>
-
-        <Button
             Text="Logout"
             TextColor="Black"
             FontAttributes="Bold"
             BackgroundColor="Transparent"
-            Grid.Row="12"
+            Grid.Row="10"
             Clicked="Logout"/>
 
     </Grid>

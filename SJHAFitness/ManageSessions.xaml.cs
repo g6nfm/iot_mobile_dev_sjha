@@ -22,6 +22,9 @@ public partial class ManageSessions : ContentPage
 
         emailLabel.Text = $"Email: {App.CurrentUser.Email}";
 
+        membershipNameLabel.Text = $"Membership Type: {App.CurrentUser.MembershipName}";
+        membershipStartLabel.Text = $"Membership Start Date: {App.CurrentUser.MembershipStartDate.Date.ToShortDateString()}";
+        membershipEndLabel.Text = $"Membership Expiry Date: {App.CurrentUser.MembershipEndDate.Date.ToShortDateString()}";
     }
 
     private void MenuPopup(object sender, EventArgs e)

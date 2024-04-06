@@ -77,11 +77,12 @@
                                             FontSize="25"
                                             Grid.Column="0"
                                             Grid.Row="1"
-                                            Margin="0,-55,0,40"/>
+                                            Margin="0,-45,0,40"/>
                                         <Label
                                             Text="Date:"
                                             TextColor="Black"
-                                            Grid.Row="2"/>
+                                            Grid.Row="2"
+                                            Margin="0,-30,0,0"/>
                                         <Label
                                             Text="{Binding Date, StringFormat='{0:dd MMM yyyy}'}"
                                             TextColor="Black"
@@ -89,7 +90,12 @@
                                             Grid.Row="3"
                                             Grid.Column="0"
                                             WidthRequest="200"
-                                            Margin="100,10,0,0"/>
+                                            Margin="100,-10,0,0"/>
+                                        <Label
+                                            Text="Time:"
+                                            TextColor="Black"
+                                            Grid.Row="5"
+                                            Margin="0,-38,0,0"/>
                                         <Label
                                             Text="{Binding Time, StringFormat='{0:HH:mm}'}"
                                             TextColor="Black"
@@ -97,7 +103,7 @@
                                             Grid.Row="4"
                                             Grid.Column="0"
                                             WidthRequest="200"
-                                            Margin="100,10,0,0"/>
+                                            Margin="100,20,0,0"/>
 
                                         <Label
                                             Text="Focus of the Session:"
@@ -105,7 +111,7 @@
                                             Grid.Row="5"
                                             Grid.Column="0"
                                             WidthRequest="200"
-                                            Margin="99,15,0,0"/>
+                                            Margin="99,5,0,0"/>
                                         <Frame Grid.Row="6" WidthRequest="250" Grid.Column="1" Margin="-27,0,0,0">
                                             <Label
                                                 Text="{Binding Focus}"
@@ -138,7 +144,7 @@
                                             HeightRequest="40"
                                             Clicked="CancelButton"
                                             Background="Green"
-                                            Margin="-20,20,0,0"
+                                            Margin="-20,10,0,0"
                                             Grid.Row="7"
                                             Grid.Column="1"/>
                                     </Grid>
@@ -164,20 +170,13 @@
                                 <Label x:Name="fullNameLabel" Text="Full Name:" FontAttributes="Bold" TextColor="Black" Background="Transparent"/>
                             </HorizontalStackLayout>
                             <HorizontalStackLayout Spacing="10">
-                                <Label Text="Member Since:" FontAttributes="Bold" TextColor="Black" Background="Transparent"/>
-                                <Label Text="(Membership)" TextColor="Black" Background="Transparent"/>
+                                <Label x:Name="membershipStartLabel" Text="Member Since:" FontAttributes="Bold" TextColor="Black" Background="Transparent"/>
                             </HorizontalStackLayout>
                             <HorizontalStackLayout Spacing="10">
-                                <Label Text="Most Recent Visit:" FontAttributes="Bold" TextColor="Black" Background="Transparent"/>
-                                <Label Text="(YYYY/MM/DD)" TextColor="Black" Background="Transparent"/>
+                                <Label x:Name="membershipEndLabel" Text="Membership End:" FontAttributes="Bold" TextColor="Black" Background="Transparent"/>
                             </HorizontalStackLayout>
                             <HorizontalStackLayout Spacing="10">
-                                <Label Text="Membership End:" FontAttributes="Bold" TextColor="Black" Background="Transparent"/>
-                                <Label Text="(Membership Expiry)" TextColor="Black" Background="Transparent"/>
-                            </HorizontalStackLayout>
-                            <HorizontalStackLayout Spacing="10">
-                                <Label Text="Membership Type:" FontAttributes="Bold" TextColor="Black" Background="Transparent"/>
-                                <Label Text="(Type)" TextColor="Black" Background="Transparent"/>
+                                <Label x:Name="membershipNameLabel" Text="Membership Type:" FontAttributes="Bold" TextColor="Black" Background="Transparent"/>
                             </HorizontalStackLayout>
                             <HorizontalStackLayout Spacing="10">
                                 <Label x:Name="emailLabel" Text="Email:" FontAttributes="Bold" TextColor="Black" Background="Transparent"/>

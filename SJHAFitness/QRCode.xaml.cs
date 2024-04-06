@@ -32,6 +32,12 @@ namespace SJHAFitness
 
             emailLabel.Text = $"Email: {App.CurrentUser.Email}";
         }
+
+        async void OnManageMembershipClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new ManageMembership());
+        }
+
         private void MenuPopup(object sender, EventArgs e)
         {
             var popup = new MenuBarItems();
