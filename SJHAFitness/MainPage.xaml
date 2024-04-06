@@ -112,7 +112,7 @@
                                                 HorizontalOptions="Start"
                                                 HorizontalTextAlignment="Start"
                                                 WidthRequest="250"
-                                                Margin="10,-13,0,0"
+                                                Margin="-10,-13,0,0"
                                                 FontAttributes="Italic"/>
                                         </Frame>
                                         <Frame WidthRequest="105"
