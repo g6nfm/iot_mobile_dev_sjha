@@ -28,22 +28,23 @@ public partial class ManageSessionItems : Popup
             Focus = SessionFocus.Text,
         };
 
-        if (session.Session == "Andrew")
+        switch (session.Session)
         {
-            session.Image = "andrew.jpg";
+            case "Andrew":
+                session.Image = "andrew.jpg";
+                break;
+            case "Hanbo":
+                session.Image = "hanbo.png";
+                break;
+            case "Jakob":
+                session.Image = "jakob.jpeg";
+                break;
+            case "Shawn":
+                session.Image = "shawn.jpg";
+                break;
         }
-        else if (session.Session == "Hanbo")
-        {
-            session.Image = "hanbo.png";
-        }
-        else if (session.Session == "Shawn")
-        {
-            session.Image = "shawn.jpg";
-        }
-        else if (session.Session == "Jakob")
-        {
-            session.Image = "jakob.jpg";
-        }
+
+
 
         DatabaseHelper.AddSessionAsync(session);
 

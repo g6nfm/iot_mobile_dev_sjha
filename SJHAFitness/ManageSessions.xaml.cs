@@ -9,9 +9,9 @@ namespace SJHAFitness;
 
 public partial class ManageSessions : ContentPage
 {
-    ObservableCollection<Sessions> Session;
+    ObservableCollection<Sessions> Session = new ObservableCollection<Sessions>();
 
-	public ManageSessions()
+    public ManageSessions()
 	{
 		InitializeComponent();
 
@@ -67,9 +67,11 @@ public partial class ManageSessions : ContentPage
                 session.Image = "jakob.jpg";
             }
 
-            Session.Add(session);
-
-            sessionsList.ItemsSource = Session;
+            Device.BeginInvokeOnMainThread(() =>
+            {
+                Session.Add(session);
+                sessionsList.ItemsSource = Session;
+            });
 
         }
     }
