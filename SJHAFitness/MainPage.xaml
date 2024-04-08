@@ -148,14 +148,14 @@
                 <Frame CornerRadius="5" BackgroundColor="LightGray" BorderColor="Transparent" Padding="10" >
                     <StackLayout>
                         <Label Text="📰 SJHA Army Newsletter" TextColor="Black" FontAttributes="Bold" FontSize="15"/>
-                        <Label Text="(Description) " TextColor="Black"/>
-                        <Label Text="(Description) " TextColor="Black"/>
-                        <Label Text="(Description) " TextColor="Black"/>
-                        <Label Text="(Description) " TextColor="Black"/>
-                        <Label Text="(Description) " TextColor="Black"/>
-                        <Label Text="(Description) " TextColor="Black"/>
-                        <Label Text="(Description) " TextColor="Black"/>
-                        <Label Text="(Description) " TextColor="Black"/>
+                        <Label Text="Breaking News: SJHA Gym Introduces Revolutionary Workout Technique!" TextColor="Black"/>
+                        <Label Text="Exclusive Insider Scoop: SJHA Gym Unveils Secret to Rapid Fat Loss!" TextColor="Black"/>
+                        <Label Text="Alert: SJHA Gym Launches Groundbreaking Fitness Challenge!" TextColor="Black"/>
+                        <Label Text="Extra! Extra! SJHA Gym Reveals Celebrity Trainer Collaboration!" TextColor="Black"/>
+                        <Label Text="Shock Announcement: SJHA Gym Introduces State-of-the-Art Equipment Upgrade!" TextColor="Black"/>
+                        <Label Text="Urgent Bulletin: SJHA Gym Offers Limited-Time Membership Discount!" TextColor="Black"/>
+                        <Label Text="Hot Off the Press: SJHA Gym Launches Cutting-Edge Virtual Fitness Program!" TextColor="Black"/>
+                        <Label Text="Front Page News: SJHA Gym Hosts Grand Opening Event with Special Guest Appearances!" TextColor="Black"/>
 
                     </StackLayout>
                 </Frame>

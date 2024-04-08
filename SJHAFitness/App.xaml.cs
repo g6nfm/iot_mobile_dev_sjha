@@ -12,7 +12,7 @@ namespace SJHAFitness
 
             // Manually create a new DbContextOptionsBuilder and configure it
             var optionsBuilder = new DbContextOptionsBuilder<AppDbContext>();
-            optionsBuilder.UseSqlServer("Server=tcp:sjhadb.database.windows.net,1433;Initial Catalog=SJHAdb;Persist Security Info=False;User ID=sjhadev;Password=DevAccount12345;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
+            optionsBuilder.UseSqlServer("Server=tcp:sjhadb.database.windows.net,1433;Initial Catalog=SJHAdb;Persist Security Info=False;User ID=sjhadev;Password=DevAccount12345;MultipleActiveResultSets=True;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
 
             // Manually create an instance of AppDbContext
             var context = new AppDbContext(optionsBuilder.Options);
