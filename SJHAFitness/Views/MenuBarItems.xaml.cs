@@ -18,25 +18,6 @@ public partial class MenuBarItems : Popup
         var account = await DatabaseHelper.GetAccountByEmailAsync(App.CurrentUser.Email);
     }
 
-    async void OnUploadPictureClicked(object sender, EventArgs e)
-    {
-        var result = await MediaPicker.Default.PickPhotoAsync();
-        if (result != null)
-        {
-            var stream = await result.OpenReadAsync();
-            using MemoryStream ms = new MemoryStream();
-            stream.CopyTo(ms);
-            byte[] imageBytes = ms.ToArray();
-            // Ensure you await the async call and possibly check the result
-            await DatabaseHelper.UpdateAccountAsync(App.CurrentUser);
-        }
-        Close();
-    }
-
-  
-
-   
-
     private void CloseMenu(object sender, EventArgs e)
     {
         Close();

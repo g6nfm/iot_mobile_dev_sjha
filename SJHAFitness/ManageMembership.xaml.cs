@@ -32,12 +32,8 @@ public partial class ManageMembership : ContentPage
                 await DisplayAlert("Membership Cancelled", "Your membership has been cancelled.", "OK");
                 await Application.Current.MainPage.Navigation.PushAsync(new LoginPage());
             }
-            else
-            {
-                await DisplayAlert("Membership Not Cancelled", "Thank you for staying with SJHA Fitness!", "OK");
-            }
+          
         }
-        // if user selects no, nothing else is done
     }
 
     private async void OnChangeMembershipClicked(object sender, EventArgs e)

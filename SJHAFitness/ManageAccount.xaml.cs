@@ -32,11 +32,6 @@ namespace SJHAFitness
             await Navigation.PushAsync(new ManageMembership());
         }
 
-        async void OnUploadPictureClicked(object sender, EventArgs e)
-        {
-            
-        }
-
         void OnChangePasswordClicked(object sender, EventArgs e)
         {
             // Toggle the visibility of the password fields
