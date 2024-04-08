@@ -44,15 +44,21 @@ public partial class ManageMembership : ContentPage
     public ManageMembership()
     {
        InitializeComponent();
-        var sessions = DatabaseHelper.GetSessionsByUser(App.CurrentUser.UserID);
+        var sessions = DatabaseHelper.GetSessionsByUserAsync(App.CurrentUser.UserID);
         firstNameLabel.Text = $"First Name: {App.CurrentUser.FirstName}";
         lastNameLabel.Text = $"Last Name: {App.CurrentUser.LastName}";
-        birthdayLabel.Text = $"Birthday: {App.CurrentUser.Birthday.Date.ToShortDateString()}";
+        birthdayLabel.Text = App.CurrentUser.Birthday.HasValue
+                     ? $"Birthday: {App.CurrentUser.Birthday.Value.ToShortDateString()}"
+                     : "Birthday: N/A";
         emailLabel.Text = $"Email: {App.CurrentUser.Email}";
         membershipNameLabel.Text = $"Membership Type: {App.CurrentUser.MembershipName}";
         membershipTermLabel.Text = $"Membership Length: {App.CurrentUser.MembershipTerm} Months";
-        membershipStartLabel.Text = $"Membership Start Date: {App.CurrentUser.MembershipStartDate.Date.ToShortDateString()}";
-        membershipEndLabel.Text = $"Membership Expiry Date: {App.CurrentUser.MembershipEndDate.Date.ToShortDateString()}";
+        membershipStartLabel.Text = App.CurrentUser.MembershipStartDate.HasValue
+                            ? $"Membership Start Date: {App.CurrentUser.MembershipStartDate.Value.ToShortDateString()}"
+                            : "Membership Start Date: N/A";
+        membershipEndLabel.Text = App.CurrentUser.MembershipEndDate.HasValue
+                          ? $"Membership Expiry Date: {App.CurrentUser.MembershipEndDate.Value.ToShortDateString()}"
+                          : "Membership Expiry Date: N/A";
     }
 
 }

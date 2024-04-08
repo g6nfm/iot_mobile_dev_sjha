@@ -17,14 +17,18 @@ public partial class ManageSessions : ContentPage
 
         LoadSessionsFromDatabase();
 
-        var sessions = DatabaseHelper.GetSessionsByUser(App.CurrentUser.UserID);
+        var sessions = DatabaseHelper.GetSessionsByUserAsync(App.CurrentUser.UserID);
         fullNameLabel.Text = $"Full Name: {App.CurrentUser.FirstName} {App.CurrentUser.LastName}";
 
         emailLabel.Text = $"Email: {App.CurrentUser.Email}";
 
         membershipNameLabel.Text = $"Membership Type: {App.CurrentUser.MembershipName}";
-        membershipStartLabel.Text = $"Membership Start Date: {App.CurrentUser.MembershipStartDate.Date.ToShortDateString()}";
-        membershipEndLabel.Text = $"Membership Expiry Date: {App.CurrentUser.MembershipEndDate.Date.ToShortDateString()}";
+        membershipStartLabel.Text = App.CurrentUser.MembershipStartDate.HasValue
+                            ? $"Membership Start Date: {App.CurrentUser.MembershipStartDate.Value.ToShortDateString()}"
+                            : "Membership Start Date: N/A";
+        membershipEndLabel.Text = App.CurrentUser.MembershipEndDate.HasValue
+                          ? $"Membership Expiry Date: {App.CurrentUser.MembershipEndDate.Value.ToShortDateString()}"
+                          : "Membership Expiry Date: N/A";
     }
 
     private void MenuPopup(object sender, EventArgs e)
@@ -87,7 +91,7 @@ public partial class ManageSessions : ContentPage
                 if (items != null)
                 {
                     items.Remove(session);
-                    DatabaseHelper.DeleteSession(session);
+                    DatabaseHelper.DeleteSessionAsync(session);
                 }
             }
         }
@@ -95,12 +99,10 @@ public partial class ManageSessions : ContentPage
 
 
 
-    public void LoadSessionsFromDatabase()
+    public async void LoadSessionsFromDatabase()
     {
-        var sessions = DatabaseHelper.GetSessionsByUser(App.CurrentUser.UserID);
-
-        Session = new ObservableCollection<Sessions>(sessions);
-
-        sessionsList.ItemsSource = Session;
+        var sessions = await DatabaseHelper.GetSessionsByUserAsync(App.CurrentUser.UserID);
+        var sessionCollection = new ObservableCollection<Sessions>(sessions);
+        sessionsList.ItemsSource = sessionCollection;
     }
 }

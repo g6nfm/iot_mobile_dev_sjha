@@ -36,20 +36,22 @@ namespace SJHAFitness
             }
 
             // grab account from database
-            var account = DatabaseHelper.GetAccountByEmail(email);
+            var account = await DatabaseHelper.GetAccountByEmailAsync(email);
 
-            if (account != null && PasswordHasher.VerifyPassword(password, account.Password))
+            // After the await, account is no longer a Task<Account>, but just Account, so you can access its properties
+            if (account != null
+                && PasswordHasher.VerifyPassword(password, account.Password))
             {
                 // Set the current logged-in account
                 App.CurrentUser = account;
 
-                // verification success
+                // Verification success
                 await DisplayAlert("Login Success", "You are now logged in!", "OK");
-                await Navigation.PushAsync(new MainPage()); // go to mainpage
+                await Navigation.PushAsync(new MainPage()); // Go to main page
             }
             else
             {
-                // failed login
+                // Failed login
                 await DisplayAlert("Login Failed", "Incorrect email or password.", "OK");
             }
         }

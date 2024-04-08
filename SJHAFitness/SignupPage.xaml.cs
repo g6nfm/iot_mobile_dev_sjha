@@ -75,13 +75,12 @@ namespace SJHAFitness
             DateTime membershipEndDate = membershipStartDate.AddMonths(_selectedMembershipLength);
 
             string hashedPassword = PasswordHasher.HashPassword(password);
-
-            var isSignupSuccessful = DatabaseHelper.SignupUser(firstName, lastName, email, hashedPassword, height, weight, birthday, _selectedMembershipLength,
-                membershipStartDate, membershipEndDate, membershipName);
+            var isSignupSuccessful = await DatabaseHelper.SignupUserAsync(firstName, lastName, email, hashedPassword, height, weight, birthday,
+                _selectedMembershipLength, membershipStartDate, membershipEndDate, membershipName);
 
             if (isSignupSuccessful)
             {
-                App.CurrentUser = DatabaseHelper.GetAccountByEmail(email);
+                App.CurrentUser = await DatabaseHelper.GetAccountByEmailAsync(email);
                 await Navigation.PushAsync(new MainPage());
             }
             else

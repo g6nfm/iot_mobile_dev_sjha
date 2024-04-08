@@ -23,12 +23,14 @@ namespace SJHAFitness
             QrCodeImage.Source = ImageSource.FromStream(() => new MemoryStream(qrCodeBytes));
 
 
-            var sessions = DatabaseHelper.GetSessionsByUser(App.CurrentUser.UserID);
+            var sessions = DatabaseHelper.GetSessionsByUserAsync(App.CurrentUser.UserID);
             firstNameLabel.Text = $"First Name: {App.CurrentUser.FirstName}";
 
             lastNameLabel.Text = $"Last Name: {App.CurrentUser.LastName}";
 
-            birthdayLabel.Text = $"Birthday: {App.CurrentUser.Birthday.Date.ToShortDateString()}";
+            birthdayLabel.Text = App.CurrentUser.Birthday.HasValue
+                     ? $"Birthday: {App.CurrentUser.Birthday.Value.ToShortDateString()}"
+                     : "Birthday: N/A";
 
             emailLabel.Text = $"Email: {App.CurrentUser.Email}";
         }

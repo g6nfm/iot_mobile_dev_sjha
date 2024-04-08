@@ -12,10 +12,12 @@ namespace SJHAFitness
         {
             InitializeComponent();
 
-            var sessions = DatabaseHelper.GetSessionsByUser(App.CurrentUser.UserID);
+            var sessions = DatabaseHelper.GetSessionsByUserAsync(App.CurrentUser.UserID);
             firstNameLabel.Text = $"First Name: {App.CurrentUser.FirstName}";
             lastNameLabel.Text = $"Last Name: {App.CurrentUser.LastName}";
-            birthdayLabel.Text = $"Birthday: {App.CurrentUser.Birthday.Date.ToShortDateString()}";
+            birthdayLabel.Text = App.CurrentUser.Birthday.HasValue
+                     ? $"Birthday: {App.CurrentUser.Birthday.Value.ToShortDateString()}"
+                     : "Birthday: N/A";
             emailLabel.Text = $"Email: {App.CurrentUser.Email}";
         }
 
@@ -32,21 +34,7 @@ namespace SJHAFitness
 
         async void OnUploadPictureClicked(object sender, EventArgs e)
         {
-            var result = await MediaPicker.Default.PickPhotoAsync();
-            if (result != null)
-            {
-                var stream = await result.OpenReadAsync();
-
-                using (MemoryStream ms = new MemoryStream())
-                {
-                    stream.CopyTo(ms);
-                    byte[] imageBytes = ms.ToArray();
-
-                    App.CurrentUser.ProfilePicture = imageBytes;
-
-                    DatabaseHelper.UpdateAccount(App.CurrentUser);
-                }
-            }
+            
         }
 
         void OnChangePasswordClicked(object sender, EventArgs e)
@@ -79,13 +67,13 @@ namespace SJHAFitness
                     // Update the password for the current logged-in account
                     if (App.CurrentUser != null)
                     {
-                        // Update the password in the database
-                        bool success = DatabaseHelper.UpdatePassword(App.CurrentUser, NewPassword.Text);
+                        // Await the UpdatePasswordAsync method to get the actual boolean result
+                        bool success = await DatabaseHelper.UpdatePasswordAsync(App.CurrentUser, NewPassword.Text);
 
                         if (success)
                         {
-                            // Display the new password in an alert
-                            await DisplayAlert("Success!", $"Password updated successfully.\n\nNew Password: {NewPassword.Text}", "OK");
+                            // Display the new password confirmation alert
+                            await DisplayAlert("Success", $"Password successfully changed to: {NewPassword.Text}", "OK");
 
                             // Navigate back to the login page
                             await Navigation.PopToRootAsync();

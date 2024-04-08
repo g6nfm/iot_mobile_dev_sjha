@@ -45,7 +45,7 @@ public partial class ManageSessionItems : Popup
             session.Image = "jakob.jpg";
         }
 
-        DatabaseHelper.AddSession(session);
+        DatabaseHelper.AddSessionAsync(session);
 
         Close(session);
     }

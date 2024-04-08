@@ -30,7 +30,7 @@ namespace YourNamespace
             }
 
             // Update the password in the database
-            bool success = DatabaseHelper.UpdatePasswordByEmail(email, newPassword);
+            bool success = await DatabaseHelper.UpdatePasswordByEmailAsync(email, newPassword);
 
             if (success)
             {

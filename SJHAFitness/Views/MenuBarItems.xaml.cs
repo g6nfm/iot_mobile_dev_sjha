@@ -7,14 +7,15 @@ public partial class MenuBarItems : Popup
     public MenuBarItems()
     {
         InitializeComponent();
-
         currentUser.Text = $"{App.CurrentUser.FirstName}";
+    }
 
-        var account = DatabaseHelper.GetAccountByEmail(App.CurrentUser.Email);
-        if (account.ProfilePicture != null)
-        {
-            ProfilePicture.Source = ImageSource.FromStream(() => new MemoryStream(account.ProfilePicture));
-        }
+    // Public method to initialize the popup asynchronously
+
+    
+    public async Task InitializeAsync()
+    {
+        var account = await DatabaseHelper.GetAccountByEmailAsync(App.CurrentUser.Email);
     }
 
     async void OnUploadPictureClicked(object sender, EventArgs e)
@@ -23,20 +24,18 @@ public partial class MenuBarItems : Popup
         if (result != null)
         {
             var stream = await result.OpenReadAsync();
-
-            using (MemoryStream ms = new MemoryStream())
-            {
-                stream.CopyTo(ms);
-                byte[] imageBytes = ms.ToArray();
-
-                App.CurrentUser.ProfilePicture = imageBytes;
-
-                DatabaseHelper.UpdateAccount(App.CurrentUser);
-            }
+            using MemoryStream ms = new MemoryStream();
+            stream.CopyTo(ms);
+            byte[] imageBytes = ms.ToArray();
+            // Ensure you await the async call and possibly check the result
+            await DatabaseHelper.UpdateAccountAsync(App.CurrentUser);
         }
-
         Close();
     }
+
+  
+
+   
 
     private void CloseMenu(object sender, EventArgs e)
     {
