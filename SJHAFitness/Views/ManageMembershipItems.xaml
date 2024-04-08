@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<toolkit:Popup xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             x:Class="SJHAFitness.Views.ManageMembershipItems">
+    <VerticalStackLayout
+            BackgroundColor="White"
+            MinimumWidthRequest="250"
+            MinimumHeightRequest="200"
+            Padding="20">
+
+        <Label Text="Choose your Subscription Length" TextColor="Green" FontAttributes="Bold" Margin="0,20"/>
+
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Start" Spacing="40">
+            <Button x:Name="oneMonthSubscriptionButton" Text="1 Month" FontSize="12" Clicked="OnSubscriptionOptionClicked" CommandParameter="1" 
+            BackgroundColor="LimeGreen" WidthRequest="80" Margin="-15,0,0,0"/>
+            <Button x:Name="threeMonthsSubscriptionButton" Text="3 Months" FontSize="12" Clicked="OnSubscriptionOptionClicked" CommandParameter="3" 
+            BackgroundColor="LimeGreen" WidthRequest="85" Margin="-30,0,0,0"/>
+            <Button x:Name="sixMonthsSubscriptionButton" Text="6 Months" FontSize="12" Clicked="OnSubscriptionOptionClicked" CommandParameter="6" 
+            BackgroundColor="LimeGreen" WidthRequest="83" Margin="-30,0,0,0"/>
+            <Button x:Name="twelveMonthsSubscriptionButton" Text="12 Months" FontSize="12" Clicked="OnSubscriptionOptionClicked" CommandParameter="12" 
+            BackgroundColor="LimeGreen" WidthRequest="89" Margin="-30,0,0,0"/>
+        </StackLayout>
+
+
+        <Grid
+            ColumnDefinitions="*,*"
+            ColumnSpacing="10"
+            Margin="0,20,0,0">
+            <Button
+                Text="Cancel"
+                Clicked="CancelButton"
+                BackgroundColor="LimeGreen"/>
+
+            <Button
+                Text="Save"
+                Clicked="SaveButton"
+                Grid.Column="1"
+                BackgroundColor="LimeGreen"/>
+        </Grid>
+    </VerticalStackLayout>
+</toolkit:Popup>

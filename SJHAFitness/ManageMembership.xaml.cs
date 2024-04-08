@@ -13,7 +13,7 @@ public partial class ManageMembership : ContentPage
 
     private void MenuPopup(object sender, EventArgs e)
     {
-        var popup = new MenuBarItems();
+        var popup = new ManageMembershipItems();
         this.ShowPopup(popup);
     }
 
@@ -24,21 +24,28 @@ public partial class ManageMembership : ContentPage
 
         if (isUserSure)
         {
-            // logic for removing account from database will be here 
-            // will do this tomorrow
+            // Assuming _databaseHelper is your DatabaseHelper instance and has the CancelMembershipAsync method
+            bool result = await DatabaseHelper.CancelMembershipAsync(App.CurrentUser.UserID);
 
-            // Show a confirmation message
-            await DisplayAlert("Membership Cancelled", "Your membership has been cancelled.", "OK");
-
-            
-            // await Navigation.PopAsync(); // navigate user back to the login page once account is removed
+            if (result)
+            {
+                await DisplayAlert("Membership Cancelled", "Your membership has been cancelled.", "OK");
+                await Application.Current.MainPage.Navigation.PushAsync(new LoginPage());
+            }
+            else
+            {
+                await DisplayAlert("Membership Not Cancelled", "Thank you for staying with SJHA Fitness!", "OK");
+            }
         }
         // if user selects no, nothing else is done
     }
 
     private async void OnChangeMembershipClicked(object sender, EventArgs e)
     {
-        await Navigation.PushAsync(new ManageMembership());
+        var popup = new ManageMembershipItems();
+       
+        var result = await this.ShowPopupAsync(popup);
+        //await Navigation.PushAsync(new ManageMembership());
     }
 
     public ManageMembership()

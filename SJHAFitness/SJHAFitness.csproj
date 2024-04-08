@@ -83,6 +83,9 @@
 	  <Compile Update="ManageMembership.xaml.cs">
 	    <DependentUpon>ManageMembership.xaml</DependentUpon>
 	  </Compile>
+	  <Compile Update="Views\ManageMembershipItems.xaml.cs">
+	    <DependentUpon>ManageMembershipItems.xaml</DependentUpon>
+	  </Compile>
 	</ItemGroup>
 
 	<ItemGroup>
@@ -111,6 +114,9 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\MenuBarItems.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\ManageMembershipItems.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Waiver.xaml">

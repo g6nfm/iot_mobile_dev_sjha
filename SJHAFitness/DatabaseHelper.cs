@@ -139,22 +139,6 @@ public static class DatabaseHelper
         return rowsAffected > 0;
     }
 
-    public static async Task<bool> CancelMembershipAsync(int userId)
-    {
-        var account = await _context.Account.FirstOrDefaultAsync(a => a.UserID == userId);
-        if (account != null)
-        {
-            account.MembershipEndDate = DateTime.Now;
-            account.MembershipName = string.Empty;
-            account.MembershipTerm = 0;
-            _context.Account.Update(account);
-            await _context.SaveChangesAsync();
-            return true;
-        }
-
-        return false; // Account not found
-    }
-
     public static async Task<bool> ChangeMembershipAsync(int userId, int newMembershipTerm, string newMembershipName)
     {
         var account = await _context.Account.FirstOrDefaultAsync(a => a.UserID == userId);
@@ -172,6 +156,31 @@ public static class DatabaseHelper
             }
             account.MembershipName = newMembershipName;
             _context.Account.Update(account);
+            await _context.SaveChangesAsync();
+            return true;
+        }
+
+        return false; // Account not found
+    }
+
+    public static async Task<bool> CancelMembershipAsync(int userId)
+    {
+        var account = await _context.Account.FirstOrDefaultAsync(a => a.UserID == userId);
+
+        if (account != null)
+        {
+            // Set the membership details to reflect cancellation
+            account.MembershipName = "N/A"; // or null, if that's preferred
+            account.MembershipTerm = 0;
+
+            // You may also want to set the start date to the current date
+            // if that's how you want to indicate a canceled membership
+            account.MembershipStartDate = DateTime.Now;
+            account.MembershipEndDate = DateTime.Now; // Reflects the membership has ended
+
+            // If you're using EF Core, it tracks changes so this might be optional
+            _context.Account.Update(account);
+
             await _context.SaveChangesAsync();
             return true;
         }
