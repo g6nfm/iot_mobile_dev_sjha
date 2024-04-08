@@ -13,7 +13,7 @@ public partial class ManageMembership : ContentPage
 
     private void MenuPopup(object sender, EventArgs e)
     {
-        var popup = new ManageMembershipItems();
+        var popup = new MenuBarItems();
         this.ShowPopup(popup);
     }
 
